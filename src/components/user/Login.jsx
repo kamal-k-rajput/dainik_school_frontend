@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-const axios = require("axios");
-
+// import axios from "axios";
+import { Footer } from "../Footer/Footer";
 export const Login = () => {
   const [formData, setFormData] = useState({
     email: "",
@@ -8,14 +8,26 @@ export const Login = () => {
   });
   function submitLogIn(e) {
     e.preventDefault();
-    axios
-      .post(`/register`, { ...formData })
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((err) => {
-        console.log(err, "error");
+    (async () => {
+      const rawResponse = await fetch("http://192.168.26.235:5000/user/login", {
+        method: "GET",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ ...formData }),
       });
+
+      console.log(rawResponse);
+    })();
+    // axios
+    //   .post(`http://192.168.26.235:5000/user/login`, { ...formData })
+    //   .then((response) => {
+    //     console.log(response);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err, "error");
+    //   });
   }
   function handleChange(e) {
     e.preventDefault();
@@ -42,6 +54,9 @@ export const Login = () => {
           <input type="submit" value="LOGIN" />
         </form>
       </div>
+
+      <button>REGISTER</button>
+      <Footer></Footer>
     </div>
   );
 };

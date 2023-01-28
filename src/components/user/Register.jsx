@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-const axios = require("axios");
+
+import axios from "axios";
 export const Register = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -13,14 +14,29 @@ export const Register = () => {
   function submitRegister(e) {
     e.preventDefault();
     console.log(formData, "formData");
-    axios
-      .post(`/login`, { ...formData })
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((err) => {
-        console.log(err, "error");
-      });
+    // axios
+    //   .post(`http://192.168.26.235:5000/user/register`, { ...formData })
+    //   .then((response) => {
+    //     console.log(response);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err, "error");
+    //   });
+    (async () => {
+      const rawResponse = await fetch(
+        "http://192.168.26.235:5000/user/register",
+        {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ ...formData }),
+        }
+      );
+
+      console.log(rawResponse);
+    })();
   }
   function handleChange(e) {
     e.preventDefault();

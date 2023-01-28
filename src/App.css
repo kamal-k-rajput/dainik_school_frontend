@@ -1,8 +1,25 @@
 .App {
   text-align: center;
+  font-size: 24px;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+* {
+  padding: 0;
+  margin: 0,
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(2, 106, 2);
+  cursor: pointer;
 }
