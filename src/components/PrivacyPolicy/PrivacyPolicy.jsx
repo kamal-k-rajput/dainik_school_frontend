@@ -1,12 +1,13 @@
 import React from "react";
+import { Footer } from "../Footer/Footer";
 import "./Privacy.css"
 export const PrivacyPolicy = () => {
   return (
     <>
-      <div>
+      <div className="privacy_policy_container">
         <h4>Dainik School Privacy Policy</h4>
         <ul className="privacy_list">
-          <li>Terms and Conditions:</li>
+          <li id="terms">Terms and Conditions:</li>
           <li> Privacy Policy </li>
           <li className="no_style">
             We value your trust. Dainik School Digital Pvt. Ltd adheres to
@@ -795,7 +796,7 @@ export const PrivacyPolicy = () => {
             that the Company has given You a reasonable opportunity to review
             these Terms and that You have agreed to them.
           </li>
-          <li className="no_style">28. Feedback:</li>
+          <li >28. Feedback:</li>
           <li className="no_style">
             Any feedback You provide with respect to the Website shall be deemed
             to be non-confidential. The Website shall be free to use such
@@ -815,7 +816,7 @@ export const PrivacyPolicy = () => {
             offensive, hurtful, or offensive. Please exercise caution while
             accessing the Application.
           </li>
-          <li className="no_style">29. Customer Care:</li>
+          <li >29. Customer Care:</li>
           <li className="no_style">
             We make all our best endeavors to provide You with a pleasant
             experience. In the unlikely event that You face any issues, please
@@ -876,6 +877,7 @@ export const PrivacyPolicy = () => {
             dainikschool@gmail.com
           </li>
         </ul>
+        <Footer/>
       </div>
     </>
   );

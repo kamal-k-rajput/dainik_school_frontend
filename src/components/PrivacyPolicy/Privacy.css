@@ -1,3 +1,24 @@
-.privacy_list{
+.privacy_list {
     list-style: circle;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
+
+.privacy_list>li {
+    text-align: justify;
+    margin: 10px;
+}
+
+.privacy_policy_container {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(232, 250, 244);
+}
+
+.no_style {
+    font-weight: 600;
+    font-weight: 300;
+}
+

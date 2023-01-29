@@ -19,7 +19,7 @@ function App() {
           <Route path="/logout" element={<LogOut />} />
           <Route path="/login" element={<Login />} />
           <Route path="/Courses" element={<Courses />} />
-          <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+          <Route path="/Privacy-Policy" element={<PrivacyPolicy />} />
         </Routes>
       </BrowserRouter>
     </div>
