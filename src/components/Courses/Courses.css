@@ -1,3 +1,29 @@
 .all_courses {
     width: 100%;
 }
+
+.all_courses>img {
+    width: 100%;
+}
+
+.mid_text {
+    font-weight: 700;
+    color: white;
+    background-color: blue;
+    margin: 10px;
+    padding: 15px;
+}
+
+.courses_section {
+    background-color: aliceblue;
+    padding: 30px;
+    margin: 20px 0;
+}
+
+.courses_list>div>img {
+    border: 2px solid red;
+    max-width: 400px;
+    max-height: fit-content;
+
+
+}
