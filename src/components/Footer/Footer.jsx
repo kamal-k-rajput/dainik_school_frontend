@@ -24,7 +24,7 @@ export const Footer = () => {
         <ul>
           <Link to="newsAndBlogs">News and Blogs</Link>
           <Link to="contacts">Contact</Link>
-          <Link to="Privacy-Policy">Term and Condictions</Link>
+          <Link to="Privacy-Policy">Term and Conditions</Link>
           <Link to="account">Account</Link>
         </ul>
       </div>
