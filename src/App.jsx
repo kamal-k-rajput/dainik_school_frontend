@@ -7,6 +7,8 @@ import { Register } from "./components/user/Register";
 import { Home } from "./components/Home/Home";
 import { Courses } from "./components/Courses/Courses";
 import { PrivacyPolicy } from "./components/PrivacyPolicy/PrivacyPolicy";
+import { ContactUs } from "./components/Contact/ContactUs";
+import { Feedback } from "./components/Feedback/Feedback";
 // import { config } from "dotenv";
 // config();
 function App() {
@@ -20,6 +22,9 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/Courses" element={<Courses />} />
           <Route path="/Privacy-Policy" element={<PrivacyPolicy />} />
+          <Route path="/Contact-us" element={<ContactUs />} />
+          <Route path="/Register" element={<Register />} />
+          <Route path="/Feedback" element={<Feedback />} />
         </Routes>
       </BrowserRouter>
     </div>

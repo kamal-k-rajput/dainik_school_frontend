@@ -20,10 +20,9 @@ export const NavbarLinks = () => {
             <Nav>
               <Nav.Link href="courses">Courses</Nav.Link>
               <Nav.Link href="academics">Academics</Nav.Link>
-              <Nav.Link href="Contacts">Contacts</Nav.Link>
+              <Nav.Link href="Contact-us">Contact</Nav.Link>
               <Nav.Link href="Login">Login</Nav.Link>
               <Nav.Link href="Register">Register</Nav.Link>
-              <Nav.Link href="contact">Contact</Nav.Link>
               <Nav.Link href="News-and-blogs">News And Blogs</Nav.Link>
             </Nav>
           </Navbar.Collapse>
