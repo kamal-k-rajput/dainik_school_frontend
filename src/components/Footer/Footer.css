@@ -1,4 +1,4 @@
-.ft-container {
+/* .ft-container {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -37,4 +37,81 @@ li {
 }
 .logo>.dainik_school_logo {
     width: 200px;
+} */
+
+.footer-container {
+    background-color: black;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px 0px;
+}
+
+.footer-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-container>div {
+    margin: 10px;
+}
+
+.footer-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-links>a:hover,
+.footer-links>div>a:hover {
+    color: rgb(96, 96, 233);
+
+}
+
+.footer-links>a,
+.footer-links>div {
+
+    color: white;
+    text-decoration: none;
+    padding: 10px 5px 5px 0;
+}
+
+.useful-links {
+    text-align: left;
+}
+
+.footer-social-link>a {
+    margin-left: 5px;
+}
+
+@media screen and (max-width:720px) {
+    .footer-container {
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width:408px) {
+    .social-icons {
+        flex-direction: row;
+    }
+
+    .footer-social-link {
+        flex-direction: column;
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width:280px) {
+    .footer-container {
+        flex-direction: column;
+        padding: 5px;
+    }
+}
+
+.align-left {
+    align-items: flex-start;
 }

@@ -29,3 +29,12 @@
 .logo>.dainik_school_logo {
     width: 200px;
 }
+
+.navbar-logo {
+    height: 5vh;
+    /* filter: invert(1); */
+}
+a{
+    text-decoration: none;
+    color: "#fff";
+}
