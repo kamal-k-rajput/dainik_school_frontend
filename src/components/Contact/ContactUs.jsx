@@ -24,7 +24,7 @@ export const ContactUs = () => {
       </div>
       <h3>We are happy to serve you.</h3>
       <div className="map">
-        <Map props={{ height: "350px" }} />
+        {/* <Map props={{ height: "350px" }} /> */}
       </div>
       <Footer />
     </>

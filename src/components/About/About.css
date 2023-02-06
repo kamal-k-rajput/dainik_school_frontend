@@ -1,0 +1,38 @@
+.about-container {
+    display: flex;
+    text-align: justify;
+    height: 50vh;
+    width: 90%;
+    margin: 50px;
+
+}
+
+.about-container>img {
+    flex: 1;
+}
+
+.about-container>p {
+    flex: 2;
+}
+
+.about-us-heading {
+    margin: 40px;
+}
+
+.contact-btn {
+    background-color: rgb(80, 129, 5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border-color: #000;
+    margin: 40px;
+    font-weight: 600;
+
+}
+
+.contact-btn:hover {
+    background-color: white;
+    color: green;
+    border-color: black;
+    transition: .6s ease;
+}

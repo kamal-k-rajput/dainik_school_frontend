@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import "./Login.css";
 // import axios from "axios";
 import { Footer } from "../Footer/Footer";
+import { Link } from "react-router-dom";
 export const Login = () => {
   const [formData, setFormData] = useState({
     email: "",
@@ -35,27 +37,27 @@ export const Login = () => {
     setFormData({ ...formData, [name]: value });
   }
   return (
-    <div>
+    <div className="login-container">
       <h1>Login</h1>
-      <div>
-        <form onSubmit={submitLogIn}>
-          <input
-            type="email"
-            name="email"
-            placeholder="email"
-            onChange={handleChange}
-          />
-          <input
-            type="password"
-            name="password"
-            placeholder="password"
-            onChange={handleChange}
-          />
-          <input type="submit" value="LOGIN" />
-        </form>
-      </div>
+      <form onSubmit={submitLogIn}>
+        <input
+          type="email"
+          name="email"
+          placeholder="email"
+          onChange={handleChange}
+        />
+        <input
+          type="password"
+          name="password"
+          placeholder="password"
+          onChange={handleChange}
+        />
+        <input type="submit" value="LOGIN" className="login-submit-button" />
+      </form>
 
-      <button>REGISTER</button>
+      <Link to="/register">
+        <button className="login-submit-button">REGISTER</button>
+      </Link>
       <Footer></Footer>
     </div>
   );

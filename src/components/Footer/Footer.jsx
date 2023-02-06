@@ -74,20 +74,20 @@ export const Footer = () => {
       <div>
         <h3 className="useful-links">Useful Links</h3>
         <div className="footer-vertical align-left footer-links">
-          <Link to="feedback">Feedback</Link>
-          <Link to="contact">Contact</Link>
-          <Link to="about">About</Link>
-          <Link to="Instructor">Instructor</Link>
-          <Link to="Courses">Courses </Link>
+          <Link to="/feedback">Feedback</Link>
+          <Link to="/contact-us">Contact</Link>
+          <Link to="/about">About</Link>
+          <Link to="/Instructor">Instructor</Link>
+          <Link to="/Courses">Courses </Link>
         </div>
       </div>
       <div>
         <h3>Quik Links</h3>
         <div className="footer-vertical align-left footer-links">
-          <Link to="Privacy-Policy">Terms &amp; Conditions</Link>
-          <Link to="news-and-blogs">News and Blogs</Link>
-          <Link to="account"> Account</Link>
-          <Link to="Gallery">Gallery</Link>
+          <Link to="/Privacy-Policy">Terms &amp; Conditions</Link>
+          <Link to="/news-and-blogs">News and Blogs</Link>
+          <Link to="/account"> Account</Link>
+          {/* <Link to="/Gallery">Gallery</Link> */}
         </div>
       </div>
       <div>

@@ -9,6 +9,7 @@ import { Courses } from "./components/Courses/Courses";
 import { PrivacyPolicy } from "./components/PrivacyPolicy/PrivacyPolicy";
 import { ContactUs } from "./components/Contact/ContactUs";
 import { Feedback } from "./components/Feedback/Feedback";
+import { About } from "./components/About/About";
 // import { config } from "dotenv";
 // config();
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/Contact-us" element={<ContactUs />} />
           <Route path="/Register" element={<Register />} />
           <Route path="/Feedback" element={<Feedback />} />
+          <Route path="/About" element={<About />} />
         </Routes>
       </BrowserRouter>
     </div>
