@@ -1,6 +1,5 @@
 import React from "react";
 import { Footer } from "../Footer/Footer";
-import { Map } from "../Map/Map";
 import "./ContactUs.css";
 
 export const ContactUs = () => {
@@ -8,24 +7,29 @@ export const ContactUs = () => {
     <>
       <div className="contact-us">
         <div>
-          <h3>Connect With Us</h3>
-          <p>VPO TOKAS DISTRICT HISAR</p>
-          <p>HARYANA PIN - 125004</p>
-          <p>+91 97290 98866</p>
+          <img
+            src="https://www.oll.co/assets/images/learningMore3.png"
+            alt="contact us"
+          />
         </div>
-        {/* <div>
-          <h3>Connect With Us</h3>
-          <p>Kachora Road</p>
-          <p>Etwah Uttar Pradesh 206001</p>
-          <p>
-            <b>Under Construction</b>
-          </p>
-        </div> */}
+        <div className="contact-container">
+          <span>CONNECT WITH US</span>
+          <span> DISTRICT HISAR</span>
+          <span>HARYANA PIN - 125004</span>
+          <a href="tel:97290 98866">+91 97290 98866</a>
+          <a href="mailto:info@dainikschool.com">info@dainikschool.com</a>
+        </div>
       </div>
       <h3>We are happy to serve you.</h3>
-      <div className="map">
-        {/* <Map props={{ height: "350px" }} /> */}
-      </div>
+      {/* <div className="contact-us-form-container">
+        <form action="/" className="contact-us-form">
+          <input type="text" name="" id="" placeholder="Your Name" />
+          <input type="email" name="" placeholder="Email" />
+          <input type="number" name="" placeholder="Mobile number" />
+          <input type="text" name="" placeholder="Your question" />
+          <input type="submit" value="SUBMIT" />
+        </form>
+      </div> */}
       <Footer />
     </>
   );

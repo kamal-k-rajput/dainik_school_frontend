@@ -5,3 +5,29 @@
     align-items: center;
 
 }
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    text-align: flex-start;
+    align-items: flex-start;
+}
+
+.contact-container>a {
+    color: black !important;
+}
+
+.contact-us-form-container {
+    margin: 0 auto;
+    border: 2px solid red;
+}
+
+.contact-us-form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact-us-form>input {
+    width: 200px;
+}
