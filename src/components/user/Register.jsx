@@ -64,7 +64,7 @@ export const Register = () => {
           <input
             type="email"
             name="email"
-            placeholder="email"
+            placeholder="Email"
             onChange={handleChange}
           />
           <input
@@ -90,7 +90,7 @@ export const Register = () => {
             placeholder="Gender"
             onChange={handleChange}
           />
-          <input type="submit" value="REGISTER" />
+          <input type="submit" value="REGISTER" className="register-submit"/>
         </form>
       </div>
       <Footer></Footer>

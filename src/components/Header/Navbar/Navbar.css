@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+.navbar-container-main {
+    background-color: #ffe77aff !important;
+}
+
 .nav-container>ul {
     display: flex;
     justify-content: space-between;
@@ -22,6 +26,12 @@
 
 }
 
+.nav-container>ul>li:hover {
+    color: black;
+    cursor: pointer;
+
+}
+
 .logo {
     flex: 2;
 }
@@ -32,9 +42,10 @@
 
 .navbar-logo {
     height: 5vh;
-    /* filter: invert(1); */
+
 }
-a{
+
+a {
     text-decoration: none;
     color: "#fff";
 }

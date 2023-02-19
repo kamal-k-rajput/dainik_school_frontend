@@ -1,8 +1,32 @@
 .register-container>form {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    border: 3px solid red;
+    justify-content: center;
+    align-items: center;
 }
 
 .register-container>form>input {
     margin: 20px;
+}
+
+
+.register-submit {
+    background-color: rgb(80, 129, 5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border-color: #000;
+    margin: 40px auto;
+    font-weight: 600;
+    width: 350px;
+    height: 60px;
+
+}
+.register-submit:hover {
+    background-color: white;
+    color: green;
+    border-color: black;
+    transition: .6s ease;
 }

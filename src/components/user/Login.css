@@ -20,7 +20,8 @@
     border-color: #000;
     margin: 40px auto;
     font-weight: 600;
-    width: 250px;
+    width: 350px;
+    height: 60px;
 }
 
 
@@ -30,4 +31,16 @@
     color: green;
     border-color: black;
     transition: .6s ease;
+}
+
+input {
+    border: 3px solid rgb(17, 92, 17);
+    border-radius: 10px;
+    width: 350px;
+    height: 60px;
+}
+
+input::placeholder {
+    font-size: 24px;
+    text-align: center;
 }

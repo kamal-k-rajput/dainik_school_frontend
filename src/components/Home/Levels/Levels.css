@@ -1,0 +1,65 @@
+.level-container>div>div {
+    width: 130px;
+    height: 134px;
+    border-radius: 25px;
+    border: 2px solid rgb(0, 0, 0);
+    background-image: linear-gradient(to right,
+            #fbc2eb 0%,
+            #a6c1ee 51%,
+            #fbc2eb 100%);
+}
+
+.beginner,
+.intermediate,
+.expert,
+.master {
+    transform: rotate(45deg);
+}
+
+.level-container {
+    display: flex;
+    padding: 0 150px;
+    align-items: center;
+    justify-content: space-around;
+    height: 400px;
+}
+
+.level-container>div>div>p:nth-child(1) {
+    border-radius: 15px;
+    font-size: 44px;
+    font-weight: 800;
+    text-align: center;
+    margin: 14px 10px 12px 8px;
+    color: rgb(72, 2, 2);
+    padding: 14px;
+    transform: rotate(-45deg);
+}
+
+.level-container>div>p:nth-child(2) {
+    border-radius: 15px;
+    text-align: center;
+    margin: 50px 0px 00px 0;
+    padding: 5px 5px;
+    background-color: green;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    font-size: 18px;
+    background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+
+
+}
+
+@media screen and (max-width:720px) {
+    .level-container>div>div {
+        width: 80px;
+        height: 80px;
+    }
+
+    .level-container>div>div>p:nth-child(1) {
+        font-size: 34px;
+        margin: 8px 4px 4px 4px;
+        padding: 0
+
+    }
+    
+}

@@ -8,18 +8,26 @@
   pointer-events: none;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 * {
   padding: 0;
-  margin: 0,
+  margin: 0;
+  /* font-family: 'Fira Sans', sans-serif; */
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Roboto', sans-serif;
 
 }
 
 a {
   text-decoration: none !important;
-  color: white !important;
+  color: black !important;
 }
 
 a:hover {
-  color: rgb(2, 106, 2)!important;
+  color: rgb(2, 106, 2) !important;
   cursor: pointer;
 }

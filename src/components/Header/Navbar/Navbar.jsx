@@ -9,7 +9,13 @@ import "./Navbar.css";
 export const NavbarLinks = () => {
   return (
     <div>
-      <Navbar collapseOnSelect expand="lg" bg="success" variant="dark">
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        bg="dark"
+        variant="dark"
+        className="navbar-container-main"
+      >
         <Container>
           <Navbar.Brand href="/">
             <img src={Logo} alt="logo" className="navbar-logo" title={"logo"} />
