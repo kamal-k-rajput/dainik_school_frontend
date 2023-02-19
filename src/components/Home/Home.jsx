@@ -3,10 +3,7 @@ import first from "../../ASSETS/IMG/homepage/first.png";
 import { Footer } from "../Footer/Footer";
 import second from "../../ASSETS/IMG/homepage/second.jpg";
 import LearningTemplate from "../../ASSETS/IMG/homepage/learning_template.png";
-import Pink_home_img from "../../ASSETS/IMG/homepage/pink_home_img.png";
-import Blue_home_img from "../../ASSETS/IMG/homepage/blue_home_img.png";
-import Taupe_Organic from "../../ASSETS/IMG/homepage/Taupe-Organic.png";
-import Yellow_marketingStrategy from "../../ASSETS/IMG/homepage/Yellow-Social-Media-Marketing-Fundamentals-Diagram-Instagram-Post.png";
+import threeperson from "../../ASSETS/IMG/homepage/threeperson.jpeg";
 import Why_we_better from "../../ASSETS/IMG/homepage/Public-sans-bold.png";
 import Playful_Modern_Design from "../../ASSETS/IMG/homepage/Playful-Modern-Design-for-Microblog-Education-Instagram-Post-2.png";
 import invest_more from "../../ASSETS/IMG/homepage/Cream-Pastel-Cute-Education-Quote-Instagram-Post.png";
@@ -74,10 +71,40 @@ export const Home = () => {
         </div>
       </div>
 
+      <h1>Why choose us ?</h1>
       <div className="text-on-img-container">
-        <div></div>
+        <div className="text-on-design">
+          <div>
+            <p>Why </p>
+            <p>dainik</p>
+            <p>school ?</p>
+          </div>
+          <div>
+            <div>
+              <h3>Student</h3>
+              <p>Affordable for every student</p>
+            </div>
+            <div>
+              <h3>Faculty</h3>
+              <p>Experienced faculty</p>
+            </div>
+            <div>
+              <h3>Teaching</h3>
+              <p>Teach from basic to advance</p>
+            </div>
+            <div>
+              <h3>Classes</h3>
+              <p>Theory & practical classes of all chapters</p>
+            </div>
+            <div>
+              <h3>Board</h3>
+              <p>Courses designed according to CBSE and State Board</p>
+            </div>
+          </div>
+        </div>
         <div>
           <p className="hm-text-on-img">
+            <h1>What make us different</h1>
             <ul>
               <li>
                 Dainik School strives to develop an extensive academic structure
@@ -102,45 +129,25 @@ export const Home = () => {
         {/* <div></div>
         <div></div> */}
       </div>
-      <img
+      {/* <img
         src={LearningTemplate}
         alt="Dainik school vision"
         className="full-size-img"
-      />
-      <div className="full-width-img-container">
-        <img
-          src={Pink_home_img}
-          alt="dainik school"
-          className="half-size-img"
-        />
-
-        <img
-          src={Blue_home_img}
-          alt="dainik school "
-          className="half-size-img"
-        />
+      /> */}
+      {/* <hr /> */}
+      <div className="hm-full-size-section">
+        <div>
+          <p>Dainik School</p>
+          <p>
+            "Education is the most powerful weapon you can use to change the
+            world."
+          </p>
+        </div>
+        <div>
+          <p>INVEST MORE</p>
+          <p>New Knowledge</p>
+        </div>
       </div>
-      <img src={Taupe_Organic} alt="Welcome" className="full-size-img" />
-      <section>
-        <h2>Why Choose us ?</h2>
-        <div className="full-width-img-container">
-          <img
-            src={Yellow_marketingStrategy}
-            alt="dainik school"
-            className="full-size-img"
-          />
-          <img src={Why_we_better} alt="Welcome" className="full-size-img" />
-        </div>
-        <div className="full-width-img-container">
-          <img
-            src={Playful_Modern_Design}
-            alt="dainik school"
-            className="full-size-img"
-          />
-          <img src={invest_more} alt="Welcome" className="full-size-img" />
-        </div>
-        <div className="div_full_width_three_image"></div>
-      </section>
       <Footer />
       <p>©2022. Dainik School All Rights Reserved.</p>
     </div>

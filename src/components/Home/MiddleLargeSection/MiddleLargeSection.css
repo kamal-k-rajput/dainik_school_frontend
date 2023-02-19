@@ -1,5 +1,4 @@
 .lg-section-container {
-    border: 2px solid red;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: #FFF9F4;
@@ -7,3 +6,11 @@
 
 }
 
+
+.we-help {
+    margin-top: 20%;
+}
+
+.world-class-learning {
+    margin-top: 25%;
+}
