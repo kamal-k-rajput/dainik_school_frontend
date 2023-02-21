@@ -83,6 +83,7 @@ export const Register = () => {
             name="class"
             placeholder="Class"
             onChange={handleChange}
+            min="1"
           />
           <input
             type="text"
@@ -90,7 +91,7 @@ export const Register = () => {
             placeholder="Gender"
             onChange={handleChange}
           />
-          <input type="submit" value="REGISTER" className="register-submit"/>
+          <input type="submit" value="REGISTER" className="register-submit" />
         </form>
       </div>
       <Footer></Footer>

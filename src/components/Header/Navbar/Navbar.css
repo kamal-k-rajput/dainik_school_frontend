@@ -2,10 +2,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    color: #000 !important;
 }
 
 .navbar-container-main {
-    background-color: #ffe77aff !important;
+    background-color: #eb0808 !important;
 }
 
 .nav-container>ul {

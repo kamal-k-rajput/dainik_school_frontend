@@ -1,0 +1,70 @@
+.second-section {
+    height: 450px;
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-around;
+    z-index: 10;
+}
+
+
+.diagnol-line {
+    height: 150px;
+    margin: 17% -10% 0 43%;
+    position: absolute;
+    width: 65%;
+    background-image: linear-gradient(to right,
+            #1173b2,
+            #18986c);
+    transform: rotate(-35deg);
+    z-index: 10;
+}
+
+
+.second-section>div:nth-child(1) {
+    flex: 6;
+    margin: 5% 0 0 5%;
+    font-size: 2.5rem;
+    transform: scale(2.0, 1.2);
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 2rem; */
+}
+
+.second-section>div:nth-child(2) {
+    flex: 4;
+    border: 3px solid purple;
+    background-color: #fff;
+    margin: 20px 20px;
+    border-radius: 15px;
+    z-index: 12;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-section>div>form {
+    /* border: 3px solid rgb(36, 7, 222); */
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* padding: 30px; */
+    z-index: 10;
+    /* background-color: aliceblue; */
+}
+
+.font-size-large {
+    font-size: 24px;
+    font-weight: 500;
+    color: #1d4886;
+}
+
+.second-section>div>form>input {
+    margin: 10px 0;
+}

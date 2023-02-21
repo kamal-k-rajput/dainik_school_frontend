@@ -1,0 +1,27 @@
+.threebox-container {
+    /* border: 3px solid hotpink; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.threebox-container>div:nth-child(1) {
+    height: 150px;
+    background-color: #9bf1b2;
+    flex: 1;
+    margin: 30px;
+    padding: 2%;
+}
+
+.threebox-container>div:nth-child(2) {
+    flex: 1;
+    margin: 30px;
+    background-color: #9bf1b2;
+    padding: 2%;
+}
+
+.threebox-container>div:nth-child(3) {
+    padding: 2%;
+    margin: 30px;
+    flex: 1;
+    background-color: #9bf1b2;
+}

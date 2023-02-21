@@ -4,7 +4,7 @@ import "./Footer.css";
 import {
   FaFacebook,
   FaInstagram,
-  FaTwitter,
+  FaYoutube,
   FaLinkedin,
   FaPhoneAlt,
 } from "react-icons/fa";
@@ -12,7 +12,7 @@ import {
 export const Footer = () => {
   return (
     <footer className="footer-container align-left ">
-      <div>
+      {/* <div>
         <h3>Address</h3>
         <p> DISTRICT HISAR</p>
         <p> HARYANA PIN - 125004</p>
@@ -28,7 +28,7 @@ export const Footer = () => {
         <p>
           <a href="mailto: dainikschool@gmail.com">dainikschool@gmail.com</a>
         </p>
-      </div>
+      </div> */}
       <div>
         <h3 className="useful-links">Useful Links</h3>
         <div className="footer-vertical align-left footer-links">
@@ -52,19 +52,25 @@ export const Footer = () => {
         <div className="footer-vertical align-left footer-links social-icons">
           <div className="footer-social-link">
             <FaInstagram />
-            <a href="https://www.instagram.com//">Instagram</a>
+            <a href="https://www.instagram.com/dainikschool_/">Instagram</a>
           </div>
           <div className="footer-social-link">
             <FaLinkedin />
-            <a href="https://www.linkedin.com/in//">Linked In</a>
+            <a href="https://www.linkedin.com/in/dainik-school-9597ba250/">
+              Linked In
+            </a>
           </div>
           <div className="footer-social-link">
-            <FaTwitter />
-            <a href="https://twitter.com/">Twitter</a>
+            <FaYoutube />
+            <a href="https://www.youtube.com/channel/UC7PltYNgy8cWQKoz6NIZBgg">
+              Youtube
+            </a>
           </div>
           <div className="footer-social-link">
             <FaFacebook />
-            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://www.facebook.com/profile.php?id=100087391771846">
+              Facebook
+            </a>
           </div>
         </div>
       </div>

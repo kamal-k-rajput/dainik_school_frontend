@@ -1,17 +1,14 @@
 import React from "react";
-import first from "../../ASSETS/IMG/homepage/first.png";
 import { Footer } from "../Footer/Footer";
-import second from "../../ASSETS/IMG/homepage/second.jpg";
-import LearningTemplate from "../../ASSETS/IMG/homepage/learning_template.png";
-import threeperson from "../../ASSETS/IMG/homepage/threeperson.jpeg";
-import Why_we_better from "../../ASSETS/IMG/homepage/Public-sans-bold.png";
-import Playful_Modern_Design from "../../ASSETS/IMG/homepage/Playful-Modern-Design-for-Microblog-Education-Instagram-Post-2.png";
-import invest_more from "../../ASSETS/IMG/homepage/Cream-Pastel-Cute-Education-Quote-Instagram-Post.png";
+import second from "../../ASSETS/IMG/homepage/Final.1.png";
 import Levels from "./Levels/Levels";
 import { Link } from "react-router-dom";
 import { MiddleLargeSection } from "./MiddleLargeSection/MiddleLargeSection";
 import { TextSection } from "./TextSection/TextSection";
 import "./Home.css";
+import { FirstSection } from "./FirstSection/FirstSection";
+import SecondSection from "./SecondSection/SecondSection";
+import ThreeBox from "./ThreeBox/ThreeBox";
 
 export const Home = () => {
   function clicked() {
@@ -19,21 +16,8 @@ export const Home = () => {
   }
   return (
     <div className="home_container">
-      <div>
-        <div>
-          <p>
-            <span className="evening"> Evening </span>School With Dainik School
-          </p>
-        </div>
-        <img src={first} alt="dainik school" />
-      </div>
-      <Levels />
-      <div>
-        <Link to="/register">
-          <button className="mid-btn">ENROLL </button>
-        </Link>
-        <button className="mid-btn">ASK YOUR DOUBTS</button>
-      </div>
+      <FirstSection />
+      <SecondSection />
       <div className="home-img-text">
         <img
           src={second}
@@ -50,6 +34,15 @@ export const Home = () => {
             which is necessary for further professional studies of students.
           </p>
         </div>
+      </div>
+      <p>We help to learn you grow faster.</p>
+      <ThreeBox />
+      <Levels />
+      <div>
+        <Link to="/register">
+          <button className="mid-btn">ENROLL </button>
+        </Link>
+        <button className="mid-btn">ASK YOUR DOUBTS</button>
       </div>
       <MiddleLargeSection />
       <TextSection />
@@ -129,12 +122,7 @@ export const Home = () => {
         {/* <div></div>
         <div></div> */}
       </div>
-      {/* <img
-        src={LearningTemplate}
-        alt="Dainik school vision"
-        className="full-size-img"
-      /> */}
-      {/* <hr /> */}
+
       <div className="hm-full-size-section">
         <div>
           <p>Dainik School</p>
