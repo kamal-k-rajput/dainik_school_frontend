@@ -1,6 +1,6 @@
 import React from "react";
 import "./FirstSection.css";
-import boy from "../../../ASSETS/IMG/homepage/FirstSection/boy.jpeg";
+import boy from "../../../ASSETS/IMG/homepage/FirstSection/boy.jpg";
 export const FirstSection = () => {
   return (
     <div className="first-section">
