@@ -1,5 +1,6 @@
 import React from "react";
 import { Footer } from "../Footer/Footer";
+import indiaMap from "../../ASSETS/IMG/ContactUs/IndiaMap.png";
 import "./ContactUs.css";
 
 export const ContactUs = () => {
@@ -7,10 +8,7 @@ export const ContactUs = () => {
     <>
       <div className="contact-us">
         <div>
-          <img
-            src="https://www.oll.co/assets/images/learningMore3.png"
-            alt="contact us"
-          />
+          <img src={indiaMap} alt="india map" />
         </div>
         <div className="contact-container">
           <span>CONNECT WITH US</span>

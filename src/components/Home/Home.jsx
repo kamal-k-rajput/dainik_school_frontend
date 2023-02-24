@@ -10,6 +10,9 @@ import SecondSection from "./SecondSection/SecondSection";
 import ThreeBox from "./ThreeBox/ThreeBox";
 import CourseSection from "./CourseSection/CourseSection";
 import investMore from "../../ASSETS/IMG/homepage/investMore.png";
+import fivePoints from "../../ASSETS/IMG/homepage/ThirdSection/fivePoints.png";
+import playschool from "../../ASSETS/IMG/homepage/MiddleLargeSection/Artwork1.png";
+import juniorClass from "../../ASSETS/IMG/homepage/MiddleLargeSection/eclass.png";
 import "./Home.css";
 
 export const Home = () => {
@@ -22,7 +25,7 @@ export const Home = () => {
       <SecondSection />
       <div className="home-img-text">
         <img
-          src={second}
+          src={fivePoints}
           alt="Dainik school vision"
           className="full-size-img"
         />
@@ -138,7 +141,7 @@ export const Home = () => {
       </div>
       <CourseSection
         props={{
-          img: investMore,
+          img: playschool,
           title: "Class LKG - 3",
           text: `Dainik School's vision is to make the learning experience 
           affordable and knowledgeable for all students. We are here to make firm. Study foundation
@@ -151,8 +154,8 @@ export const Home = () => {
       />
       <CourseSection
         props={{
-          img: investMore,
-          title: "Class 9 - 12",
+          img: juniorClass,
+          title: "Class 4 - 12",
           text: `Education is the most powerful weapon you can use to change the world.
               `,
           buttonLabel: "Explore",

@@ -1,12 +1,14 @@
 .threebox-container {
-    /* border: 3px solid hotpink; */
+
     display: flex;
     justify-content: space-evenly;
+    color: #fff;
+    height: 250px;
+    padding: 0;
 }
 
 .threebox-container>div:nth-child(1) {
-    height: 150px;
-    background-color: #9bf1b2;
+    background-color: #0171bf;
     flex: 1;
     margin: 30px;
     padding: 2%;
@@ -15,7 +17,7 @@
 .threebox-container>div:nth-child(2) {
     flex: 1;
     margin: 30px;
-    background-color: #9bf1b2;
+    background-color: #0171bf;
     padding: 2%;
 }
 
@@ -23,5 +25,5 @@
     padding: 2%;
     margin: 30px;
     flex: 1;
-    background-color: #9bf1b2;
+    background-color: #0171bf;
 }

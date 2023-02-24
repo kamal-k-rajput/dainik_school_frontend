@@ -25,12 +25,15 @@
 
 .second-section>div:nth-child(1) {
     flex: 6;
-    margin: 5% 0 0 5%;
-    font-size: 4.5rem;
+    margin: 4% 0 0 5%;
+    font-size: 4rem;
     /* transform: scale(2.0, 1.2); */
     display: flex;
     flex-direction: column;
+    line-height: 80px;
     font-family: 'Poppins', sans-serif !important;
+    color: #413f40;
+    text-align: justify;
 }
 
 .second-section>div:nth-child(2) {
