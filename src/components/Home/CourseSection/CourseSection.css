@@ -1,0 +1,16 @@
+.course-card {
+    display: flex !important;
+    flex-direction: row;
+    /* width: 100% !important; */
+    height: 350px;
+    text-align: justify;
+    background-color: rgb(215, 236, 215);
+    width: 90% !important;
+    margin: 5% auto; 
+}
+
+.course-card>img {
+    width: 40%;
+
+    padding: 5%;
+}

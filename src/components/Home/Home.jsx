@@ -5,10 +5,12 @@ import Levels from "./Levels/Levels";
 import { Link } from "react-router-dom";
 import { MiddleLargeSection } from "./MiddleLargeSection/MiddleLargeSection";
 import { TextSection } from "./TextSection/TextSection";
-import "./Home.css";
 import { FirstSection } from "./FirstSection/FirstSection";
 import SecondSection from "./SecondSection/SecondSection";
 import ThreeBox from "./ThreeBox/ThreeBox";
+import CourseSection from "./CourseSection/CourseSection";
+import investMore from "../../ASSETS/IMG/homepage/investMore.png";
+import "./Home.css";
 
 export const Home = () => {
   function clicked() {
@@ -119,8 +121,6 @@ export const Home = () => {
             </ul>
           </p>
         </div>
-        {/* <div></div>
-        <div></div> */}
       </div>
 
       <div className="hm-full-size-section">
@@ -136,6 +136,28 @@ export const Home = () => {
           <p>New Knowledge</p>
         </div>
       </div>
+      <CourseSection
+        props={{
+          img: investMore,
+          title: "Class LKG - 3",
+          text: `Dainik School's vision is to make the learning experience 
+          affordable and knowledgeable for all students. We are here to make firm. Study foundation
+           of every student by providing English, Mathematics,
+            Physics, Chemistry and Biology specialized & profound 
+          Knowledge which is necessary for further professional studies of students
+              `,
+          buttonLabel: "Explore",
+        }}
+      />
+      <CourseSection
+        props={{
+          img: investMore,
+          title: "Class 9 - 12",
+          text: `Education is the most powerful weapon you can use to change the world.
+              `,
+          buttonLabel: "Explore",
+        }}
+      />
       <Footer />
       <p>©2022. Dainik School All Rights Reserved.</p>
     </div>
