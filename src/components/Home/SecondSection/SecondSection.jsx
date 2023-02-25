@@ -25,8 +25,8 @@ const SecondSection = () => {
           />
         </form>
         <p>
-          By continuing, you agree to 88Guru's Conditions of Use and Privacy
-          Policy
+          By continuing, you agree to DainikSchool's Conditions of Use and
+          Privacy Policy.
         </p>
       </div>
       <div className="diagnol-line"></div>

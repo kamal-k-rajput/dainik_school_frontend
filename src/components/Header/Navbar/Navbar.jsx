@@ -10,33 +10,6 @@ import "./Navbar.css";
 
 export const NavbarLinks = () => {
   return (
-    // <div>
-    //   <Navbar
-    //     collapseOnSelect
-    //     expand="lg"
-    //     bg="dark"
-    //     variant="dark"
-    //     className="navbar-container-main"
-    //   >
-    //     <Container>
-    //       <Navbar.Brand href="/">
-    //         <img src={Logo} alt="logo" className="navbar-logo" title={"logo"} />
-    //       </Navbar.Brand>
-    //       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-    //       <Navbar.Collapse id="responsive-navbar-nav">
-    //         <Nav className="me-auto"></Nav>
-    //         <Nav>
-    //           <Nav.Link href="courses">Courses</Nav.Link>
-    //           <Nav.Link href="live-classes">Live Classes</Nav.Link>
-    //           <Nav.Link href="Login">Login</Nav.Link>
-    //           <Nav.Link href="Contact-us">Contact</Nav.Link>
-    //           <Nav.Link href="Register">Register</Nav.Link>
-    //           <Nav.Link href="News-and-blogs">News And Blogs</Nav.Link>
-    //         </Nav>
-    //       </Navbar.Collapse>
-    //     </Container>
-    //   </Navbar>
-    // </div>
 
     <Navbar collapseOnSelect expand="lg" bg="light" variant="#000">
       <Container>

@@ -14,6 +14,8 @@ import fivePoints from "../../ASSETS/IMG/homepage/ThirdSection/fivePoints.png";
 import playschool from "../../ASSETS/IMG/homepage/MiddleLargeSection/Artwork1.png";
 import juniorClass from "../../ASSETS/IMG/homepage/MiddleLargeSection/eclass.png";
 import "./Home.css";
+import { WhatsMore } from "./WhatsMore/WhatsMore";
+import HorizoantalLine from "../HorizoantalLine/HorizoantalLine";
 
 export const Home = () => {
   function clicked() {
@@ -22,7 +24,10 @@ export const Home = () => {
   return (
     <div className="home_container">
       <FirstSection />
+      <HorizoantalLine />
+
       <SecondSection />
+      <HorizoantalLine />
       <div className="home-img-text">
         <img
           src={fivePoints}
@@ -40,7 +45,7 @@ export const Home = () => {
           </p>
         </div>
       </div>
-      <p>We help to learn you grow faster.</p>
+      <h1>We help to learn you grow faster.</h1>
       <ThreeBox />
       <Levels />
       <div>
@@ -161,6 +166,7 @@ export const Home = () => {
           buttonLabel: "Explore",
         }}
       />
+      <WhatsMore />
       <Footer />
       <p>©2022. Dainik School All Rights Reserved.</p>
     </div>

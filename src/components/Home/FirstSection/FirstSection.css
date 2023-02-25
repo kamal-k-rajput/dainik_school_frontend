@@ -1,8 +1,11 @@
 .first-section {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-family: 'Poppins', sans-serif !important;
     color: #413f40;
+    background-color: #f0f0f0;
+    text-shadow: 4px 2px #b6b4b5;
+    padding: 5% 0;
 }
 
 .first-section>div:nth-child(1)>b {
@@ -13,7 +16,7 @@
 .first-section>div:nth-child(1) {
     margin: 4% 0 0 5%;
     flex: 1;
-    font-size: 3.5rem;
+    font-size: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -31,4 +34,11 @@
     height: 400px !important;
     border: 2px solid black;
 
+}
+
+.d-block {
+    border: 2px solid black;
+    border-radius: 5%;
+    margin-right: -10%;
+    display: inline !important;
 }

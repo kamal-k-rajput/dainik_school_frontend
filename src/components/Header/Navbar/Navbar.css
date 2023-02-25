@@ -3,6 +3,7 @@
     justify-content: space-around;
     align-items: center;
     color: #000 !important;
+    background-color: #fff !important;
 }
 
 .navbar-container-main {
@@ -16,8 +17,8 @@
     align-items: center;
     list-style: none;
     margin: 0;
-    padding: 10px 20px;
-    height: 80px;
+    padding: 5px 20px;
+    height: 70px;
     color: grey;
 }
 
@@ -42,8 +43,7 @@
 }
 
 .navbar-logo {
-    height: 5vh;
-
+    height: 7vh;
 }
 
 a {

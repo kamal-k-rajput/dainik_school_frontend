@@ -16,7 +16,7 @@ h3 {
 .home-img-text {
     display: flex;
     margin: 50px 0;
-    background-color: rgb(238, 244, 249);
+    background-color: #f0f0f0;
 }
 
 .home-img-text>img {
@@ -50,6 +50,7 @@ h3 {
     object-fit: cover;
     font-weight: 400;
     margin-left: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .hm-text-on-img>ul>li {
