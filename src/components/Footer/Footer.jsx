@@ -12,39 +12,32 @@ import {
 export const Footer = () => {
   return (
     <footer className="footer-container align-left ">
-      {/* <div>
-        <h3>Address</h3>
-        <p> DISTRICT HISAR</p>
-        <p> HARYANA PIN - 125004</p>
-        <p>
-          <span>
-            <FaPhoneAlt style={{ marginRight: "5px", marginLeft: "10px" }} />
-            <a href="tel:97290 98866">+91 97290 98866</a>
-          </span>
-        </p>
-        <p>
-          <a href="mailto: info@dainikschool.com">info@dainikschool.com</a>
-        </p>
-        <p>
-          <a href="mailto: dainikschool@gmail.com">dainikschool@gmail.com</a>
-        </p>
-      </div> */}
       <div>
-        <h3 className="useful-links">Useful Links</h3>
+        <h3 className="useful-links">About Dainik School</h3>
         <div className="footer-vertical align-left footer-links">
-          <Link to="/feedback">Feedback</Link>
-          <Link to="/contact-us">Contact</Link>
-          <Link to="/about">About</Link>
-          <Link to="/Instructor">Instructor</Link>
-          <Link to="/Courses">Courses </Link>
+          <Link to="/about">About us</Link>
+          {/* <Link to="/feedback">Feedback</Link> */}
+          <Link to="/contact-us">Contact us</Link>
+          <Link to="/news-and-blogs">News and Blogs</Link>
+          <Link to="/">Site Maps</Link>
+          {/* <Link to="/Instructor">Instructor</Link>
+          <Link to="/Courses">Courses </Link> */}
         </div>
       </div>
       <div>
-        <h3>Quick Links</h3>
+        <h3>Courses</h3>
         <div className="footer-vertical align-left footer-links">
-          <Link to="/Privacy-Policy">Terms &amp; Conditions</Link>
-          <Link to="/news-and-blogs">News and Blogs</Link>
-          <Link to="/account"> Account</Link>
+          <Link to="/courses"> Courses</Link>
+          <Link to="/classes">Live Classes</Link>
+          <Link to="/free-courses"> Free Courses</Link>
+          {/* <Link to="/Privacy-Policy">Terms &amp; Conditions</Link> */}
+        </div>
+      </div>
+      <div>
+        <h3>Educator</h3>
+        <div className="footer-vertical align-left footer-links">
+          <Link to="/apply-now"> Apply Now</Link>
+          <Link to="/Help">Educator Policy</Link>
         </div>
       </div>
       <div>

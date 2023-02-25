@@ -7,7 +7,7 @@ export const VerticalCards = ({ cardProps }) => {
   return (
     <div>
       <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
+        <Card.Img variant="top" src={cardProps.img} />
         <Card.Body>
           <Card.Title>{cardProps.title}</Card.Title>
           <Card.Text>

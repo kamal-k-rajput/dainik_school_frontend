@@ -5,7 +5,7 @@
 }
 
 .text-section-right {
-    background-color: #C2D5DC;
+    background-color: #fff;
     flex: 40%;
     margin-left: 25px;
     border-radius: 15px;
@@ -17,16 +17,17 @@
 }
 
 .text-section-left>div:nth-child(1)>p {
-    font-size: 40px;
+    font-size: 45px;
     margin: 0 auto;
     padding: 60px;
     color: white;
 }
 
 .text-section-left>div:nth-child(1) {
-    background-color: #DDC2BA;
+    background-color: #00b14f;
     height: 200px;
     margin-bottom: 20px;
+    border-radius: 25px;
 }
 
 td {
@@ -35,33 +36,33 @@ td {
     padding: 2px 5px;
 }
 
-
-.text-section-right>div {
-    background-color: #C2D5DC;
-    margin: 90px auto;
-    height: 70%;
-    padding: 5% 5%;
-    width: 35%;
-    background-color: #FEF6E8;
-    border-radius: 15px;
-}
-
-.text-section-right>div>div>p {
-    font-weight: 600;
-    font-size: 26px;
-    color: #1a4c58;
-    background-color: #FEF6E8;
-}
-
-.text-section-right>div>div>p:nth-child(2) {
-    text-decoration: none;
-    color: #521604;
-    font: 200;
-    font-size: 14px;
-}
-
 .hm-vision-list {
     width: 75%;
     margin: 70px auto;
     color: #1a4c58;
+}
+
+.text-section-right {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+.text-section-right div {
+    display: flex;
+    text-align: center;
+    overflow: hidden;
+    justify-content: space-around;
+    padding: 0 20%;
+}
+
+.text-section-right>img {
+    height: 80%;
+    width: 80%;
+}
+
+.text-section-right div img {
+    width: 45%;
+    height: inherit;
 }

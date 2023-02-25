@@ -2,15 +2,55 @@
     display: flex !important;
     flex-direction: row;
     /* width: 100% !important; */
-    height: 350px;
+    height: 550px;
     text-align: justify;
-    background-color: rgb(215, 236, 215);
+    background-color: rgb(255, 255, 255);
     width: 90% !important;
-    margin: 5% auto; 
+    margin: 5% auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
 }
 
 .course-card>img {
-    width: 40%;
+    min-width: 40% !important;
+    max-width: 40% !important;
+    margin-right: 200px;
+    margin-left: 50px;
+    padding: 2% 0;
+}
 
-    padding: 5%;
+.course-section .card-title {
+    border: 2px solid black;
+    display: inline-block;
+    padding: 10px 50px;
+    font-size: 45px;
+    font-weight: 700;
+    background-color: white;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-image: linear-gradient(to right,
+            #fbc2eb 0%,
+            #a6f1ee 51%);
+    margin-left: -450px;
+}
+
+.course-section .card-body {
+    padding: 0 40px;
+    margin-left: 300px;
+}
+
+.card-text>p:nth-child(1) {
+    /* margin-top: 100px; */
+    text-align: justify;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.card-text>p:nth-child(2) {
+    margin-top: 0 10px;
+    text-align: justify;
+    padding: 10px;
+    overflow: hidden;
+    height: 50%;
+    /* border: 2px solid red; */
 }

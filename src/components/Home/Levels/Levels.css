@@ -25,6 +25,7 @@
     align-items: center;
     justify-content: space-around;
     height: 400px;
+    margin-top: 200px;
 }
 
 .level-container>div>div>p:nth-child(1) {

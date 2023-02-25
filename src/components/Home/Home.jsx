@@ -28,6 +28,29 @@ export const Home = () => {
 
       <SecondSection />
       <HorizoantalLine />
+      <CourseSection
+        props={{
+          img: juniorClass,
+          title: "Class 4 - 12",
+          text: `Education is the most powerful weapon you can use to change the world.
+              `,
+          buttonLabel: "Explore",
+        }}
+      />
+      <CourseSection
+        props={{
+          img: playschool,
+          title: "Class LKG - 3",
+          text: `Dainik School's vision is to make the learning experience 
+              affordable and knowledgeable for all students. Study foundation
+               of every student by providing English, Mathematics,
+               Physics, Chemistry and Biology specialized & profound 
+               Knowledge which is necessary for further professional studies of students
+               `,
+          buttonLabel: "Explore",
+        }}
+      />
+      <TextSection />
       <div className="home-img-text">
         <img
           src={fivePoints}
@@ -45,43 +68,19 @@ export const Home = () => {
           </p>
         </div>
       </div>
-      <h1>We help to learn you grow faster.</h1>
       <ThreeBox />
       <Levels />
-      <div>
+      {/* <div>
         <Link to="/register">
           <button className="mid-btn">ENROLL </button>
         </Link>
         <button className="mid-btn">ASK YOUR DOUBTS</button>
-      </div>
-      <MiddleLargeSection />
-      <TextSection />
-      <div className="home-img-text">
-        <img
-          src={second}
-          alt="Dainik school vision"
-          className="full-size-img"
-        />
-        <div>
-          <p className="hm-img-text">
-            Take the next step toward your personal and professional goals with
-            Dainik School.
-          </p>
-          <p>
-            Join now to receive personalized recommendations from the full
-            dainik school catalog.
-          </p>
-        </div>
-      </div>
+      </div> */}
 
-      <h1>Why choose us ?</h1>
+      <div className="why-choose-us">WHY CHOOSE US ?</div>
       <div className="text-on-img-container">
         <div className="text-on-design">
-          <div>
-            <p>Why </p>
-            <p>dainik</p>
-            <p>school ?</p>
-          </div>
+          <div></div>
           <div>
             <div>
               <h3>Student</h3>
@@ -130,42 +129,6 @@ export const Home = () => {
           </p>
         </div>
       </div>
-
-      <div className="hm-full-size-section">
-        <div>
-          <p>Dainik School</p>
-          <p>
-            "Education is the most powerful weapon you can use to change the
-            world."
-          </p>
-        </div>
-        <div>
-          <p>INVEST MORE</p>
-          <p>New Knowledge</p>
-        </div>
-      </div>
-      <CourseSection
-        props={{
-          img: playschool,
-          title: "Class LKG - 3",
-          text: `Dainik School's vision is to make the learning experience 
-          affordable and knowledgeable for all students. We are here to make firm. Study foundation
-           of every student by providing English, Mathematics,
-            Physics, Chemistry and Biology specialized & profound 
-          Knowledge which is necessary for further professional studies of students
-              `,
-          buttonLabel: "Explore",
-        }}
-      />
-      <CourseSection
-        props={{
-          img: juniorClass,
-          title: "Class 4 - 12",
-          text: `Education is the most powerful weapon you can use to change the world.
-              `,
-          buttonLabel: "Explore",
-        }}
-      />
       <WhatsMore />
       <Footer />
       <p>©2022. Dainik School All Rights Reserved.</p>

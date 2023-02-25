@@ -1,4 +1,15 @@
 .whats-more-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.whats-more-container .card {
+    /* border: 2px solid green; */
+    width: 400px !important;
+}
+
+.card-img-top {
+    height: 350px;
+    /* border: 2px solid red; */
 }

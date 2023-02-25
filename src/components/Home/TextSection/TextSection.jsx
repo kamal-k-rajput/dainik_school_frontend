@@ -1,6 +1,10 @@
 import React from "react";
-import "./TextSection.css";
 import { BsArrow90DegRight } from "react-icons/bs";
+import googleplayStore from "../../../ASSETS/IMG/homepage/playStore/AppleStore.png";
+import appleStore from "../../../ASSETS/IMG/homepage/playStore/GooglePlay.png";
+import mobileApp from "../../../ASSETS/IMG/homepage/playStore/mobileApp.png";
+import "./TextSection.css";
+
 export const TextSection = () => {
   return (
     <div className="hm-text-section">
@@ -52,11 +56,10 @@ export const TextSection = () => {
         </div>
       </div>
       <div className="text-section-right">
+        <img src={mobileApp} alt="Mobile app" />
         <div>
-          <div>
-            <p>Pursue your passion and you'll never work a day in your life</p>
-            <p>@dainikschool</p>
-          </div>
+          <img src={googleplayStore} alt="google play store" />
+          <img src={appleStore} alt="app appstore" />
         </div>
       </div>
     </div>

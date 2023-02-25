@@ -35,3 +35,11 @@ a:hover {
   color: rgb(2, 106, 2) !important;
   cursor: pointer;
 }
+
+.navbar {
+  background-color: #fff !important;
+}
+
+.bg-light {
+  opacity: 0 !important;
+}

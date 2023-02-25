@@ -6,7 +6,7 @@ import "./CourseSection.css";
 const CourseSection = ({ props }) => {
   console.log(props.img);
   return (
-    <div>
+    <div className="course-section">
       <Card style={{ width: "18rem" }} className="card course-card">
         <Card.Img variant="top" src={props.img} />
         <div>
