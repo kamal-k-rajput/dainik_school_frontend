@@ -66,3 +66,17 @@ td {
     width: 45%;
     height: inherit;
 }
+
+@media screen and (max-width:720px) {
+
+    .hm-text-section {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 50px;
+        height: 100%;
+    }
+
+    .text-section-right {
+        flex-direction: column;
+    }
+}

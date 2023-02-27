@@ -72,3 +72,17 @@
     width: 100%;
     margin-top: 20px;
 }
+
+@media screen and (max-width:1080px) {
+    .threebox-container>div>p:nth-child(1) {
+        font-size: 40px;
+
+    }
+}
+
+@media screen and (max-width:720px) {
+    .threebox-container>div>p:nth-child(1) {
+        font-size: 30px;
+
+    }
+}
