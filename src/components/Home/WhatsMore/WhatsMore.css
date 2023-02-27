@@ -6,7 +6,7 @@
 
 .whats-more-container .card {
     /* border: 2px solid green; */
-    width: 400px !important;
+    max-width: 400px !important;
 }
 
 .card-img-top {

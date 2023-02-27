@@ -74,15 +74,6 @@ h3 {
     background-color: rgb(255, 255, 255);
 }
 
-.text-on-design>div:nth-child(1) {
-    margin: 5%;
-    margin-top: 25%;
-    font-size: 34px;
-    font-weight: 600;
-    padding: 24px 0 24px 24px;
-    /* border: 2px solid red; */
-}
-
 .hm-text-on-img>h1 {
     padding: 20px 0 0px 20px;
 }
@@ -221,6 +212,11 @@ h3 {
 @media screen and (max-width:1080px) {
     .text-on-img-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .text-on-design>div:nth-child(2) {
+        width: 100%;
+        margin: 40px 50px
     }
 }
 
