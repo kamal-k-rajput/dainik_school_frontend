@@ -9,7 +9,7 @@ const SecondSection = () => {
         <b>Padhai Nahi Rukegi</b>
       </div>
 
-      <div>
+      <div className="second-section-form-container">
         <p className="font-size-large">Start your 5-Day Free Trial</p>
         <p>Get instant access by signing up now.</p>
         <p>*Trial access is limited to 10 lessons</p>

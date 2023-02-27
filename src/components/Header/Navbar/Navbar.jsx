@@ -36,7 +36,7 @@ export const NavbarLinks = () => {
             </NavDropdown>
             <Nav.Link href="live-classes">Live Classes</Nav.Link>
             <Nav.Link href="Login">
-              <Button variant="success">Login</Button>{" "}
+              <Button variant="success">LOG IN</Button>{" "}
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
