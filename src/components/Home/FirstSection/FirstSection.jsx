@@ -18,7 +18,6 @@ export const FirstSection = () => {
         <b> DAINIK SCHOOL</b>
       </div>
       <div>
-        {/* <img src={boy} alt="dainik school" /> */}
         <Carousel activeIndex={index} onSelect={handleSelect}>
           <Carousel.Item>
             <img className="d-block w-50" src={boy} alt="First slide" />

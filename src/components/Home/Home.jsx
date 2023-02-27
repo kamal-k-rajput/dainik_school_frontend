@@ -1,15 +1,11 @@
 import React from "react";
 import { Footer } from "../Footer/Footer";
-import second from "../../ASSETS/IMG/homepage/Final.1.png";
 import Levels from "./Levels/Levels";
-import { Link } from "react-router-dom";
-import { MiddleLargeSection } from "./MiddleLargeSection/MiddleLargeSection";
 import { TextSection } from "./TextSection/TextSection";
 import { FirstSection } from "./FirstSection/FirstSection";
 import SecondSection from "./SecondSection/SecondSection";
 import ThreeBox from "./ThreeBox/ThreeBox";
 import CourseSection from "./CourseSection/CourseSection";
-import investMore from "../../ASSETS/IMG/homepage/investMore.png";
 import fivePoints from "../../ASSETS/IMG/homepage/ThirdSection/fivePoints.png";
 import playschool from "../../ASSETS/IMG/homepage/MiddleLargeSection/Artwork1.png";
 import juniorClass from "../../ASSETS/IMG/homepage/MiddleLargeSection/eclass.png";
