@@ -9,9 +9,9 @@ import CourseSection from "./CourseSection/CourseSection";
 import fivePoints from "../../ASSETS/IMG/homepage/ThirdSection/fivePoints.png";
 import playschool from "../../ASSETS/IMG/homepage/MiddleLargeSection/Artwork1.png";
 import juniorClass from "../../ASSETS/IMG/homepage/MiddleLargeSection/eclass.png";
-import "./Home.css";
 import { WhatsMore } from "./WhatsMore/WhatsMore";
 import HorizoantalLine from "../HorizoantalLine/HorizoantalLine";
+import "./Home.css";
 
 export const Home = () => {
   function clicked() {

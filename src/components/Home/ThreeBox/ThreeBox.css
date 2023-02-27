@@ -78,11 +78,19 @@
         font-size: 40px;
 
     }
+
+    .threebox-container {
+        margin: 0 2%;
+    }
 }
 
 @media screen and (max-width:720px) {
     .threebox-container>div>p:nth-child(1) {
         font-size: 30px;
 
+    }
+
+    .threebox-container {
+        margin: 0 1%;
     }
 }

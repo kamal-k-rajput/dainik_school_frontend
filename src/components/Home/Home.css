@@ -218,6 +218,12 @@ h3 {
     margin-bottom: 30px;
 }
 
+@media screen and (max-width:1080px) {
+    .text-on-img-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 @media screen and (max-width:720px) {
     .home-img-text {
         flex-direction: column;
@@ -229,13 +235,6 @@ h3 {
     }
 }
 
-@media screen and (max-width:720px) {
-    .home-img-text {
-        /* height: 600px; */
-        overflow: hidden;
-        overflow-x: scroll;
-    }
-}
 
 /* 
 
