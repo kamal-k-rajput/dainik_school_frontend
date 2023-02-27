@@ -7,7 +7,7 @@ const CourseSection = ({ props }) => {
   console.log(props.img);
   return (
     <div className="course-section">
-      <Card style={{ width: "18rem" }} className="card course-card">
+      {/* <Card style={{ width: "18rem" }} className="card course-card">
         <Card.Img variant="top" src={props.img} />
         <div>
           <Card.Body>
@@ -19,7 +19,20 @@ const CourseSection = ({ props }) => {
             <Button variant="primary">{props.buttonLabel}</Button>
           </Card.Body>
         </div>
-      </Card>
+      </Card> */}
+      <div>
+        <h1>{props.title}</h1>
+      </div>
+      <div>
+        <div>
+          <img src={props.img} alt="" />
+        </div>
+        <div>
+          <h2>Dainik School.com</h2>
+          <p>{props.text}</p>
+          <button className="btn btn-success">{props.buttonLabel}</button>
+        </div>
+      </div>
     </div>
   );
 };
