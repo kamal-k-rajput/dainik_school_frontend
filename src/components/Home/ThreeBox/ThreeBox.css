@@ -3,7 +3,7 @@
     justify-content: space-evenly;
     color: #1d4886;
     margin: 0 10%;
-    padding:10px 0;
+    padding: 10px 0;
 
 }
 
@@ -84,7 +84,7 @@
 
     .threebox-container {
         margin: 0 2%;
-        /* flex-direction: column; */
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }

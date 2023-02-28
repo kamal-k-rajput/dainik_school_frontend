@@ -11,6 +11,7 @@ import { WhatsMore } from "./WhatsMore/WhatsMore";
 import HorizoantalLine from "../HorizoantalLine/HorizoantalLine";
 import "./Home.css";
 import { DisplayCourses } from "./DisplayCourses/DisplayCourses";
+import { ThreePart } from "./ThreePart/ThreePart";
 
 export const Home = () => {
   function clicked() {
@@ -25,8 +26,8 @@ export const Home = () => {
       <HorizoantalLine />
       <DisplayCourses />
       <DisplayCourses />
-
-      <div className="home-img-text">
+      <ThreePart />
+      {/* <div className="home-img-text">
         <img
           src={fivePoints}
           alt="Dainik school vision"
@@ -42,7 +43,7 @@ export const Home = () => {
             which is necessary for further professional studies of students.
           </p>
         </div>
-      </div>
+      </div> */}
       <ThreeBox />
       <Levels />
       {/* <div>
@@ -53,32 +54,7 @@ export const Home = () => {
       </div> */}
 
       {/* <div className="why-choose-us">WHY CHOOSE US ?</div> */}
-      <div className="text-on-img-container">
-        <div className="text-on-design">
-          <div></div>
-          <div>
-            <div>
-              <h3>Student</h3>
-              <p>Affordable for every student</p>
-            </div>
-            <div>
-              <h3>Faculty</h3>
-              <p>Experienced faculty</p>
-            </div>
-            <div>
-              <h3>Teaching</h3>
-              <p>Teach from basic to advance</p>
-            </div>
-            <div>
-              <h3>Classes</h3>
-              <p>Theory & practical classes of all chapters</p>
-            </div>
-            <div>
-              <h3>Board</h3>
-              <p>Courses designed according to CBSE and State Board</p>
-            </div>
-          </div>
-        </div>
+      {/* <div className="text-on-img-container">
         <div>
           <p className="hm-text-on-img">
             <h1>What make us different</h1>
@@ -103,7 +79,7 @@ export const Home = () => {
             </ul>
           </p>
         </div>
-      </div>
+      </div> */}
       <WhatsMore />
       <Footer />
       <p>©2022. Dainik School All Rights Reserved.</p>
