@@ -2,14 +2,17 @@
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 50px;
+    font-size: 14px;
 }
 
 .whats-more-container .card {
     /* border: 2px solid green; */
     max-width: 400px !important;
+    border-radius: 15px;
 }
 
 .card-img-top {
-    height: 350px;
+    height: 250px;
     /* border: 2px solid red; */
+    border-radius: 15px;
 }

@@ -5,7 +5,8 @@
     color: #404040;
     background-color: #fff;
     text-shadow: -2px -2px #b6b4b5;
-    padding: 5% 0;
+    padding: 0 0;
+    margin-top: 70px;
 }
 
 .first-section>div:nth-child(1)>b {

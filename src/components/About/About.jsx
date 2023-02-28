@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import First_img from "../../ASSETS/IMG/About/FIRST_IMG.png";
+import { TextSection } from "../Home/TextSection/TextSection";
 import { ContactUs } from "../Contact/ContactUs";
 
 export const About = () => {
@@ -17,6 +18,7 @@ export const About = () => {
         </p>
         <img src={First_img} alt="About us" />
       </div>
+      <TextSection />
       <ContactUs />
       {/* <Link to="/contact-us">
         <button className="contact-btn">Contact Us</button>

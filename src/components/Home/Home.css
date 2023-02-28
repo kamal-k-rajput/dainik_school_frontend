@@ -186,6 +186,10 @@ h3 {
     /* background-image: url(../../ASSETS/IMG/homepage/threeperson.jpeg); */
 }
 
+.hr-first-line {
+    margin-top: 65px !important;
+}
+
 .hm-full-size-section>div:nth-child(2) {
     /* background-image: url(../../ASSETS/IMG/homepage/fiveperson.jpeg); */
     background-color: rgb(40, 143, 240);

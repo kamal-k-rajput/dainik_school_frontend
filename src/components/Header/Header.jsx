@@ -6,7 +6,6 @@ export const Header = () => {
   return (
     <div>
       <NavbarLinks />
-      <HorizoantalLine />
     </div>
   );
 };

@@ -1,17 +1,16 @@
 import React from "react";
 import { Footer } from "../Footer/Footer";
 import Levels from "./Levels/Levels";
-import { TextSection } from "./TextSection/TextSection";
 import { FirstSection } from "./FirstSection/FirstSection";
 import SecondSection from "./SecondSection/SecondSection";
 import ThreeBox from "./ThreeBox/ThreeBox";
-import CourseSection from "./CourseSection/CourseSection";
+
 import fivePoints from "../../ASSETS/IMG/homepage/ThirdSection/fivePoints.png";
-import playschool from "../../ASSETS/IMG/homepage/MiddleLargeSection/Artwork1.png";
-import juniorClass from "../../ASSETS/IMG/homepage/MiddleLargeSection/eclass.png";
+
 import { WhatsMore } from "./WhatsMore/WhatsMore";
 import HorizoantalLine from "../HorizoantalLine/HorizoantalLine";
 import "./Home.css";
+import { DisplayCourses } from "./DisplayCourses/DisplayCourses";
 
 export const Home = () => {
   function clicked() {
@@ -19,34 +18,14 @@ export const Home = () => {
   }
   return (
     <div className="home_container">
+      <HorizoantalLine className="hr-first-line" />
       <FirstSection />
       <HorizoantalLine />
-
       <SecondSection />
       <HorizoantalLine />
-      <CourseSection
-        props={{
-          img: juniorClass,
-          title: "Class 4 - 12",
-          text: `Education is the most powerful weapon you can use to change the world.
-              `,
-          buttonLabel: "Explore",
-        }}
-      />
-      <CourseSection
-        props={{
-          img: playschool,
-          title: "Class LKG - 3",
-          text: `Dainik School's vision is to make the learning experience 
-              affordable and knowledgeable for all students. Study foundation
-               of every student by providing English, Mathematics,
-               Physics, Chemistry and Biology specialized & profound 
-               Knowledge which is necessary for further professional studies of students
-               `,
-          buttonLabel: "Explore",
-        }}
-      />
-      <TextSection />
+      <DisplayCourses />
+      <DisplayCourses />
+
       <div className="home-img-text">
         <img
           src={fivePoints}
@@ -73,7 +52,7 @@ export const Home = () => {
         <button className="mid-btn">ASK YOUR DOUBTS</button>
       </div> */}
 
-      <div className="why-choose-us">WHY CHOOSE US ?</div>
+      {/* <div className="why-choose-us">WHY CHOOSE US ?</div> */}
       <div className="text-on-img-container">
         <div className="text-on-design">
           <div></div>

@@ -21,14 +21,14 @@ const CourseSection = ({ props }) => {
         </div>
       </Card> */}
       <div>
-        <h1>{props.title}</h1>
+        <span>{props.title}</span>
       </div>
       <div>
         <div>
           <img src={props.img} alt="" />
         </div>
         <div>
-          <h2>Dainik School.com</h2>
+          <h4>Dainik School.com</h4>
           <p>{props.text}</p>
           <button className="btn btn-success">{props.buttonLabel}</button>
         </div>

@@ -10,7 +10,7 @@ import "./Navbar.css";
 
 export const NavbarLinks = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="white" variant="light">
+    <Navbar collapseOnSelect expand="lg" bg="white" variant="light" fixed="top">
       <Container>
         <Navbar.Brand href="/">
           <img src={Logo} alt="logo" className="navbar-logo" title={"logo"} />
