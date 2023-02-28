@@ -27,16 +27,16 @@ export const NavbarLinks = () => {
               Dank memes
             </Nav.Link> */}
             {/* <Nav.Link href="courses">Courses</Nav.Link> */}
-            <NavDropdown title="Courses" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Maths</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">English</NavDropdown.Item>
+            <NavDropdown title="COURSES" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">MATHS</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">ENGLISH</NavDropdown.Item>
               {/* <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item> */}
               <NavDropdown.Divider />
               {/* <NavDropdown.Item href="#action/3.4">New type</NavDropdown.Item> */}
             </NavDropdown>
-            <Nav.Link href="live-classes">Live Classes</Nav.Link>
+            <Nav.Link href="live-classes">LIVE CLASSES</Nav.Link>
             <Nav.Link href="Login">
-              <Button variant="success">LOG IN</Button>{" "}
+              <Button variant="success">Log In</Button>{" "}
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
