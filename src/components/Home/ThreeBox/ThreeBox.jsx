@@ -5,28 +5,16 @@ const ThreeBox = () => {
   return (
     <div className="threebox-container">
       <div>
-        <p>3100+ </p>
-        <div className="box-texts">
-          <p>Videos </p>
-          <p> Lectures </p>
-        </div>
-        <div className="bottom-line"></div>
+        <span>3100+ </span>
+        <span>Videos Lectures</span>
       </div>
       <div>
-        <p>Notes</p>
-        <div className="box-texts">
-          <p>5 Lakh+</p>
-          <p>Pages</p>
-        </div>
-        <div className="bottom-line"></div>
+        <span>Notes</span>
+        <span>5 Lakh+ Pages</span>
       </div>
       <div>
-        <p>60000+</p>
-        <div className="box-texts">
-          <p>Questions</p>
-          <p>Bank</p>
-        </div>
-        <div className="bottom-line"></div>
+        <span>60000+</span>
+        <span>Questions Bank</span>
       </div>
     </div>
   );

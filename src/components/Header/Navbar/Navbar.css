@@ -23,9 +23,10 @@
     color: grey;
 }
 
-.nav-container>ul>li:hover {
-    color: #5EC57D;
+.nav-container>ul>li {
+    color: #347571 !important;
     cursor: pointer;
+    background-color: #347571 !important;
 
 }
 
@@ -45,6 +46,7 @@
 
 .navbar-logo {
     height: 7vh;
+    margin-top: 2px !important;
 }
 
 a {
@@ -54,4 +56,12 @@ a {
 
 .navbar-expand-lg {
     padding: 0;
+}
+
+.hr-first-line {
+    position: fixed;
+    top: 0;
+    margin-top: 65px !important;
+    height: 35px;
+    display: block;
 }

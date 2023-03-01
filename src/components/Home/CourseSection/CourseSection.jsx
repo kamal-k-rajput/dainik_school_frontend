@@ -25,7 +25,7 @@ const CourseSection = ({ props }) => {
       </div>
       <div>
         <div>
-          <img src={props.img} alt="" />
+          <img src={props.img} alt={props.title} />
         </div>
         <div>
           <h4>Dainik School.com</h4>

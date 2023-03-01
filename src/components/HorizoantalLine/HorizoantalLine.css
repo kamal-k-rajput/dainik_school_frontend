@@ -1,13 +1,13 @@
 .hr-line {
     display: flex;
     width: 100%;
-    margin-top: 65px;
 }
 
 .hr-line-one {
     flex: 1;
     border: 2px solid #34a853;
     background-color: #34a853;
+    /* margin-top: 65px; */
 
 }
 
@@ -21,4 +21,8 @@
     background-color: #1d4886;
     border: 2px solid #1d4886;
     flex: 1;
+}
+
+.hr-first-line {
+    margin-top: 65px;
 }

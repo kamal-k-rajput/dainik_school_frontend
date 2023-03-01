@@ -35,6 +35,9 @@ export function ThreePart() {
       </div>
       <div>
         <img src={mobileView} alt="" />
+        <div className="mobile-app-icon">
+          <img src={playStore} alt="playstore" />
+        </div>
       </div>
     </div>
   );

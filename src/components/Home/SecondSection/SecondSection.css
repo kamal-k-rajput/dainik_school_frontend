@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-around;
     z-index: 10;
+    margin-bottom: 0;
 
 }
 
@@ -21,6 +22,7 @@
     transform: rotate(-35deg);
     z-index: 10;
     /* border-radius: 20%; */
+    display: none;
 }
 
 
@@ -44,7 +46,7 @@
     flex: 3;
     /* border: 3px solid purple; */
     background-color: #fff;
-    margin: 20px 20px;
+    margin: 30px 20px;
     border-radius: 15px;
     z-index: 12;
     font-size: 13px;
@@ -94,7 +96,7 @@
     font-weight: 600;
     padding-top: .275rem !important;
     padding-bottom: .275rem !important;
-    background-color: #00b14f;
+    background-color: #347571;
 }
 
 .second-section-form-container {

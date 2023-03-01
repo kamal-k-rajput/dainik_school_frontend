@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 40px 40px;
+    margin: 20px 40px;
     /* height: 310px; */
     border-radius: 15px;
     background-color: #F2F2F2;
@@ -30,19 +30,20 @@
 .course-section>div:nth-child(2) div>img {
     width: 100%;
     max-height: 450px;
+    margin: 20px;
 }
 
 .course-section span {
-    background-image: linear-gradient(to right,
-            #fbc2eb 0%,
-            #a6f1ee 51%);
-    ;
+    background-color: #e4b835;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    border: 2px solid black;
+    border: 1px solid black;
     display: inline-block;
     padding: 5px 20px;
     margin: 0;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
 }
 
 .course-section>div:nth-child(2)>div:nth-child(2) {

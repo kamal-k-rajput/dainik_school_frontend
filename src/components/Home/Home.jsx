@@ -4,14 +4,12 @@ import Levels from "./Levels/Levels";
 import { FirstSection } from "./FirstSection/FirstSection";
 import SecondSection from "./SecondSection/SecondSection";
 import ThreeBox from "./ThreeBox/ThreeBox";
-
 import fivePoints from "../../ASSETS/IMG/homepage/ThirdSection/fivePoints.png";
-
 import { WhatsMore } from "./WhatsMore/WhatsMore";
 import HorizoantalLine from "../HorizoantalLine/HorizoantalLine";
-import "./Home.css";
 import { DisplayCourses } from "./DisplayCourses/DisplayCourses";
 import { ThreePart } from "./ThreePart/ThreePart";
+import "./Home.css";
 
 export const Home = () => {
   function clicked() {
@@ -19,7 +17,6 @@ export const Home = () => {
   }
   return (
     <div className="home_container">
-      <HorizoantalLine className="hr-first-line" />
       <FirstSection />
       <HorizoantalLine />
       <SecondSection />
@@ -82,7 +79,6 @@ export const Home = () => {
       </div> */}
       <WhatsMore />
       <Footer />
-      <p>©2022. Dainik School All Rights Reserved.</p>
     </div>
   );
 };

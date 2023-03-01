@@ -1,4 +1,3 @@
-import "./App.css";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { Header } from "./components/Header/Header";
 import { LogOut } from "./components/LogOut";
@@ -10,6 +9,7 @@ import { PrivacyPolicy } from "./components/PrivacyPolicy/PrivacyPolicy";
 import { ContactUs } from "./components/Contact/ContactUs";
 import { Feedback } from "./components/Feedback/Feedback";
 import { About } from "./components/About/About";
+import "./App.css";
 // import { config } from "dotenv";
 // config();
 function App() {
