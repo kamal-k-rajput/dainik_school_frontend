@@ -16,7 +16,7 @@
 }
 
 .first-section>div:nth-child(1) {
-    margin: 150px 0 0 5%;
+    margin: 150px 0 0 6%;
     flex: 1;
     font-size: 3.5rem;
     display: flex;
@@ -39,7 +39,7 @@
 .d-block {
     border: 2px solid rgb(255, 255, 255);
     border-radius: 5%;
-    margin-right: -10%;
+    margin-right: -28%;
     display: inline !important;
     margin-top: 150px;
 }
