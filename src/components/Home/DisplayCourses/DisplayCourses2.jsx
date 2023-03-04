@@ -4,13 +4,13 @@ import juniorClass from "../../../ASSETS/IMG/homepage/MiddleLargeSection/eclass.
 import playschool from "../../../ASSETS/IMG/homepage/MiddleLargeSection/Artwork1.png";
 import "./DisplayCourses.css";
 
-export const DisplayCourses = () => {
+export const DisplayCourses2 = () => {
   return (
     <div className="display-course-container">
       <CourseSection
         props={{
           img: playschool,
-          title: "Classes LKG - 3",
+          title: "Classes 9-12",
           text: `Education is the most powerful weapon you can use to change the world.
               `,
           buttonLabel: "Explore",
@@ -19,7 +19,7 @@ export const DisplayCourses = () => {
       <CourseSection
         props={{
           img: juniorClass,
-          title: "Classes 4 - 8",
+          title: "Languages",
           text: `Dainik School's vision is to make the learning experience.`,
           buttonLabel: "Explore",
         }}

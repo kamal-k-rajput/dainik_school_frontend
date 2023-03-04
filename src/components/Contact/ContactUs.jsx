@@ -2,12 +2,16 @@ import React from "react";
 import { Footer } from "../Footer/Footer";
 import HorizoantalLine from "../HorizoantalLine/HorizoantalLine";
 import indiaMap from "../../ASSETS/IMG/ContactUs/IndiaMap.png";
+import { Gap } from "../Tools/Gap";
+import { CustomHeader } from "../Tools/CustomHeader";
 import "./ContactUs.css";
 
 export const ContactUs = () => {
   return (
     <>
+      <Gap />
       <HorizoantalLine />
+      <CustomHeader props={{ title: "Contact Us" }} />
       <div className="contact-us">
         <div>
           <img src={indiaMap} alt="india map" />

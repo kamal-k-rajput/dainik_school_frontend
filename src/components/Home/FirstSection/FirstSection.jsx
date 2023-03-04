@@ -3,8 +3,8 @@ import Carousel from "react-bootstrap/Carousel";
 import boy from "../../../ASSETS/IMG/homepage/FirstSection/boy.jpg";
 import boy2 from "../../../ASSETS/IMG/homepage/FirstSection/boy2.jpg";
 import boy3 from "../../../ASSETS/IMG/homepage/FirstSection/boy3.jpg";
-import "./FirstSection.css";
 import HorizoantalLine from "../../HorizoantalLine/HorizoantalLine";
+import "./FirstSection.css";
 export const FirstSection = () => {
   const [index, setIndex] = useState(0);
 
@@ -13,12 +13,9 @@ export const FirstSection = () => {
   };
   return (
     <>
-      <HorizoantalLine className="hr-line" />
+      <HorizoantalLine className="first-hr-line" />
       <div className="first-section">
         <div>
-          {/* <b>EVENING SCHOOL</b>
-          <b>WITH</b>
-          <b> DAINIK SCHOOL</b> */}
           <p>DainikSchool is a home school E-learning</p>
           <p>plateform for students from Nursery to grade 12.</p>
         </div>

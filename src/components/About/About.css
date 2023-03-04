@@ -1,9 +1,9 @@
 .about-container {
     display: flex;
     text-align: justify;
-    height: 50vh;
     width: 90%;
     margin: 50px;
+    font-size: 18px;
 
 }
 

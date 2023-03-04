@@ -24,7 +24,7 @@ const SecondSection = () => {
             className="btn btn-success"
           />
         </form>
-        <p>
+        <p className="policy-acceptance">
           By continuing, you agree to DainikSchool's Conditions of Use and
           Privacy Policy.
         </p>

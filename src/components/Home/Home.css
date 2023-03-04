@@ -23,11 +23,3 @@ h3 {
 .mid-btn:hover {
     background-image: linear-gradient(to left, #f17dd0 0%, #76a1eb 51%, #f66ecf 100%);
 }
-
-
-
-.hr-line {
-    margin-top: 62px !important;
-    position: fixed;
-    top: 64;
-}

@@ -1,0 +1,9 @@
+.custom-header-box {
+    width: 100%;
+    background-color: #347571;
+    height: 150px;
+    color: #fff;
+    padding-top: 3%;
+    font-weight: 700;
+    font-size: 48px;
+}

@@ -1,13 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaYoutube,
-  FaLinkedin,
-  FaPhoneAlt,
-} from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 
 export const Footer = () => {
   return (
@@ -19,6 +13,8 @@ export const Footer = () => {
             <Link to="/about">About us</Link>
             {/* <Link to="/feedback">Feedback</Link> */}
             <Link to="/contact-us">Contact us</Link>
+            <Link to="/faculty">Our Faculty</Link>
+
             <Link to="/news-and-blogs">News and Blogs</Link>
             <Link to="/">Site Maps</Link>
             {/* <Link to="/Instructor">Instructor</Link>
@@ -31,7 +27,9 @@ export const Footer = () => {
             <Link to="/courses"> Courses</Link>
             <Link to="/live-classes">Live Classes</Link>
             <Link to="/free-courses"> Free Courses</Link>
-            {/* <Link to="/Privacy-Policy">Terms &amp; Conditions</Link> */}
+            <Link to="/previous-year-question-paper">Previous year Paper</Link>
+            <Link to="/practice-session">Practice Session</Link>
+            <Link to="/library">Library</Link>
           </div>
         </div>
         <div>

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import "./Library.css";
-import { Footer } from "../Footer/Footer";
-
-export const Library = () => {
+import "./PracticeSession.css";
+import { Gap } from "../Tools/Gap";
+import HorizoantalLine from "../HorizoantalLine/HorizoantalLine";
+import { CustomHeader } from "../Tools/CustomHeader";
+export const PracticeSession = () => {
   const [newClass, setNewClass] = useState("");
   function handleClick(event) {
     setNewClass((newClass) => {
@@ -14,7 +15,10 @@ export const Library = () => {
     });
   }
   return (
-    <>
+    <div>
+      <Gap />
+      <HorizoantalLine />
+      <CustomHeader props={{ title: "Practice Session" }} />
       <div className="library_container">
         <div className="all_library"></div>
         <section className="library-section">
@@ -35,8 +39,6 @@ export const Library = () => {
           <div>Class 12</div>
         </section>
       </div>
-
-      <Footer />
-    </>
+    </div>
   );
 };

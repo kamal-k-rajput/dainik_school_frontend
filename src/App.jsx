@@ -15,8 +15,10 @@ import { Library } from "./components/Library/Library";
 import { Classes } from "./components/Courses/Classes/Classes";
 import { PreviousYearQuestions } from "./components/Courses/PreviousYearQuestions/PreviousYearQuestions";
 import { FreeCourses } from "./components/Courses/FreeCourses/FreeCourses";
-// import { config } from "dotenv";
-// config();
+import { Faculty } from "./components/Faculty/Faculty";
+import { PracticeSession } from "./components/PracticeSession/PracticeSession";
+import { NewsAndBlogs } from "./components/NewsNblogs/NewsAndBlogs";
+
 function App() {
   return (
     <div className="App">
@@ -36,6 +38,9 @@ function App() {
           <Route path="/library" element={<Library />} />
           <Route path="/classes" element={<Classes />} />
           <Route path="/free-courses" element={<FreeCourses />} />
+          <Route path="/news-and-blogs" element={<NewsAndBlogs />} />
+          <Route path="/faculty" element={<Faculty />} />
+          <Route path="/practice-session" element={<PracticeSession />} />
           <Route
             path="/previous-year-question-paper"
             element={<PreviousYearQuestions />}
