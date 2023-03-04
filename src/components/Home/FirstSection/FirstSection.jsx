@@ -4,6 +4,7 @@ import boy from "../../../ASSETS/IMG/homepage/FirstSection/boy.jpg";
 import boy2 from "../../../ASSETS/IMG/homepage/FirstSection/boy2.jpg";
 import boy3 from "../../../ASSETS/IMG/homepage/FirstSection/boy3.jpg";
 import HorizoantalLine from "../../HorizoantalLine/HorizoantalLine";
+import { Gap } from "../../Tools/Gap";
 import "./FirstSection.css";
 export const FirstSection = () => {
   const [index, setIndex] = useState(0);
@@ -13,6 +14,7 @@ export const FirstSection = () => {
   };
   return (
     <>
+      <Gap />
       <HorizoantalLine className="first-hr-line" />
       <div className="first-section">
         <div>

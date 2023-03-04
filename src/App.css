@@ -28,7 +28,7 @@ h1 {
 }
 
 .footer-container>a {
-  color: white !important;
+  color: rgb(124, 12, 12) !important;
 }
 
 a:hover {
@@ -36,34 +36,8 @@ a:hover {
   cursor: pointer;
 }
 
-.navbar {
-  background-color: #fff !important;
-}
 
 .bg-light {
   opacity: 0 !important;
 }
 
-.nav-link {
-  font-size: 16px !important;
-  font-weight: 500 !important;
-  color: #347571 !important;
-  padding: 0 !important;
-  margin: 25px 0 0 35px;
-}
-
-.nav-link>a {
-  padding: 10px 0 !important;
-}
-
-.nav-link>button {
-  font-size: 16px !important;
-  font-weight: 500 !important;
-  margin: 0 !important;
-  margin-bottom: 5px !important;
-  margin-top: -5px !important
-}
-
-.btn {
-  background-color: #347571;
-}

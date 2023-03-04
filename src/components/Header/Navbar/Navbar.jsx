@@ -6,19 +6,12 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Button from "react-bootstrap/Button";
-import HorizoantalLine from "../../HorizoantalLine/HorizoantalLine";
 import "./Navbar.css";
 
 export const NavbarLinks = () => {
   return (
     <div className="navbar-component">
-      <Navbar
-        collapseOnSelect
-        expand="lg"
-        bg="white"
-        variant="light"
-        fixed="top"
-      >
+      <Navbar collapseOnSelect expand="xl" bg="dark" variant="dark" fixed="top">
         <Container>
           <Navbar.Brand href="/">
             <img src={Logo} alt="logo" className="navbar-logo" title={"logo"} />

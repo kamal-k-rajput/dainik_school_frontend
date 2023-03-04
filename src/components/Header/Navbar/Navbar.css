@@ -1,52 +1,16 @@
-.nav-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: #000 !important;
-    background-color: #fff !important;
-    padding: 0 !important;
-}
-
-.navbar-container-main {
-    background-color: #eb0808 !important;
-}
-
-.nav-container>ul {
-    display: flex;
-    justify-content: space-between;
-    flex: 8;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 5px 20px;
-    height: 70px;
-    color: grey;
-}
-
-.nav-container>ul>li {
-    color: #347571 !important;
-    cursor: pointer;
-    background-color: #347571 !important;
-
-}
-
-.nav-container>ul>li:hover {
-    color: black;
-    cursor: pointer;
-
-}
-
 .logo {
     flex: 2;
 }
 
 .logo>.dainik_school_logo {
     width: 200px;
+    height: 100px;
 }
 
 .navbar-logo {
     height: 7vh;
     margin-top: 2px !important;
+    color: black;
 }
 
 a {
@@ -54,7 +18,39 @@ a {
     color: "#fff";
 }
 
+.navbar {
+
+    color: #347571 !important;
+}
+
 .navbar-expand-lg {
     padding: 0;
 }
 
+.navbar-component {
+    color: green;
+}
+
+.nav-link {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    color: #347571 !important;
+    padding: 0 !important;
+    margin: 25px 0 0 35px;
+}
+
+.nav-link>a {
+    padding: 10px 0 !important;
+}
+
+.nav-link>button {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    margin: 0 !important;
+    margin-bottom: 5px !important;
+    margin-top: -5px !important
+}
+
+.btn {
+    background-color: #347571;
+}
