@@ -3,6 +3,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
 import "./VerticalCards.css";
+import { Link } from "react-router-dom";
 export const VerticalCards = ({ cardProps }) => {
   return (
     <div>
@@ -14,7 +15,9 @@ export const VerticalCards = ({ cardProps }) => {
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </Card.Text>
-          <Button variant="primary">{cardProps.buttonLabel}</Button>
+          <Link to={cardProps.link}>
+            <Button variant="primary">{cardProps.buttonLabel}</Button>
+          </Link>
         </Card.Body>
       </Card>
     </div>

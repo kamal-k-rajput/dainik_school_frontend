@@ -14,6 +14,7 @@ export const WhatsMore = () => {
           title: "Dainik School Learners Community",
           text: "",
           buttonLabel: "Become a Learner",
+          link: "/courses",
         }}
       />
       <VerticalCards
@@ -22,6 +23,7 @@ export const WhatsMore = () => {
           title: "Share Your Expertise",
           text: "",
           buttonLabel: "Become a Educator",
+          link: "/apply-now",
         }}
       />
       <VerticalCards
@@ -30,6 +32,7 @@ export const WhatsMore = () => {
           title: "Opportunities at Dainik School",
           text: "",
           buttonLabel: "Join the team",
+          link: "/apply-now",
         }}
       />
     </div>

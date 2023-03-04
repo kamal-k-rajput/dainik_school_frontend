@@ -5,6 +5,7 @@ import indiaMap from "../../ASSETS/IMG/ContactUs/IndiaMap.png";
 import { Gap } from "../Tools/Gap";
 import { CustomHeader } from "../Tools/CustomHeader";
 import "./ContactUs.css";
+import { MoveToTop } from "../Tools/MoveToTop";
 
 export const ContactUs = () => {
   return (
@@ -34,6 +35,7 @@ export const ContactUs = () => {
         </form>
       </div> */}
       <Footer />
+      <MoveToTop />
     </>
   );
 };

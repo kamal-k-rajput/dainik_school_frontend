@@ -4,6 +4,7 @@ import HorizoantalLine from "../../HorizoantalLine/HorizoantalLine";
 import { Gap } from "../../Tools/Gap";
 import { CustomHeader } from "../../Tools/CustomHeader";
 import "./LiveClasses.css";
+import { MoveToTop } from "../../Tools/MoveToTop";
 
 export const LiveClasses = () => {
   const subjects = [
@@ -61,6 +62,7 @@ export const LiveClasses = () => {
       </section>
 
       <Footer />
+      <MoveToTop />
     </>
   );
 };

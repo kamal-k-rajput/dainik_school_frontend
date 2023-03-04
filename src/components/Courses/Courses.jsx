@@ -6,6 +6,7 @@ import "./Courses.css";
 import { Gap } from "../Tools/Gap";
 import HorizoantalLine from "../HorizoantalLine/HorizoantalLine";
 import { CustomHeader } from "../Tools/CustomHeader";
+import { MoveToTop } from "../Tools/MoveToTop";
 export const Courses = () => {
   return (
     <>
@@ -28,8 +29,8 @@ export const Courses = () => {
           <div>course</div>
         </section>
       </div>
-
       <Footer />
+      <MoveToTop />
     </>
   );
 };

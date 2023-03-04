@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Library.css";
 import { Footer } from "../Footer/Footer";
+import { MoveToTop } from "../Tools/MoveToTop";
 
 export const Library = () => {
   const [newClass, setNewClass] = useState("");
@@ -37,6 +38,7 @@ export const Library = () => {
       </div>
 
       <Footer />
+      <MoveToTop />
     </>
   );
 };

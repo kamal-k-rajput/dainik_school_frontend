@@ -5,6 +5,7 @@ import { Gap } from "../Tools/Gap";
 import HorizoantalLine from "../HorizoantalLine/HorizoantalLine";
 import { CustomHeader } from "../Tools/CustomHeader";
 import { Footer } from "../Footer/Footer";
+import { MoveToTop } from "../Tools/MoveToTop";
 
 export const About = () => {
   return (
@@ -84,6 +85,7 @@ export const About = () => {
 
       <TextSection />
       <Footer />
+      <MoveToTop />
     </>
   );
 };

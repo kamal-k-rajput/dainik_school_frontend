@@ -5,6 +5,7 @@ import { Gap } from "../Tools/Gap";
 import HorizoantalLine from "../HorizoantalLine/HorizoantalLine";
 import { Footer } from "../Footer/Footer";
 import { CustomHeader } from "../Tools/CustomHeader";
+import { MoveToTop } from "../Tools/MoveToTop";
 
 export const Faculty = () => {
   return (
@@ -14,6 +15,7 @@ export const Faculty = () => {
       <CustomHeader props={{ title: "Faculty" }}></CustomHeader>
       <WhatsMore />
       <Footer />
+      <MoveToTop />
     </div>
   );
 };
