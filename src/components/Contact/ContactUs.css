@@ -1,5 +1,5 @@
 .contact-us {
-    height: 700px;
+    height: 500px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -11,6 +11,9 @@
     flex-direction: column;
     text-align: flex-start;
     align-items: flex-start;
+    border: 2px solid grey;
+    border-radius: 15px;
+    padding: 30px;
 }
 
 .contact-container>a {
@@ -34,5 +37,6 @@
 
 .contact-us>div:nth-child(1)>img {
     width: 400px;
-    height: 600px;
+    height: 400px;
+    padding: 10px;
 }

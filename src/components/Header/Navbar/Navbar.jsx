@@ -11,7 +11,7 @@ import "./Navbar.css";
 
 export const NavbarLinks = () => {
   return (
-    <div>
+    <div className="navbar-component">
       <Navbar
         collapseOnSelect
         expand="lg"
@@ -38,7 +38,6 @@ export const NavbarLinks = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <HorizoantalLine className="hr-first-line" />
     </div>
   );
 };
