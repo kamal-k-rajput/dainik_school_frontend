@@ -26,12 +26,28 @@ export const NavbarLinks = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto"></Nav>
             <Nav>
-              <NavDropdown title="COURSES" id="collasible-nav-dropdown">
+              <NavDropdown title="CLASSES" id="collasible-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">
+                  LKG TO 5th
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.1">6 to 8th</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.1">
+                  9 to 12th
+                </NavDropdown.Item>
+              </NavDropdown>
+              <NavDropdown title="SUBJECTS" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">MATHS</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">SCIENCE</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">ENGLISH</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">SST</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">EVS</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">HINDI</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">
+                  SPOKEN ENGLISH
+                </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="live-classes">LIVE CLASSES</Nav.Link>
-              <Nav.Link href="Login">
+              <Nav.Link href="https://nrichlearning.com/auth/login">
                 <Button variant="success">Log In</Button>{" "}
               </Nav.Link>
             </Nav>

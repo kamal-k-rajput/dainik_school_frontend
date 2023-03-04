@@ -1,18 +1,21 @@
 .first-section {
     display: flex;
     justify-content: space-between;
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Nunito', sans-serif !important;
     background-color: #347571;
-    text-shadow: -2px -2px #b6b4b5;
+    /* text-shadow: -2px -2px #b6b4b5; */
     padding: 0 0;
     margin-top: 0px;
     color: white;
     height: 680px;
+    font-weight: 800;
 }
 
-.first-section>div:nth-child(1)>b {
+.first-section>div:nth-child(1)>p {
+    text-align: start;
     margin: 0;
-    padding: 0
+    padding: 0;
+    font-size: 44px;
 }
 
 .first-section>div:nth-child(1) {

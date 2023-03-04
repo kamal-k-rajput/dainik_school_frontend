@@ -10,6 +10,11 @@ import { ContactUs } from "./components/Contact/ContactUs";
 import { Feedback } from "./components/Feedback/Feedback";
 import { About } from "./components/About/About";
 import "./App.css";
+import { LiveClasses } from "./components/Courses/LiveClasses/LiveClasses";
+import { Library } from "./components/Library/Library";
+import { Classes } from "./components/Courses/Classes/Classes";
+import { PreviousYearQuestions } from "./components/Courses/PreviousYearQuestions/PreviousYearQuestions";
+import { FreeCourses } from "./components/Courses/FreeCourses/FreeCourses";
 // import { config } from "dotenv";
 // config();
 function App() {
@@ -27,6 +32,14 @@ function App() {
           <Route path="/Register" element={<Register />} />
           <Route path="/Feedback" element={<Feedback />} />
           <Route path="/About" element={<About />} />
+          <Route path="/live-classes" element={<LiveClasses />} />
+          <Route path="/library" element={<Library />} />
+          <Route path="/classes" element={<Classes />} />
+          <Route path="/free-courses" element={<FreeCourses />} />
+          <Route
+            path="/previous-year-question-paper"
+            element={<PreviousYearQuestions />}
+          />
         </Routes>
       </BrowserRouter>
     </div>

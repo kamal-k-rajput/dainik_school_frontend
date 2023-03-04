@@ -29,7 +29,7 @@ export const Footer = () => {
           <h3>Courses</h3>
           <div className="footer-vertical align-left footer-links">
             <Link to="/courses"> Courses</Link>
-            <Link to="/classes">Live Classes</Link>
+            <Link to="/live-classes">Live Classes</Link>
             <Link to="/free-courses"> Free Courses</Link>
             {/* <Link to="/Privacy-Policy">Terms &amp; Conditions</Link> */}
           </div>

@@ -1,24 +1,25 @@
 import React from "react";
 import { Footer } from "../Footer/Footer";
+import HorizoantalLine from "../HorizoantalLine/HorizoantalLine";
 import indiaMap from "../../ASSETS/IMG/ContactUs/IndiaMap.png";
 import "./ContactUs.css";
 
 export const ContactUs = () => {
   return (
     <>
+      <HorizoantalLine />
       <div className="contact-us">
         <div>
           <img src={indiaMap} alt="india map" />
         </div>
         <div className="contact-container">
-          <span>CONNECT WITH US</span>
+          <span className="heading">CONTACT US</span>
           <span> DISTRICT HISAR</span>
           <span>HARYANA PIN - 125004</span>
           <a href="tel:97290 98866">+91 97290 98866</a>
           <a href="mailto:info@dainikschool.com">info@dainikschool.com</a>
         </div>
       </div>
-      <h3>We are happy to serve you.</h3>
       {/* <div className="contact-us-form-container">
         <form action="/" className="contact-us-form">
           <input type="text" name="" id="" placeholder="Your Name" />

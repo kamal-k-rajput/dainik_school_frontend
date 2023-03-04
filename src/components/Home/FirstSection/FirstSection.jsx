@@ -16,9 +16,11 @@ export const FirstSection = () => {
       <HorizoantalLine className="hr-line" />
       <div className="first-section">
         <div>
-          <b>EVENING SCHOOL</b>
+          {/* <b>EVENING SCHOOL</b>
           <b>WITH</b>
-          <b> DAINIK SCHOOL</b>
+          <b> DAINIK SCHOOL</b> */}
+          <p>DainikSchool is a home school E-learning</p>
+          <p>plateform for students from Nursery to grade 12.</p>
         </div>
         <div>
           <Carousel activeIndex={index} onSelect={handleSelect}>
@@ -34,7 +36,8 @@ export const FirstSection = () => {
 
               <Carousel.Caption>
                 {/* <h3>Second slide label</h3> */}
-                {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}x
+                {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
+                x
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
