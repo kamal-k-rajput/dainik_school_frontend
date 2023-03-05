@@ -11,8 +11,7 @@ export const DisplayCourses = () => {
         props={{
           img: playschool,
           title: "Classes LKG - 3",
-          text: `Education is the most powerful weapon you can use to change the world.
-              `,
+          text: `Tied to the philosophy of "nature and nurture" , dainik school gives your child a right path combining animated series for fun learning and clearing the basic concepts with much ease and understanding. click the linkbelow to learn more.`,
           buttonLabel: "Explore",
         }}
       />

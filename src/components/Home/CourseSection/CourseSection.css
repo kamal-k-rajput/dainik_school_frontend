@@ -53,6 +53,7 @@
     align-items: center;
     text-align: justify;
     padding: 30px;
+    font-size: 16px;
 }
 
 .course-section>div:nth-child(2)>div:nth-child(2)>button {
@@ -60,8 +61,3 @@
     margin: 20px;
 }
 
-@media screen and (max-width:720px) {
-    .course-section>div:nth-child(2) {
-        flex-direction: column;
-    }
-}

@@ -28,6 +28,7 @@ a {
 .container {
 
     margin-bottom: 0 !important;
+    padding: 0 !important
 }
 
 .navbar-expand-lg {

@@ -9,6 +9,7 @@
     height: 680px;
     font-weight: 800;
     align-items: center;
+    width: 100%;
 }
 
 .first-section>div:nth-child(1)>p {
