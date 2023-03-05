@@ -11,7 +11,6 @@ export const About = () => {
   return (
     <>
       <Gap></Gap>
-      <HorizoantalLine></HorizoantalLine>
       <CustomHeader props={{ title: "About Us" }}></CustomHeader>
       <div className="about-container">
         <p>

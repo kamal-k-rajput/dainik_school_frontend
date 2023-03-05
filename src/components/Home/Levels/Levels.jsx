@@ -8,7 +8,7 @@ function Levels() {
         <div className="beginner">
           <p>1</p>
         </div>
-        <p>Beginner</p>
+        <p>Learner</p>
       </div>
       <div>
         <div className="intermediate">

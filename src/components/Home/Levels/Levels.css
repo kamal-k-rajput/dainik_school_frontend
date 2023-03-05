@@ -71,7 +71,6 @@
 
     .level-container {
         margin-top: 50px;
-        flex-direction: column;
         height: 100%;
         justify-content: center;
     }

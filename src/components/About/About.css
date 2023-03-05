@@ -1,8 +1,8 @@
 .about-container {
     display: flex;
     text-align: justify;
-    width: 90%;
-    margin: 50px;
+    width: 80%;
+    margin: 50px 10%;
     font-size: 18px;
 
 }
@@ -13,11 +13,11 @@
 
 .about-container>p {
     flex: 2;
-    margin-right: 20px;
+    margin-right: 0px;
 }
 
 .about-us-heading {
-    margin: 40px;
+    margin: 40px 0;
 }
 
 .contact-btn {
@@ -26,7 +26,7 @@
     padding: 10px 20px;
     border-radius: 15px;
     border-color: #000;
-    margin: 40px;
+    margin: 40px 0;
     font-weight: 600;
 
 }

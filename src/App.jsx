@@ -18,6 +18,7 @@ import { FreeCourses } from "./components/Courses/FreeCourses/FreeCourses";
 import { Faculty } from "./components/Faculty/Faculty";
 import { PracticeSession } from "./components/PracticeSession/PracticeSession";
 import { NewsAndBlogs } from "./components/NewsNblogs/NewsAndBlogs";
+import { DrivingLicense } from "./components/DrivingLicense/DrivingLicense";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route path="/news-and-blogs" element={<NewsAndBlogs />} />
           <Route path="/faculty" element={<Faculty />} />
           <Route path="/practice-session" element={<PracticeSession />} />
+          <Route path="/license" element={<DrivingLicense />} />
           <Route
             path="/previous-year-question-paper"
             element={<PreviousYearQuestions />}

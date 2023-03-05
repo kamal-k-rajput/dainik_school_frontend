@@ -11,7 +11,7 @@ export const DisplayCourses2 = () => {
         props={{
           img: playschool,
           title: "Classes 9-12",
-          text: `Education is the most powerful weapon you can use to change the world.
+          text: `Education is the most powerful weapon..
               `,
           buttonLabel: "Explore",
         }}
@@ -20,7 +20,7 @@ export const DisplayCourses2 = () => {
         props={{
           img: juniorClass,
           title: "Languages",
-          text: `Dainik School's vision is to make the learning experience.`,
+          text: `Our vision is to make the learning experience.`,
           buttonLabel: "Explore",
         }}
       />

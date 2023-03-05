@@ -1,0 +1,20 @@
+.drivingLicense-container {
+    border: 2px solid rgb(119, 118, 118);
+    display: flex;
+    margin: 100px;
+
+}
+
+.drivingLicense-container>div {
+    border: 2px solid black;
+    flex: 1;
+    height: 300px;
+    padding: 50px;
+    margin: 50px;
+}
+
+@media screen and (max-width:720px) {
+    .drivingLicense-container {
+        flex-direction: column;
+    }
+}

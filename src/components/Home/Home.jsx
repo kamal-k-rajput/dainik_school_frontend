@@ -21,7 +21,6 @@ export const Home = () => {
       <FirstSection />
       <HorizoantalLine />
       <SecondSection />
-      <HorizoantalLine />
       <DisplayCourses />
       <DisplayCourses2 />
       <ThreePart />

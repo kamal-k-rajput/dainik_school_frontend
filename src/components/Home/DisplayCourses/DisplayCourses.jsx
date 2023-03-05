@@ -11,7 +11,7 @@ export const DisplayCourses = () => {
         props={{
           img: playschool,
           title: "Classes LKG - 3",
-          text: `Tied to the philosophy of "nature and nurture" , dainik school gives your child a right path combining animated series for fun learning and clearing the basic concepts with much ease and understanding. click the linkbelow to learn more.`,
+          text: `Philosophy of "nature and nurture" `,
           buttonLabel: "Explore",
         }}
       />
@@ -19,7 +19,7 @@ export const DisplayCourses = () => {
         props={{
           img: juniorClass,
           title: "Classes 4 - 8",
-          text: `Dainik School's vision is to make the learning experience.`,
+          text: `Vision is to make the learning experience.`,
           buttonLabel: "Explore",
         }}
       />
