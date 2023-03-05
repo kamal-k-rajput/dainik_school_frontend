@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
+import { About } from "../About/About";
 
 export const Footer = () => {
   return (
@@ -27,7 +28,7 @@ export const Footer = () => {
             <Link to="/courses"> Courses</Link>
             <Link to="/live-classes">Live Classes</Link>
             <Link to="/free-courses"> Free Courses</Link>
-            <Link to="/previous-year-question-paper">Previous year Paper</Link>
+            <Link to="/previous-year-question-paper">Previous Paper</Link>
             <Link to="/practice-session">Practice Session</Link>
             <Link to="/library">Library</Link>
           </div>
@@ -65,6 +66,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
+      <About/>
       <p className="copyright-text">
         ©2022. Dainik School Digital Private Ltd. All Rights Reserved.
       </p>

@@ -93,4 +93,9 @@
     .three-part-container {
         height: 100%;
     }
+
+.three-part-container img{
+    max-width: 100% ;
+    display: block;
+}
 }

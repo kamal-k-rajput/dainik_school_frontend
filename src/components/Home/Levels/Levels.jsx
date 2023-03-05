@@ -14,7 +14,7 @@ function Levels() {
         <div className="intermediate">
           <p>2</p>
         </div>
-        <p>Intermediate</p>
+        <p>Average</p>
       </div>
       <div>
         <div className="expert">

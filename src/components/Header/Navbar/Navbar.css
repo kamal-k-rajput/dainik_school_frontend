@@ -62,3 +62,7 @@ a {
 .btn {
     background-color: #347571;
 }
+
+.navbar-logo {
+    height: 4vh;
+}

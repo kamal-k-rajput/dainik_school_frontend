@@ -83,8 +83,8 @@ export const About = () => {
         <button className="contact-btn">Contact Us</button>
       </Link> */}
 
-      <TextSection />
-      <Footer />
+      {/* <TextSection /> */}
+      {/* <Footer /> */}
       <MoveToTop />
     </>
   );
