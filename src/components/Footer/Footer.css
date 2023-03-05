@@ -103,6 +103,9 @@
         align-items: flex-start;
         justify-content: flex-start;
     }
+        .footer-horizoantal {
+            margin: 0 2%;
+        }
 }
 
 .align-left {
