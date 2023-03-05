@@ -14,7 +14,6 @@ export const FirstSection = () => {
   };
   return (
     <>
-      <Gap />
       <HorizoantalLine className="first-hr-line" />
       <div className="first-section">
         <div>
