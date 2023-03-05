@@ -1,0 +1,27 @@
+.first-line {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    opacity: 1;
+    z-index: 1200;
+    margin-bottom: -2px;
+}
+
+.line-one {
+    flex: 1;
+    border: 3px solid #34a853;
+    background-color: #34a853;
+
+}
+
+.first-line>div:nth-child(2) {
+    background-color: #fb4f48;
+    flex: 1;
+    border: 3px solid #fb4f48;
+}
+
+.first-line>div:nth-child(3) {
+    background-color: #1d4886;
+    border: 3px solid #1d4886;
+    flex: 1;
+}

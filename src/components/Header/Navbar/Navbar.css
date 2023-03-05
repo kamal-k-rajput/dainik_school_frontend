@@ -21,6 +21,13 @@ a {
 .navbar {
 
     color: #347571 !important;
+    margin-bottom: 0 !important;
+    height: 9vh;
+}
+
+.container {
+
+    margin-bottom: 0 !important;
 }
 
 .navbar-expand-lg {

@@ -7,15 +7,23 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Button from "react-bootstrap/Button";
 import "./Navbar.css";
+import HorizoantalLine from "../../HorizoantalLine/HorizoantalLine";
 
 export const NavbarLinks = () => {
   return (
     <div className="navbar-component">
-      <Navbar collapseOnSelect expand="xl" bg="dark" variant="dark" fixed="top">
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        bg="light"
+        variant="light"
+        fixed="top"
+      >
         <Container>
           <Navbar.Brand href="/">
             <img src={Logo} alt="logo" className="navbar-logo" title={"logo"} />
           </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto"></Nav>
             <Nav>
@@ -47,6 +55,7 @@ export const NavbarLinks = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <HorizoantalLine />
     </div>
   );
 };
