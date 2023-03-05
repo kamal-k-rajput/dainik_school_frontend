@@ -129,7 +129,7 @@
     }
 
     .second-section>div:nth-child(2) {
-        min-width: 320px
+        /* min-width: 320px */
     }
 
     .font-size-large {}

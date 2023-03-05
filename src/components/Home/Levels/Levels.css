@@ -58,6 +58,10 @@
 } */
 
 @media screen and (max-width:720px) {
+    .level-container {
+        max-width: 100%;
+    }
+
     .level-container>div>div {
         width: 80px;
         height: 80px;

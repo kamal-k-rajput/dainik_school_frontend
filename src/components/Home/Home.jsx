@@ -11,6 +11,7 @@ import { ThreePart } from "./ThreePart/ThreePart";
 import "./Home.css";
 import { Gap } from "../Tools/Gap";
 import { DisplayCourses2 } from "./DisplayCourses/DisplayCourses2";
+import { BasicExample } from "../Header/Navbar/Navbar";
 
 export const Home = () => {
   function clicked() {

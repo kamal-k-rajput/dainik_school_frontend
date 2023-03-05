@@ -19,14 +19,13 @@ a {
 }
 
 .navbar {
-
     color: #347571 !important;
     margin-bottom: 0 !important;
     height: 9vh;
+    z-index: 12000;
 }
 
 .container {
-
     margin-bottom: 0 !important;
     padding: 0 !important
 }
@@ -65,4 +64,8 @@ a {
 
 .navbar-logo {
     height: 4vh;
+}
+
+.navbar-nav {
+    background-color: #fff !important;
 }

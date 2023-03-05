@@ -31,3 +31,7 @@ a:hover {
   color: #e3b30a !important;
   cursor: pointer;
 }
+
+.bg-light {
+  /* opacity: 0 !important; */
+}
