@@ -1,6 +1,6 @@
 .first-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     font-family: 'Nunito', sans-serif !important;
     background-color: #347571;
     padding: 0 0;
@@ -8,17 +8,17 @@
     color: white;
     height: 680px;
     font-weight: 800;
+    align-items: center;
 }
 
 .first-section>div:nth-child(1)>p {
     text-align: start;
     margin: 0;
-    padding: 0;
-    /* font-size: 44px; */
+    padding: 0 0 0 100px;
 }
 
 .first-section>div:nth-child(1) {
-    margin: 150px 0 0 6%;
+    border: 2px red;
     flex: 1;
     font-size: 3.5rem;
     display: flex;
@@ -44,7 +44,6 @@
     border-radius: 5%;
     margin-right: 0%;
     display: inline !important;
-    margin-top: 150px;
 }
 
 
