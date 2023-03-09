@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Library.css";
 import { Footer } from "../Footer/Footer";
 import { MoveToTop } from "../Tools/MoveToTop";
+import { CustomHeader } from "../Tools/CustomHeader";
 
 export const Library = () => {
   const [newClass, setNewClass] = useState("");
@@ -16,6 +17,7 @@ export const Library = () => {
   }
   return (
     <>
+      <CustomHeader props={{ title: "Library" }} />
       <div className="library_container">
         <div className="all_library"></div>
         <section className="library-section">
