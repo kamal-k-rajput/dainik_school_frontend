@@ -15,7 +15,7 @@
 .first-section>div:nth-child(1)>p {
     text-align: start;
     margin: 0;
-    padding: 0 0 0 100px;
+    padding: 0 0 0 50px;
 }
 
 .first-section>div:nth-child(1) {

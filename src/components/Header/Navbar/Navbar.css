@@ -30,6 +30,10 @@ a {
     padding: 0 !important
 }
 
+.navbar>.container {
+    margin: 0 10px;
+}
+
 .navbar-expand-lg {
     padding: 0;
 }

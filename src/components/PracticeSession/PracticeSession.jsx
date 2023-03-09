@@ -4,6 +4,7 @@ import { Gap } from "../Tools/Gap";
 import HorizoantalLine from "../HorizoantalLine/HorizoantalLine";
 import { CustomHeader } from "../Tools/CustomHeader";
 import { MoveToTop } from "../Tools/MoveToTop";
+import { Footer } from "../Footer/Footer";
 export const PracticeSession = () => {
   const [newClass, setNewClass] = useState("");
   function handleClick(event) {
@@ -40,7 +41,8 @@ export const PracticeSession = () => {
           <div>Class 12</div>
         </section>
       </div>
-      <MoveToTop/>
+      <Footer />
+      <MoveToTop />
     </div>
   );
 };

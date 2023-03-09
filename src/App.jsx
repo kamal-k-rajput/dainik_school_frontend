@@ -43,6 +43,7 @@ function App() {
           <Route path="/faculty" element={<Faculty />} />
           <Route path="/practice-session" element={<PracticeSession />} />
           <Route path="/license" element={<DrivingLicense />} />
+          <Route path="/educator-policy" element={<About />} />
           <Route
             path="/previous-year-question-paper"
             element={<PreviousYearQuestions />}
