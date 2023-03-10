@@ -7,7 +7,7 @@
     padding: 40px 0px;
     bottom: 0;
     position: relative;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .ft-main-container {
@@ -103,9 +103,10 @@
         align-items: flex-start;
         justify-content: flex-start;
     }
-        .footer-horizoantal {
-            margin: 0 2%;
-        }
+
+    .footer-horizoantal {
+        margin: 0 2%;
+    }
 }
 
 .align-left {
