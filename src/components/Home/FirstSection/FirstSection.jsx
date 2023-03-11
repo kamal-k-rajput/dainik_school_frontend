@@ -14,7 +14,8 @@ export const FirstSection = () => {
   };
   return (
     <>
-      {/* <HorizoantalLine className="first-hr-line" /> */}
+      <Gap />
+      <HorizoantalLine className="first-hr-line" />
       <div className="first-section">
         <div>
           <p>DainikSchool is a home school E-learning</p>
