@@ -11,8 +11,7 @@ export const DisplayCourses2 = () => {
         props={{
           img: playschool,
           title: "Classes 9-12",
-          text: `Education is the most powerful weapon..
-              `,
+          text: `Live Tution Program at anywhere.`,
           buttonLabel: "Explore",
         }}
       />
@@ -20,7 +19,7 @@ export const DisplayCourses2 = () => {
         props={{
           img: juniorClass,
           title: "Languages",
-          text: `Our vision is to make the learning experience.`,
+          text: `Live learning program for everyone anytime anywhere. `,
           buttonLabel: "Explore",
         }}
       />
