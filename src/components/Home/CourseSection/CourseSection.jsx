@@ -14,7 +14,7 @@ const CourseSection = ({ props }) => {
           <img src={props.img} alt={props.title} />
         </div>
         <div>
-          <h4>Dainik School.com</h4>
+          <span>Dainik School.com</span>
           <p>{props.text}</p>
           <Link className="btn btn-success" to="/courses">
             {props.buttonLabel}

@@ -1,18 +1,20 @@
 .display-course-container {
     display: flex;
     justify-content: space-evenly;
-    margin: 10px 5% 0;
+    margin: 10px 2.5% 0;
+    height: 300px;
 }
 
 .display-course-container>div {
     justify-content: space-between;
     flex: 1;
     display: flex;
-    margin: 10px 0;
+    margin: 10px 2.5%;
 }
 
 @media screen and (max-width:720px) {
     .display-course-container {
         flex-direction: column;
+        height: 100%;
     }
 }
