@@ -11,7 +11,7 @@ export const About = () => {
   return (
     <>
       <Gap></Gap>
-      <CustomHeader props={{ title: "About Us" }}></CustomHeader>
+      {/* <CustomHeader props={{ title: "About Us" }}></CustomHeader> */}
       <div className="about-container">
         <p>
           <h2>About Dainik School</h2>

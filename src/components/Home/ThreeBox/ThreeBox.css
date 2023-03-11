@@ -1,7 +1,7 @@
 .threebox-container {
     display: flex;
-    height: 200px;
-    margin: 5% 10%;
+    height: 175px;
+    margin: 5% 2%;
 }
 
 .threebox-container>div {

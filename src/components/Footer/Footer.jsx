@@ -9,7 +9,7 @@ export const Footer = () => {
     <div className="ft-main-container">
       <footer className="footer-container align-left ">
         <div>
-          <h3 className="useful-links">About Dainik School</h3>
+          <h3 className="useful-links">About Us </h3>
           <div className="footer-vertical align-left footer-links">
             <Link to="/about">About us</Link>
             {/* <Link to="/feedback">Feedback</Link> */}
@@ -42,7 +42,7 @@ export const Footer = () => {
         </div>
       </footer>
       <div className="ft-social">
-        <h3>To know more about us and what we offer, follow us on:</h3>
+        <h4>To know more about us and what we offer, follow us on:</h4>
         <div className="footer-horizoantal align-left footer-links social-icons">
           <div className="footer-social-link">
             <a href="https://www.instagram.com/dainikschool_/">
@@ -66,8 +66,9 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <About/>
-      <p className="copyright-text">
+      <h1>About us</h1>
+      <About />
+      <p id="copyright-text">
         ©2022. Dainik School Digital Private Ltd. All Rights Reserved.
       </p>
     </div>
