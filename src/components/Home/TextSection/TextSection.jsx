@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { BsArrow90DegRight } from "react-icons/bs";
 import appleStore from "../../../ASSETS/IMG/homepage/playStore/AppleStore.png";
 import playStore from "../../../ASSETS/IMG/homepage/playStore/GooglePlay.png";
-import mobileApp from "../../../ASSETS/IMG/homepage/playStore/mobileApp.png";
+import mobileView from "../../../ASSETS/IMG/homepage/playStore/mobileApp.png";
 import "./TextSection.css";
 
 export const TextSection = () => {
@@ -56,11 +57,13 @@ export const TextSection = () => {
         </div>
       </div>
       <div className="text-section-right">
-        <img src={mobileApp} alt="Mobile app" />
-        <div>
-          <img src={playStore} alt="google play store" />
-          {/* <img src={appleStore} alt="app appstore" /> */}
-        </div>
+          <img src={mobileView} alt="mobile app view" />
+          <Link to="https://play.google.com/store/apps/details?id=com.nrichlearning.dainikschool&pli=1">
+            <div className="mobile-app-icon">
+              <img src={playStore} alt="playstore" />
+              <img src={appleStore} alt="playstore" />
+            </div>
+          </Link>
       </div>
     </div>
   );

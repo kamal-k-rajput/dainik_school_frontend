@@ -3,8 +3,8 @@ import fivePoints from "../../../ASSETS/IMG/homepage/ThirdSection/fivePoints.png
 import appleStore from "../../../ASSETS/IMG/homepage/playStore/AppleStore.png";
 import mobileView from "../../../ASSETS/IMG/homepage/playStore/mobileApp.png";
 import playStore from "../../../ASSETS/IMG/homepage/playStore/GooglePlay.png";
-import "./ThreePart.css";
 import { Link } from "react-router-dom";
+import "./ThreePart.css";
 
 export function ThreePart() {
   return (
@@ -33,15 +33,6 @@ export function ThreePart() {
           <h3>Board</h3>
           <p>Courses designed according to CBSE and State Board</p>
         </div>
-      </div>
-      <div>
-        <img src={mobileView} alt="mobile app view" />
-        <Link to="https://play.google.com/store/apps/details?id=com.nrichlearning.dainikschool&pli=1">
-          <div className="mobile-app-icon">
-            <img src={playStore} alt="playstore" />
-            <img src={appleStore} alt="playstore" />
-          </div>
-        </Link>
       </div>
     </div>
   );

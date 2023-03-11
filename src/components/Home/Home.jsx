@@ -12,11 +12,9 @@ import "./Home.css";
 import { Gap } from "../Tools/Gap";
 import { DisplayCourses2 } from "./DisplayCourses/DisplayCourses2";
 import { BasicExample } from "../Header/Navbar/Navbar";
+import { TextSection } from "./TextSection/TextSection";
 
 export const Home = () => {
-  function clicked() {
-    console.log("clicked");
-  }
   return (
     <div className="home_container">
       <FirstSection />
@@ -25,6 +23,7 @@ export const Home = () => {
       <DisplayCourses />
       <DisplayCourses2 />
       <ThreePart />
+      <TextSection />
       <ThreeBox />
       <Levels />
       <WhatsMore />
