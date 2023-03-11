@@ -5,7 +5,7 @@
 
 .hr-line-one {
     flex: 1;
-    border: 2px solid #34a853;
+    border: 1px solid #34a853;
     background-color: #34a853;
 
 }
@@ -13,11 +13,11 @@
 .hr-line>div:nth-child(2) {
     background-color: #fb4f48;
     flex: 1;
-    border: 2px solid #fb4f48;
+    border: 1px solid #fb4f48;
 }
 
 .hr-line>div:nth-child(3) {
     background-color: #1d4886;
-    border: 2px solid #1d4886;
+    border: 1px solid #1d4886;
     flex: 1;
 }
