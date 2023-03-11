@@ -39,6 +39,7 @@ export function ThreePart() {
         <Link to="https://play.google.com/store/apps/details?id=com.nrichlearning.dainikschool&pli=1">
           <div className="mobile-app-icon">
             <img src={playStore} alt="playstore" />
+            <img src={appleStore} alt="playstore" />
           </div>
         </Link>
       </div>

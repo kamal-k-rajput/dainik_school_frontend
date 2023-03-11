@@ -35,6 +35,7 @@
 
 .course-section>div:nth-child(1) span {
     background-color: #62cc70;
+    background-color: #ff9925;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border: 1px solid black;
