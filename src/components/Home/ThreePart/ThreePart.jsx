@@ -1,9 +1,5 @@
 import React from "react";
 import fivePoints from "../../../ASSETS/IMG/homepage/ThirdSection/fivePoints.png";
-import appleStore from "../../../ASSETS/IMG/homepage/playStore/AppleStore.png";
-import mobileView from "../../../ASSETS/IMG/homepage/playStore/mobileApp.png";
-import playStore from "../../../ASSETS/IMG/homepage/playStore/GooglePlay.png";
-import { Link } from "react-router-dom";
 import "./ThreePart.css";
 
 export function ThreePart() {
