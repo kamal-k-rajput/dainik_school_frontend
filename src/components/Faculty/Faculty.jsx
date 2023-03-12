@@ -12,7 +12,7 @@ export const Faculty = () => {
     <div>
       <Gap></Gap>
       <HorizoantalLine></HorizoantalLine>
-      <CustomHeader props={{ title: "Faculty" }}></CustomHeader>
+      <CustomHeader props={{ title: "Our Team" }}></CustomHeader>
       <WhatsMore />
       <Footer />
       <MoveToTop />
