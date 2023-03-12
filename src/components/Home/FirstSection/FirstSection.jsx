@@ -20,22 +20,35 @@ export const FirstSection = () => {
         <div>
           <p>DainikSchool is a home school E-learning</p>
           <p>plateform for students from Nursery to grade 12.</p>
+          <div className="btn-parent">
+            <button className="btn btn-success">Login </button>
+            <button className="btn btn-success">Register</button>
+          </div>
         </div>
         <div>
           <Carousel activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item>
               <img className="d-block w-50" src={boy} alt="First slide" />
-              <Carousel.Caption></Carousel.Caption>
+              <Carousel.Caption>
+                <span>Vadic Maths</span>
+                {/* <p>Nulla vitae elit liber.</p> */}
+              </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <img className="d-block w-50" src={boy2} alt="Second slide" />
 
-              <Carousel.Caption></Carousel.Caption>
+              <Carousel.Caption>
+                <span>Science</span>
+                {/* <p>Nulla vitae elit libero</p> */}
+              </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <img className="d-block w-50" src={boy3} alt="Third slide" />
 
-              <Carousel.Caption></Carousel.Caption>
+              <Carousel.Caption>
+                <span>English</span>
+                {/* <p>Nulla vitae elit libero.</p> */}
+              </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
         </div>
