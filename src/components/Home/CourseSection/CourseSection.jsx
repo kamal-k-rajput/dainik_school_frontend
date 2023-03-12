@@ -16,7 +16,7 @@ const CourseSection = ({ props }) => {
         <div>
           <span>Dainik School.com</span>
           <p>{props.text}</p>
-          <Link className="btn btn-success" to="/courses">
+          <Link className="btn btn-success gradient-btn" to="/courses">
             {props.buttonLabel}
           </Link>
         </div>

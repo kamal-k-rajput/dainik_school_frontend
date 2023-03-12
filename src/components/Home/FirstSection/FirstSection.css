@@ -43,6 +43,7 @@
     padding: 40px;
     background-color: #ff9925;
     border: 1px solid black;
+    margin-top: 40px;
 }
 
 .first-section>div:nth-child(2) {

@@ -19,10 +19,10 @@ export const FirstSection = () => {
       <div className="first-section">
         <div>
           <p>DainikSchool is a home school E-learning</p>
-          <p>plateform for students from Nursery to grade 12.</p>
+          <p>plateform for students from Nursery to Grade 12.</p>
           <div className="btn-parent">
-            <button className="btn btn-success">Login </button>
-            <button className="btn btn-success">Register</button>
+            <button className="btn btn-success gradient-btn">Login </button>
+            <button className="btn btn-success gradient-btn">Register</button>
           </div>
         </div>
         <div>
@@ -30,7 +30,7 @@ export const FirstSection = () => {
             <Carousel.Item>
               <img className="d-block w-50" src={boy} alt="First slide" />
               <Carousel.Caption>
-                <span>Vadic Maths</span>
+                <span>Vedic Maths</span>
                 {/* <p>Nulla vitae elit liber.</p> */}
               </Carousel.Caption>
             </Carousel.Item>

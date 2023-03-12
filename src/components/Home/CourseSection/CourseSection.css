@@ -39,6 +39,7 @@
     font-size: 18px;
     color: #fff;
     font-weight: 600;
+    background-image: linear-gradient(to left, #22c1c3, #fdbb2d);
 }
 
 .course-section>div:nth-child(2)>div:nth-child(2) {
@@ -54,4 +55,8 @@
 .course-section>div:nth-child(2)>div:nth-child(2)>button {
     width: 200px;
     margin: 20px;
+}
+
+.gradient-btn {
+    background-image: linear-gradient(to left, #22c1c3, #fdbb2d);
 }

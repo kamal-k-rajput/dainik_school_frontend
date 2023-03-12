@@ -21,7 +21,7 @@ const SecondSection = () => {
           <input
             type="submit"
             value="STUDENT ENROLL"
-            className="btn btn-success"
+            className="btn btn-success gradient-btn"
           />
         </form>
         <p className="policy-acceptance">

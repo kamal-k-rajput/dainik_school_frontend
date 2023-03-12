@@ -9,10 +9,29 @@
 .intermediate,
 .expert,
 .master {
-    background-color: #347571;
     transform: rotate(45deg);
     color: #fff;
 
+}
+
+.beginner,
+.beginner-text {
+    background-color: #CBEDD5;
+}
+
+.intermediate,
+.intermediate-text {
+    background-color: #97DECE;
+}
+
+.expert,
+.expert-text {
+    background-color: #62B6B7;
+}
+
+.master,
+.master-text {
+    background-color: #439A97;
 }
 
 .level-container {
@@ -31,6 +50,7 @@
     text-align: center;
     margin: 14px 0px 12px 0px;
     color: #fff;
+    color: #000000;
     padding: 14px;
     transform: rotate(-45deg);
 }
@@ -40,12 +60,10 @@
     text-align: center;
     margin: 50px 0px 00px 0;
     padding: 5px 5px;
-    background-color: green;
-    color: #347571;
+    color: #000000;
     border: 1px solid black;
     font-size: 22px;
     font-weight: 400;
-    background-color: #ff9925;
 }
 
 
