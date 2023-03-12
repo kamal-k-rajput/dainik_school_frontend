@@ -54,7 +54,7 @@ td {
     text-align: center;
     overflow: hidden;
     justify-content: space-around;
-    padding: 0 20%;
+    padding: 0;
 }
 
 .text-section-right>img {
