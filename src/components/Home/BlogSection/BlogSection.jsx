@@ -39,14 +39,7 @@ export const BlogSection = () => {
           <span className="blog-title">Title</span>
           <p className="blog-desc">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-            maxime, rem suscipitLorem ipsum dolor sit amet consectetur
-            adipisicing elit. Laboriosam maxime, rem suscipitLorem ipsum dolor
-            sit amet consectetur adipisicing elit. Laboriosam maxime, rem
-            suscipitLorem ipsum dolor sit amet consectetur adipisicing elit.
-            Laboriosam maxime, rem suscipitLorem ipsum dolor sit amet
-            consectetur adipisicing elit. Laboriosam maxime, rem suscipit
-            possimus cumque asperiores error corrupti dignissimos porro
-            laudantium atque cum saepe. Obcaecati architecto aspernatur etc.
+            maxime, rem suscipitLorem ipsum dolor sit.
           </p>
           <button className="btn btn-success">Read more</button>
         </div>

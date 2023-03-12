@@ -9,8 +9,11 @@
 }
 
 .font-size-large {
-    font-size: 21px;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
     color: rgb(3, 83, 76);
+
 }
 
 .second-section>div:nth-child(1) {

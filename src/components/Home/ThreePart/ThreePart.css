@@ -89,14 +89,16 @@
 @media screen and (max-width:720px) {
     .three-part-container {
         flex-direction: column;
-    }
-
-    .three-part-container {
         height: 100%;
+        margin: 0 10px;
     }
 
     .three-part-container img {
         max-width: 100%;
         display: block;
+    }
+
+    .mobile-app-icon {
+        display: flex;
     }
 }

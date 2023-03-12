@@ -21,6 +21,11 @@ export const FirstSection = () => {
           <p>DainikSchool is a home school E-learning</p>
           <p>plateform for students from Nursery to Grade 12.</p>
           <div className="btn-parent">
+            <p>
+              Children no longer need to go outside of home to study tuition.
+              The aim of “Dainik School” is to teach tuition at home by saving
+              children’s time and parents money.
+            </p>
             <button className="btn btn-success gradient-btn">Login </button>
             <button className="btn btn-success gradient-btn">Register</button>
           </div>

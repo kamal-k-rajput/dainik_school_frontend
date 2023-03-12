@@ -1,5 +1,4 @@
 .first-section {
-
     display: flex;
     justify-content: space-evenly;
     font-family: 'Nunito', sans-serif !important;
@@ -11,11 +10,9 @@
     font-weight: 800;
     align-items: center;
     width: 100%;
-    /* background-image: url("../../../ASSETS//IMG//homepage//FirstSection//first_bg.png"); */
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-color: rgb(0 0 0 / 94%); */
 }
 
 .first-section>div:nth-child(1)>p {
@@ -65,7 +62,10 @@
     display: inline !important;
 }
 
-.reduce-opacity {}
+.btn-parent {
+    font-size: 16px;
+    margin-left: 35px;
+}
 
 .carousel-caption {
     margin: 0 10%;
@@ -115,4 +115,28 @@
         margin: 100px 0;
     }
 
+    .first-section>div:nth-child(1)>p {
+
+        line-height: 35px;
+    }
+
+    .first-section>div:nth-child(1)>p {
+        padding: 0px;
+        margin-left: 35px;
+
+    }
+
+    .btn-parent>p {
+        text-align: left;
+    }
+
+    .btn-parent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .first-section .btn-parent>.btn {
+        margin-left: 0;
+    }
 }
