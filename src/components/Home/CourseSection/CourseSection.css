@@ -11,6 +11,12 @@
 
 }
 
+.course-logo {
+    height: 40px !important;
+    width: 100px !important;
+    margin-left: 0 !important;
+}
+
 .course-section>div:nth-child(2) {
     display: flex;
     width: 100%;
@@ -25,14 +31,15 @@
 .course-section>div:nth-child(2) div>img {
     width: 100%;
     height: 175px;
-    margin: 20px;
+    margin: 10px 10px;
+    margin-bottom: 20px;
 }
 
 .course-section>div:nth-child(1) span {
     background-color: #ff9925;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid #347571;
     display: inline-block;
     padding: 5px 20px;
     margin: 0;
@@ -45,11 +52,13 @@
 .course-section>div:nth-child(2)>div:nth-child(2) {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     text-align: justify;
-    padding: 30px;
+    padding: 0 30px 0;
     font-size: 16px;
+    margin-bottom: 20px;
+    color: #fff;
 }
 
 .course-section>div:nth-child(2)>div:nth-child(2)>button {
@@ -58,5 +67,11 @@
 }
 
 .gradient-btn {
+    background-image: linear-gradient(to left, #008CE1, #01AE9E);
     background-image: linear-gradient(to left, #22c1c3, #fdbb2d);
+}
+
+.gradient-btn-blue {
+
+    background-image: linear-gradient(to left, #008CE1, #01AE9E);
 }
