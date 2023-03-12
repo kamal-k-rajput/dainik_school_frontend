@@ -13,6 +13,7 @@ import { Gap } from "../Tools/Gap";
 import { DisplayCourses2 } from "./DisplayCourses/DisplayCourses2";
 import { BasicExample } from "../Header/Navbar/Navbar";
 import { TextSection } from "./TextSection/TextSection";
+import { BlogSection } from "./BlogSection/BlogSection";
 
 export const Home = () => {
   return (
@@ -26,6 +27,7 @@ export const Home = () => {
       <TextSection />
       <ThreeBox />
       <Levels />
+      <BlogSection />
       <WhatsMore />
       <Footer />
     </div>
