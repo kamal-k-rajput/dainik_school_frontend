@@ -9,10 +9,29 @@
 .intermediate,
 .expert,
 .master {
-    background-color: #347571;
     transform: rotate(45deg);
     color: #fff;
 
+}
+
+.beginner,
+.beginner-text {
+    background-color: #CBEDD5;
+}
+
+.intermediate,
+.intermediate-text {
+    background-color: #97DECE;
+}
+
+.expert,
+.expert-text {
+    background-color: #62B6B7;
+}
+
+.master,
+.master-text {
+    background-color: #439A97;
 }
 
 .level-container {
@@ -31,6 +50,7 @@
     text-align: center;
     margin: 14px 0px 12px 0px;
     color: #fff;
+    color: #000000;
     padding: 14px;
     transform: rotate(-45deg);
 }
@@ -40,14 +60,10 @@
     text-align: center;
     margin: 50px 0px 00px 0;
     padding: 5px 5px;
-    background-color: green;
-    color: #fff;
+    color: #000000;
     border: 1px solid black;
     font-size: 22px;
     font-weight: 400;
-    background-color: #347571;
-
-
 }
 
 
@@ -64,7 +80,7 @@
 
     .level-container>div>div>p:nth-child(1) {
         font-size: 24px;
-        margin: 10px 4px;
+        margin: 20px 4px;
         padding: 0;
     }
 
@@ -80,15 +96,23 @@
     }
 }
 
+/* @media screen and (max-width:576px) {} */
+
 @media screen and (max-width:380px) {
     .level-container>div>div {
         width: 50px;
         height: 50px;
         /* border: 3px solid rgb(151, 15, 181); */
         ;
+        border-radius: 10px;
     }
 
     .level-container>div>p:nth-child(2) {
         font-size: 14px;
+    }
+
+    .level-container>div>div>p:nth-child(1) {
+        margin: 5px 4px;
+        /* font-size: 12px; */
     }
 }

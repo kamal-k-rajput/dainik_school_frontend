@@ -16,12 +16,12 @@ const SecondSection = () => {
         <form>
           <label>Name</label>
           <input type="text" placeholder="Name" />
-          <label>Mobile Number</label>
+        <label>Mobile Number</label>
           <input type="number" placeholder="Mobile Number" />
           <input
             type="submit"
             value="STUDENT ENROLL"
-            className="btn btn-success"
+            className="btn btn-success gradient-btn"
           />
         </form>
         <p className="policy-acceptance">

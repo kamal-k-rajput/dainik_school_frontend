@@ -9,6 +9,7 @@
 .three-part-container img {
     max-width: 100%;
     min-height: 300px;
+    max-height: 100%;
 }
 
 .three-part-container>div:nth-child(1) {
@@ -81,20 +82,23 @@
 .mobile-app-icon>img {
     width: 150px;
     min-height: 50px;
+    margin-right: 10px;
 }
 
 
 @media screen and (max-width:720px) {
     .three-part-container {
         flex-direction: column;
-    }
-
-    .three-part-container {
         height: 100%;
+        margin: 0 10px;
     }
 
     .three-part-container img {
         max-width: 100%;
         display: block;
+    }
+
+    .mobile-app-icon {
+        display: flex;
     }
 }

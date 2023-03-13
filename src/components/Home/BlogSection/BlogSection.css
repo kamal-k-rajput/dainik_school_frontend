@@ -1,0 +1,43 @@
+.blog-section {
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    overflow-x: scroll;
+    height: 350px;
+    margin: 20px 5%;
+}
+
+.blog-one {
+    border: 1px solid red;
+    margin: 10px;
+    width: 100vw;
+    text-align: justify;
+}
+
+.blog-section>div {
+    flex: 1;
+}
+
+.blog-img {
+    width: 100%;
+    height: 100%;
+}
+
+.blog-title {
+    display: block;
+    font-weight: 700;
+    font-size: 28px;
+    color: #008eff;
+}
+
+.blog-desc {
+    text-align: justify;
+    margin: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.blog-section-title {
+    text-align: left;
+    margin: 20px 5%;
+}

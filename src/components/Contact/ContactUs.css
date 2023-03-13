@@ -53,5 +53,15 @@
     .contact-us {
         flex-direction: column;
         height: 700px;
+
     }
+
+    .contact-container {
+        margin: 50px 0;
+    }
+
+    .contact-us>div:nth-child(1)>img {
+        width: 90%;
+    }
+
 }

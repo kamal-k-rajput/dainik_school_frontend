@@ -1,14 +1,14 @@
 .threebox-container {
     display: flex;
-    height: 200px;
-    margin: 5% 10%;
+    height: 175px;
+    margin: 5% 5%;
 }
 
 .threebox-container>div {
     flex: 1;
     border: 1px solid #000;
     margin: 0 20px;
-    border-bottom: 7px solid red;
+    border-bottom: 7px solid #347571;
     border-radius: 15px;
     display: flex;
     flex-direction: column;

@@ -1,5 +1,4 @@
 .second-section {
-    /* height: 850px; */
     width: 100%;
     display: flex;
     background-color: #fff;
@@ -7,19 +6,24 @@
     justify-content: space-around;
     z-index: 10;
     margin-bottom: 0;
+}
+
+.font-size-large {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+    color: rgb(3, 83, 76);
 
 }
 
-
 .second-section>div:nth-child(1) {
     flex: 6;
-    /* margin: 14% 0 0 5%; */
     font-size: 2.5rem;
-    /* transform: scale(2.0, 1.2); */
     display: flex;
     flex-direction: column;
     line-height: 30px;
     color: #404040;
+    color: #347571;
     background-color: #fff;
     text-shadow: -2px -2px #b6b4b5;
     font-family: 'Poppins', sans-serif !important;
@@ -30,9 +34,8 @@
 
 .second-section>div:nth-child(2) {
     flex: 3;
-    /* border: 3px solid purple; */
     background-color: #fff;
-    margin: 30px 20px;
+    margin: 30px 100px;
     border-radius: 15px;
     z-index: 12;
     font-size: 13px;
@@ -44,8 +47,6 @@
     padding: 0px;
     text-align: justify;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-
 }
 
 .policy-acceptance {
@@ -66,7 +67,6 @@
     width: 100%;
     height: 50px;
     font-size: 22px;
-
 }
 
 .btn-success {
@@ -75,6 +75,7 @@
     padding-top: .275rem !important;
     padding-bottom: .275rem !important;
     background-color: #347571;
+    /* background-image: linear-gradient(to left, #22c1c3, #fdbb2d); */
 }
 
 .second-section-form-container {
@@ -84,7 +85,6 @@
 
 .second-section-form-container>form {
     margin: 20px 0;
-
 }
 
 @media screen and (max-width:1080px) {
@@ -101,17 +101,7 @@
     .second-section>div:nth-child(1) {
         flex: 5;
     }
-}
 
-@media screen and (max-width:900px) {
-
-    .second-section>div:nth-child(1) {
-        flex: 4;
-    }
-
-}
-
-@media screen and (max-width:1080px) {
     .second-section>div:nth-child(2) {
         font-size: 13px;
         padding: 0 20px;
@@ -122,6 +112,16 @@
     }
 }
 
+
+@media screen and (max-width:900px) {
+
+    .second-section>div:nth-child(1) {
+        flex: 4;
+    }
+
+}
+
+
 @media screen and (max-width:720px) {
     .second-section {
         flex-direction: column;
@@ -129,8 +129,6 @@
     }
 
     .second-section>div:nth-child(2) {
-        /* min-width: 320px */
+        margin: 0 auto;
     }
-
-    .font-size-large {}
 }

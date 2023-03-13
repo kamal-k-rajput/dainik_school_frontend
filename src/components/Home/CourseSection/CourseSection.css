@@ -4,24 +4,25 @@
     align-items: center;
     justify-content: center;
     margin: 20px 40px;
-    /* height: 310px; */
     border-radius: 15px;
     background-color: #F2F2F2;
-    font-size: 16px;
+    font-size: 12px;
     box-shadow: 0 27px 20px -19px rgb(122 62 134 / 31%);
 
 }
 
+.course-logo {
+    height: 40px !important;
+    width: 100px !important;
+    margin-left: 0 !important;
+}
+
 .course-section>div:nth-child(2) {
     display: flex;
-    /* border: 2px solid red; */
-    /* justify-content: space-around; */
     width: 100%;
 }
 
-.course-section>div:nth-child(2)>div:nth-child(2) {
-    /* border: 2px solid #0a827e; */
-}
+.course-section>div:nth-child(2)>div:nth-child(2) {}
 
 .course-section>div:nth-child(2) div {
     flex: 1;
@@ -29,31 +30,35 @@
 
 .course-section>div:nth-child(2) div>img {
     width: 100%;
-    max-height: 450px;
-    margin: 20px;
+    height: 175px;
+    margin: 10px 10px;
+    margin-bottom: 20px;
 }
 
-.course-section span {
-    background-color: #62cc70;
+.course-section>div:nth-child(1) span {
+    background-color: #ff9925;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid #347571;
     display: inline-block;
     padding: 5px 20px;
     margin: 0;
     font-size: 18px;
     color: #fff;
     font-weight: 600;
+    background-image: linear-gradient(to left, #22c1c3, #fdbb2d);
 }
 
 .course-section>div:nth-child(2)>div:nth-child(2) {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     text-align: justify;
-    padding: 30px;
+    padding: 0 30px 0;
     font-size: 16px;
+    margin-bottom: 20px;
+    color: #fff;
 }
 
 .course-section>div:nth-child(2)>div:nth-child(2)>button {
@@ -61,3 +66,12 @@
     margin: 20px;
 }
 
+.gradient-btn {
+    background-image: linear-gradient(to left, #008CE1, #01AE9E);
+    background-image: linear-gradient(to left, #22c1c3, #fdbb2d);
+}
+
+.gradient-btn-blue {
+
+    background-image: linear-gradient(to left, #008CE1, #01AE9E);
+}

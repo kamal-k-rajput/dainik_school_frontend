@@ -19,34 +19,40 @@ export const FirstSection = () => {
       <div className="first-section">
         <div>
           <p>DainikSchool is a home school E-learning</p>
-          <p>plateform for students from Nursery to grade 12.</p>
+          <p>plateform for students from Nursery to Grade 12.</p>
+          <div className="btn-parent">
+            <p>
+              Children no longer need to go outside of home to study tuition.
+              The aim of “Dainik School” is to teach tuition at home by saving
+              children’s time and parents money.
+            </p>
+            <button className="btn btn-success gradient-btn">Login </button>
+            <button className="btn btn-success gradient-btn">Register</button>
+          </div>
         </div>
         <div>
           <Carousel activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item>
               <img className="d-block w-50" src={boy} alt="First slide" />
               <Carousel.Caption>
-                {/* <h3>First slide label</h3> */}
-                {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
+                <span>Vedic Maths</span>
+                {/* <p>Nulla vitae elit liber.</p> */}
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <img className="d-block w-50" src={boy2} alt="Second slide" />
 
               <Carousel.Caption>
-                {/* <h3>Second slide label</h3> */}
-                {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
-                x
+                <span>Science</span>
+                {/* <p>Nulla vitae elit libero</p> */}
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <img className="d-block w-50" src={boy3} alt="Third slide" />
 
               <Carousel.Caption>
-                {/* <h3>Third slide label</h3> */}
-                <p>
-                  {/* Praesent commodo cursus magna, vel scelerisque nisl consectetur. */}
-                </p>
+                <span>English</span>
+                {/* <p>Nulla vitae elit libero.</p> */}
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
