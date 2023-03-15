@@ -48,9 +48,7 @@ export const NavbarLinks = () => {
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="live-classes">LIVE CLASSES</Nav.Link>
-              <Nav.Link href="https://nrichlearning.com/auth/login">
-                <Button variant="success">Log In</Button>{" "}
-              </Nav.Link>
+              
             </Nav>
           </Navbar.Collapse>
         </Container>

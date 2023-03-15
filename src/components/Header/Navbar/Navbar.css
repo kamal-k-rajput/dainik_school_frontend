@@ -72,7 +72,7 @@ a {
 }
 
 .navbar-logo {
-    height: 4vh;
+    height: 55px;
 }
 
 .navbar-nav {
@@ -84,5 +84,9 @@ a {
     .navbar>.container {
         margin-left: 10px !important;
         margin-right: 10px !important;
+    }
+
+    .navbar-logo {
+        height: 17vh;
     }
 }
