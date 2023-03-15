@@ -29,8 +29,8 @@ export const TextSection = () => {
         </div>
         <div>
           <div className="mobile-app-icon">
-            <img src={playStore} alt="playstore" />
             <img src={appleStore} alt="playstore" />
+            <img src={playStore} alt="playstore" />
           </div>
         </div>
       </div>

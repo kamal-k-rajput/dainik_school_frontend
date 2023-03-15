@@ -19,6 +19,7 @@ import { Faculty } from "./components/Faculty/Faculty";
 import { PracticeSession } from "./components/PracticeSession/PracticeSession";
 import { NewsAndBlogs } from "./components/NewsNblogs/NewsAndBlogs";
 import { DrivingLicense } from "./components/DrivingLicense/DrivingLicense";
+import { AboutUs } from "./components/About/AboutUs";
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
           <Route path="/Contact-us" element={<ContactUs />} />
           <Route path="/Register" element={<Register />} />
           <Route path="/Feedback" element={<Feedback />} />
-          <Route path="/About" element={<About />} />
+          <Route path="/About" element={<AboutUs />} />
           <Route path="/live-classes" element={<LiveClasses />} />
           <Route path="/library" element={<Library />} />
           <Route path="/classes" element={<Classes />} />

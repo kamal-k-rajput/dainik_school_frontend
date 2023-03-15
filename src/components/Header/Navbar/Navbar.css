@@ -33,6 +33,11 @@ a {
 
 }
 
+.navbar-toggler {
+    background-color: #347571 !important;
+    color: white !important;
+}
+
 .navbar>.container {
     margin: 0 10px;
 }
