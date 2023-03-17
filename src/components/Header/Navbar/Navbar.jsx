@@ -5,7 +5,6 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import Button from "react-bootstrap/Button";
 import "./Navbar.css";
 import HorizoantalLine from "../../HorizoantalLine/HorizoantalLine";
 
@@ -23,7 +22,12 @@ export const NavbarLinks = () => {
           <Navbar.Brand href="/">
             <img src={Logo} alt="logo" className="navbar-logo" title={"logo"} />
           </Navbar.Brand>
-              <Nav.Link href="live-classes">Log In</Nav.Link>
+          <Nav.Link
+            href="live-classes"
+            className="btn btn-success btn-gradient login-btn-nav"
+          >
+            Log In
+          </Nav.Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto"></Nav>

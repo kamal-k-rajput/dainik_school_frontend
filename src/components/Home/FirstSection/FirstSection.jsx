@@ -26,8 +26,14 @@ export const FirstSection = () => {
               The aim of “Dainik School” is to teach tuition at home by saving
               children’s time and parents money.
             </p>
-            <button className="btn btn-success gradient-btn">Login </button>
-            <button className="btn btn-success gradient-btn">Register</button>
+            <div>
+              <button className="btn btn-success gradient-btn">Login </button>
+              <button className="btn btn-success gradient-btn">Register</button>
+            </div>
+            <div>
+              <button className="btn btn-success gradient-btn">Test </button>
+              <button className="btn btn-success gradient-btn">Quiz</button>
+            </div>
           </div>
         </div>
         <div>

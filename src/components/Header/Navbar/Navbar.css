@@ -33,10 +33,6 @@ a {
 
 }
 
-.navbar-toggler {
-    background-color: #347571 !important;
-    color: white !important;
-}
 
 .navbar>.container {
     margin: 0 10px;
@@ -57,7 +53,13 @@ a {
     font-weight: 500 !important;
     color: #347571 !important;
     padding: 0 !important;
-    margin: 25px 0 0 35px;
+    margin: 10px 0 0 35px;
+}
+
+.login-btn-nav {
+    color: #fff !important;
+    margin-top: 4px;
+    padding: 20px !important;
 }
 
 .nav-link>a {
@@ -77,7 +79,7 @@ a {
 }
 
 .navbar-logo {
-    height: 55px;
+    height: 45px;
 }
 
 .navbar-nav {
@@ -92,6 +94,6 @@ a {
     }
 
     .navbar-logo {
-        height: 7vh;
+        height: 17vh;
     }
 }
