@@ -60,6 +60,7 @@ a {
     color: #fff !important;
     margin-top: 4px;
     padding: 20px !important;
+    margin-left: 50% !important;
 }
 
 .nav-link>a {
@@ -86,6 +87,15 @@ a {
     background-color: #fff !important;
 }
 
+@media screen and (max-width:800px) {
+
+
+    .login-btn-nav {
+        margin-right: 0 !important;
+        margin-left: 20% !important;
+    }
+}
+
 @media screen and (max-width:576px) {
 
     .navbar>.container {
@@ -93,7 +103,12 @@ a {
         margin-right: 10px !important;
     }
 
-    /* .navbar-logo {
-        height: 17vh;
-    } */
+
+
+    .login-btn-nav {
+        margin-right: 0 !important;
+        margin-left: 0% !important;
+        border: 5px solid red;
+    }
+
 }
