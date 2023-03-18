@@ -54,7 +54,7 @@
     width: 400px;
     height: 400px !important;
     border: 2px solid rgb(255, 255, 255) !important;
- 
+
 
 }
 
@@ -71,18 +71,16 @@
     margin-left: 40px;
     margin-top: 20px;
     text-align: justify;
-    font-weight:300 ;
+    font-weight: 300;
 }
 
 .carousel-caption {
-    margin: -20px 10%;
+    margin: 20px 10%;
     width: 50%;
-    background-color: rgb(0 0 0 / 50%);
+    /* background-color: rgb(0 0 0 / 50%); */
     color: #fff;
     font-weight: 700;
     font-size: 48px !important;
-    padding: 20%;
-    border-radius: 20px;
 }
 
 .first-section .btn-parent>div {
@@ -123,9 +121,16 @@
         margin-top: 100px;
     }
 
+    .carousel-caption {
+        font-size: 20px !important;
+    }
 }
 
 @media screen and (max-width:576px) {
+    .carousel-caption {
+        margin-top: -10%;
+        padding: 100px 0;
+    }
     .first-section>div:nth-child(1) {
         font-size: 22px;
     }
