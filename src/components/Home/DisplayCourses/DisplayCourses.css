@@ -1,7 +1,7 @@
 .display-course-container {
+    margin: 0 40px;
     display: flex;
     justify-content: space-evenly;
-    margin: 0px 0px 0px;
     height: 300px;
 }
 
