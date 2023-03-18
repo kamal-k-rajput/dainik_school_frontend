@@ -27,8 +27,8 @@ export const Home = () => {
       <TextSection />
       <ThreeBox />
       <Levels />
-      <BlogSection />
       <WhatsMore />
+      <BlogSection />
       <Footer />
     </div>
   );

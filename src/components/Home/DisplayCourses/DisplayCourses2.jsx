@@ -12,7 +12,7 @@ export const DisplayCourses2 = () => {
         props={{
           img: classNinth,
           title: "Classes 9-12",
-          text: `We works to build solid amp; strong foundation for developing brains`,
+          text: `We works to build solid & strong foundation for developing brains`,
           buttonLabel: "Explore",
         }}
       />
