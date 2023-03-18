@@ -18,8 +18,8 @@ export const FirstSection = () => {
       <HorizoantalLine className="first-hr-line" />
       <div className="first-section">
         <div>
-          <p>DainikSchool is a home school E-learning</p>
-          <p>plateform for students from Nursery to Grade 12.</p>
+          <p>DainikSchool is a home school E-learning
+          plateform for students from Nursery to Grade 12.</p>
           <div className="btn-parent">
             <p>
              Now Children no longer need to go outside of home to study tuition.
