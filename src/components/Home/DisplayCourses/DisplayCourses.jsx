@@ -11,7 +11,7 @@ export const DisplayCourses = () => {
         props={{
           img: playschool,
           title: "Classes LKG - 3",
-          text: `Now children’s no longer need learning with Animation videos Early learning program for ignited minds.`,
+          text: `Early learning with Animated videos for Ignited Mind.`,
           buttonLabel: "Explore",
         }}
       />

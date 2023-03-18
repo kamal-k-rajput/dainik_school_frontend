@@ -20,7 +20,7 @@ export const DisplayCourses2 = () => {
         props={{
           img: language,
           title: "Languages",
-          text: `Live learning programme for trending and versatile language`,
+          text: `Live learning programme for trending and versatile language.`,
           buttonLabel: "Explore",
         }}
       />
