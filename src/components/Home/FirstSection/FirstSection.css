@@ -79,6 +79,7 @@
     color: #fff;
     font-weight: 700;
     font-size: 48px !important;
+    padding: 20%
 }
 
 .first-section .btn-parent>div {
@@ -139,7 +140,7 @@
 
     .first-section>div:nth-child(1)>p {
         padding: 0px;
-        margin-left: 35px;
+        margin:0 15px;
 
     }
 
