@@ -54,6 +54,7 @@
     width: 400px;
     height: 400px !important;
     border: 2px solid rgb(255, 255, 255) !important;
+ 
 
 }
 
@@ -61,6 +62,7 @@
     border: 2px solid rgb(255, 255, 255);
     margin-right: 0%;
     display: inline !important;
+    border-radius: 20px !important;
 }
 
 .btn-parent {
@@ -73,13 +75,14 @@
 }
 
 .carousel-caption {
-    margin: 20px 10%;
+    margin: -20px 10%;
     width: 50%;
     background-color: rgb(0 0 0 / 50%);
     color: #fff;
     font-weight: 700;
     font-size: 48px !important;
     padding: 20%;
+    border-radius: 20px;
 }
 
 .first-section .btn-parent>div {
