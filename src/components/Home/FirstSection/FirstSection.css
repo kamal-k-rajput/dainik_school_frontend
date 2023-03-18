@@ -85,7 +85,7 @@
 
 .first-section .btn-parent>div {
     width: 200px;
-    margin: 10px;
+    margin: 10px 100px;
     display: flex;
 }
 
@@ -94,7 +94,7 @@
     width: 218px;
     display: flex;
     justify-content: space-between;
-
+    margin-left: 50px;
 }
 
 @media screen and (max-width:1080px) {
@@ -161,6 +161,8 @@
 
     .btn-parent {
         display: flex;
+        margin-left: 0;
+        margin-right: 0;
         flex-direction: column;
         align-items: center;
     }
