@@ -53,14 +53,13 @@ a {
     font-weight: 500 !important;
     color: #347571 !important;
     padding: 0 !important;
-    margin: 10px 0 0 35px;
+    margin: 0 20px 0 15px;
 }
 
 .login-btn-nav {
     color: #fff !important;
     margin-top: 4px;
     padding: 5px !important;
-    margin-left: 55% !important;
     font-family: 600;
 }
 
@@ -88,15 +87,19 @@ a {
     background-color: #fff !important;
 }
 
+.small-screen {
+    display: none;
+
+}
 @media screen and (max-width:800px) {
+    .large-screen {
+        display: none;
+    }
 
-
-    .login-btn-nav {
-        margin-right: 0 !important;
-        margin-left: 20% !important;
+    .small-screen {
+        display: block;
     }
 }
-
 @media screen and (max-width:576px) {
 
     .navbar>.container {
@@ -106,9 +109,13 @@ a {
 
 
 
-    .login-btn-nav {
-        margin-right: 0 !important;
-        margin-left: 10% !important;
-    }
 
+
+}
+
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    display: none;
 }

@@ -24,7 +24,7 @@ export const NavbarLinks = () => {
           </Navbar.Brand>
           <Nav.Link
             href="live-classes"
-            className="btn btn-success btn-gradient login-btn-nav"
+            className="btn btn-success btn-gradient login-btn-nav small-screen"
           >
             Log In
           </Nav.Link>
@@ -56,6 +56,12 @@ export const NavbarLinks = () => {
             </Nav>
           </Navbar.Collapse>
         </Container>
+        <Nav.Link
+          href="live-classes"
+          className="btn btn-success btn-gradient login-btn-nav large-screen"
+        >
+          Log In
+        </Nav.Link>
       </Navbar>
       <HorizoantalLine />
     </div>
