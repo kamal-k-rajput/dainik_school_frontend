@@ -59,8 +59,9 @@ a {
 .login-btn-nav {
     color: #fff !important;
     margin-top: 4px;
-    padding: 20px !important;
+    padding: 5px !important;
     margin-left: 50% !important;
+    font-family: 600;
 }
 
 .nav-link>a {
@@ -108,7 +109,6 @@ a {
     .login-btn-nav {
         margin-right: 0 !important;
         margin-left: 0% !important;
-        border: 5px solid red;
     }
 
 }
