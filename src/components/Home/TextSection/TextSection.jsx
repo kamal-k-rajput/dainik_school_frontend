@@ -28,10 +28,12 @@ export const TextSection = () => {
           <p></p>
         </div>
         <div>
-          <div className="mobile-app-icon">
-            <img src={appleStore} alt="playstore" />
-            <img src={playStore} alt="playstore" />
-          </div>
+          <Link to="https://play.google.com/store/apps/details?id=com.nrichlearning.dainikschool">
+            <div className="mobile-app-icon">
+              <img src={appleStore} alt="playstore" />
+              <img src={playStore} alt="playstore" />
+            </div>
+          </Link>
         </div>
       </div>
     </div>

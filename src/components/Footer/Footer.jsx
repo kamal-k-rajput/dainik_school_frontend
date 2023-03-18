@@ -37,7 +37,7 @@ export const Footer = () => {
           <h3>Educator</h3>
           <div className="footer-vertical align-left footer-links">
             <Link to="/apply-now"> Apply Now</Link>
-            <Link to="/Help">Educator Policy</Link>
+            <Link to="/educator-policy">Educator Policy</Link>
           </div>
         </div>
       </footer>
