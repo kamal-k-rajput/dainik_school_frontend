@@ -19,7 +19,7 @@ export const DisplayCourses = () => {
         props={{
           img: juniorClass,
           title: "Classes 4 - 8",
-          text: `Attractive learning to mold young minds into strong individuals by animation &amp; live tutoring.`,
+          text: `Attractive learning to mold young minds into strong individuals by animation amp; live tutoring.`,
           buttonLabel: "Explore",
         }}
       />

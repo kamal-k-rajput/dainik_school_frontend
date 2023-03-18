@@ -129,6 +129,6 @@
     }
 
     .second-section>div:nth-child(2) {
-        margin: 0 auto;
+        margin: 30px auto;
     }
 }

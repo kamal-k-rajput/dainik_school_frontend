@@ -168,6 +168,10 @@
     .first-section .btn-parent>div {
         margin-left: 0;
     }
+
+    .w-50 {
+        width: 70% !important;
+    }
 }
 
 .carousel-indicators {
