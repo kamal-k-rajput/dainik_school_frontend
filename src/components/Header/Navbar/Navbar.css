@@ -89,7 +89,7 @@ a {
 
 .small-screen {
     display: none;
-
+margin-left: 50px;
 }
 @media screen and (max-width:800px) {
     .large-screen {
