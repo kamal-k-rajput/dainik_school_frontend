@@ -68,7 +68,8 @@
 .btn-parent {
     font-size: 18px;
     line-height: 27px;
-    margin-left: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 20px;
     text-align: justify;
     font-weight: 300;
@@ -131,6 +132,7 @@
         margin-top: -10%;
         padding: 100px 0;
     }
+
     .first-section>div:nth-child(1) {
         font-size: 22px;
     }
@@ -152,11 +154,11 @@
     .first-section>div:nth-child(1)>p {
         padding: 0px;
         margin: 0 15px;
-
+        text-align: justify;
     }
 
     .btn-parent>p {
-        text-align: left;
+        text-align: justify;
     }
 
     .btn-parent {
