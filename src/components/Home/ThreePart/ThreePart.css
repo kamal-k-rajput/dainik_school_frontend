@@ -1,8 +1,7 @@
 .three-part-container {
     display: flex;
-    margin: 40px;
+    margin: 40px 5%;
     font-size: 14px;
-    margin-right: 60px;
     height: 400px;
 }
 
@@ -10,6 +9,7 @@
     max-width: 100%;
     min-height: 300px;
     max-height: 100%;
+    margin-right: 50%;
 }
 
 .three-part-container>div:nth-child(1) {
@@ -30,7 +30,7 @@
 .three-part-container>div div {
 
     border: 1px solid rgb(0, 0, 0);
-    margin: 10px;
+    margin: 10px 0;
 }
 
 .text-on-design {
@@ -90,7 +90,7 @@
     .three-part-container {
         flex-direction: column;
         height: 100%;
-        margin: 0 10px;
+        margin: 0 5%;
     }
 
     .three-part-container img {

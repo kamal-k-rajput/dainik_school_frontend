@@ -28,62 +28,14 @@ export const TextSection = () => {
           <p></p>
         </div>
         <div>
-          <div className="mobile-app-icon">
-            <img src={playStore} alt="playstore" />
-            <img src={appleStore} alt="playstore" />
-          </div>
+          <Link to="https://play.google.com/store/apps/details?id=com.nrichlearning.dainikschool">
+            <div className="mobile-app-icon">
+              <img src={appleStore} alt="playstore" />
+              <img src={playStore} alt="playstore" />
+            </div>
+          </Link>
         </div>
       </div>
     </div>
   );
 };
-
-{
-  /* <div className="text-section-left">
-  <div>
-    <p>Learn How to Grow</p>
-  </div>
-  <div className="hm-vision-list">
-    {" "}
-    <table>
-      <tbody>
-        <tr>
-          <td>
-            {" "}
-            <BsArrow90DegRight />
-          </td>
-          <td>Visit to dainikschool.com</td>
-        </tr>
-        <tr>
-          <td>
-            {" "}
-            <BsArrow90DegRight />
-          </td>
-          <td>Choose Your Ideal Career</td>
-        </tr>
-        <tr>
-          <td>
-            {" "}
-            <BsArrow90DegRight />
-          </td>
-          <td>Register as student</td>
-        </tr>
-        <tr>
-          <td>
-            {" "}
-            <BsArrow90DegRight />
-          </td>
-          <td>Pay for a course or Specialization</td>
-        </tr>
-        <tr>
-          <td>
-            {" "}
-            <BsArrow90DegRight />
-          </td>
-          <td>Grow your career</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>; */
-}

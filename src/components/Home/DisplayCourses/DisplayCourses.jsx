@@ -11,7 +11,7 @@ export const DisplayCourses = () => {
         props={{
           img: playschool,
           title: "Classes LKG - 3",
-          text: `Learning with Animation videos Early learning program for ignited minds.`,
+          text: `Early learning with Animated videos for Ignited Mind.`,
           buttonLabel: "Explore",
         }}
       />
@@ -19,7 +19,7 @@ export const DisplayCourses = () => {
         props={{
           img: juniorClass,
           title: "Classes 4 - 8",
-          text: `Vision is to make Attractive Learning with animation and live tutring.`,
+          text: `Attractive learning to mold young minds into strong individuals by animation & live tutoring.`,
           buttonLabel: "Explore",
         }}
       />

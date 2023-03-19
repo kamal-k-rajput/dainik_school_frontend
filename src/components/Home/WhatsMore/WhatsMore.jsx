@@ -20,7 +20,7 @@ export const WhatsMore = () => {
       <VerticalCards
         cardProps={{
           img: shivam,
-          title: "Share Your Expertise",
+          title: "Share Your Expertise at Dainik School",
           text: "",
           buttonLabel: "Become a Educator",
           link: "/apply-now",

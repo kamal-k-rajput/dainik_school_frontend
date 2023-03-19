@@ -29,9 +29,11 @@ a {
     margin: 0 auto !important;
     margin-bottom: 0 !important;
     padding: 0 !important;
+    margin-left: 5% !important;
 
 
 }
+
 
 .navbar>.container {
     margin: 0 10px;
@@ -52,7 +54,14 @@ a {
     font-weight: 500 !important;
     color: #347571 !important;
     padding: 0 !important;
-    margin: 25px 0 0 35px;
+    margin: 0 20px 0 15px;
+}
+
+.login-btn-nav {
+    color: #fff !important;
+    margin-top: 4px;
+    padding: 5px !important;
+    font-family: 600;
 }
 
 .nav-link>a {
@@ -72,11 +81,30 @@ a {
 }
 
 .navbar-logo {
-    height: 4vh;
+    height: 45px;
 }
 
 .navbar-nav {
     background-color: #fff !important;
+}
+
+.small-screen {
+    display: none;
+}
+
+.large-screen {
+    margin: 0 5% 0 0;
+    width: 80px;
+}
+
+@media screen and (max-width:800px) {
+    .large-screen {
+        display: none;
+    }
+
+    .small-screen {
+        display: block;
+    }
 }
 
 @media screen and (max-width:576px) {
@@ -85,4 +113,16 @@ a {
         margin-left: 10px !important;
         margin-right: 10px !important;
     }
+
+
+
+
+
+}
+
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    display: none;
 }

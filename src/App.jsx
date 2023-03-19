@@ -8,8 +8,6 @@ import { Courses } from "./components/Courses/Courses";
 import { PrivacyPolicy } from "./components/PrivacyPolicy/PrivacyPolicy";
 import { ContactUs } from "./components/Contact/ContactUs";
 import { Feedback } from "./components/Feedback/Feedback";
-import { About } from "./components/About/About";
-import "./App.css";
 import { LiveClasses } from "./components/Courses/LiveClasses/LiveClasses";
 import { Library } from "./components/Library/Library";
 import { Classes } from "./components/Courses/Classes/Classes";
@@ -19,6 +17,9 @@ import { Faculty } from "./components/Faculty/Faculty";
 import { PracticeSession } from "./components/PracticeSession/PracticeSession";
 import { NewsAndBlogs } from "./components/NewsNblogs/NewsAndBlogs";
 import { DrivingLicense } from "./components/DrivingLicense/DrivingLicense";
+import { AboutUs } from "./components/About/AboutUs";
+import { EducatorPolicy } from "./components/Others/EducatorPolicy";
+import "./App.css";
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
           <Route path="/Contact-us" element={<ContactUs />} />
           <Route path="/Register" element={<Register />} />
           <Route path="/Feedback" element={<Feedback />} />
-          <Route path="/About" element={<About />} />
+          <Route path="/About" element={<AboutUs />} />
           <Route path="/live-classes" element={<LiveClasses />} />
           <Route path="/library" element={<Library />} />
           <Route path="/classes" element={<Classes />} />
@@ -43,7 +44,7 @@ function App() {
           <Route path="/faculty" element={<Faculty />} />
           <Route path="/practice-session" element={<PracticeSession />} />
           <Route path="/license" element={<DrivingLicense />} />
-          <Route path="/educator-policy" element={<About />} />
+          <Route path="/educator-policy" element={<EducatorPolicy />} />
           <Route
             path="/previous-year-question-paper"
             element={<PreviousYearQuestions />}

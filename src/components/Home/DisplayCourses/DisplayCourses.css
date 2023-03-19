@@ -1,7 +1,7 @@
 .display-course-container {
+    margin: 0 5%;
     display: flex;
     justify-content: space-evenly;
-    margin: 10px 2.5% 0;
     height: 300px;
 }
 
@@ -9,12 +9,16 @@
     justify-content: space-between;
     flex: 1;
     display: flex;
-    margin: 10px 2.5%;
+    margin: 10px 0px 10px 20px;
 }
 
 @media screen and (max-width:720px) {
     .display-course-container {
         flex-direction: column;
         height: 100%;
+    }
+
+    .display-course-container>div {
+        margin: 10px 20px;
     }
 }

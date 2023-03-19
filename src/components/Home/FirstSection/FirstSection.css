@@ -17,11 +17,12 @@
 
 .first-section>div:nth-child(1)>p {
     text-align: start;
-    margin: 0;
-    padding: 0 0 0 50px;
-    line-height: 65px;
-    color: #ff9925;
+    font-size: 35px;
+    margin: 0 5%;
+    margin-left: 10%;
+    line-height: 42px;
     color: #fff;
+    font-weight: 800;
 }
 
 .first-section>div:nth-child(1) {
@@ -53,27 +54,48 @@
     height: 400px !important;
     border: 2px solid rgb(255, 255, 255) !important;
 
+
 }
 
 .d-block {
     border: 2px solid rgb(255, 255, 255);
-    border-radius: 5%;
-    margin-right: 0%;
+    margin-right: -30%;
     display: inline !important;
+    border-radius: 20px !important;
 }
 
 .btn-parent {
-    font-size: 16px;
-    margin-left: 35px;
+    font-size: 18px;
+    line-height: 27px;
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-top: 30px;
+    font-weight: 300;
+    text-align: left;
+
 }
 
 .carousel-caption {
-    margin: 0 10%;
+    margin: 20px 24%;
     width: 50%;
-    background-color: rgb(0 0 0 / 50%);
+    /* background-color: rgb(0 0 0 / 50%); */
     color: #fff;
     font-weight: 700;
     font-size: 48px !important;
+}
+
+.first-section .btn-parent>div {
+    width: 350px;
+    margin: 10px 0px;
+    display: flex;
+}
+
+
+.two-btn-container {
+    width: 218px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
 }
 
 @media screen and (max-width:1080px) {
@@ -89,6 +111,7 @@
 
     .first-section {
         height: 370px;
+        height: 100%;
     }
 
     .first-section>div:nth-child(1) {
@@ -99,9 +122,17 @@
         margin-top: 100px;
     }
 
+    .carousel-caption {
+        font-size: 20px !important;
+    }
 }
 
 @media screen and (max-width:576px) {
+    .carousel-caption {
+        margin-top: -10%;
+        padding: 100px 0;
+    }
+
     .first-section>div:nth-child(1) {
         font-size: 22px;
     }
@@ -122,21 +153,31 @@
 
     .first-section>div:nth-child(1)>p {
         padding: 0px;
-        margin-left: 35px;
-
+        margin: 0 5% !important;
     }
 
     .btn-parent>p {
-        text-align: left;
+        text-align: justify;
+        margin: 0 5% !important;
     }
 
     .btn-parent {
         display: flex;
+        margin-left: 0;
+        margin-right: 0;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
-    .first-section .btn-parent>.btn {
+    .first-section .btn-parent>div {
         margin-left: 0;
     }
+
+    .w-50 {
+        width: 80% !important;
+    }
+}
+
+.carousel-indicators {
+    display: none;
 }
