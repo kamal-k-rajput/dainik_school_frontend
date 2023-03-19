@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import logo from "../../../ASSETS/IMG/Logo/logo.png";
 
 const CourseSection = ({ props }) => {
-  console.log(props.img);
   return (
     <div className="course-section gradient-btn-blue">
       <div>
