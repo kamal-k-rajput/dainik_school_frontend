@@ -1,123 +1,126 @@
-.logo {
-    flex: 2;
-}
-
-.logo>.dainik_school_logo {
-    width: 200px;
-    height: 100px;
-}
-
-.navbar-logo {
-    height: 7vh;
-    margin-top: 2px !important;
-    color: black;
-}
-
 a {
     text-decoration: none;
     color: "#fff";
 }
 
-.navbar {
-    color: #347571 !important;
-    height: 9vh;
-    z-index: 12000;
-    background-color: #fff;
-}
-
-.container {
-    margin: 0 auto !important;
-    margin-bottom: 0 !important;
-    padding: 0 !important;
-    margin-left: 5% !important;
-
-
-}
-
-
-.navbar>.container {
-    margin: 0 10px;
-}
-
 .navbar-expand-lg {
     background-color: #fff !important;
-    padding: 0;
-    height: 60px;
+    height: 56px !important;
 }
 
-.navbar-component {
-    color: green;
+.navbar-container {
+    /* border: 2px solid hotpink; */
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 5%;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    align-items: center;
+    z-index: 15;
 }
+
+.navbar-logo {
+    width: 150px;
+}
+
 
 .nav-link {
-    font-size: 16px !important;
-    font-weight: 500 !important;
-    color: #347571 !important;
-    padding: 0 !important;
-    margin: 0 20px 0 15px;
+    color: #347571;
+    font-weight: 500;
+    font-size: 18px;
 }
 
-.login-btn-nav {
-    color: #fff !important;
-    margin-top: 4px;
-    padding: 5px !important;
-    font-family: 600;
+.navbar-container .right-box {
+    display: flex;
+
 }
 
-.nav-link>a {
-    padding: 10px 0 !important;
+.links-container>span>a {
+    color: #347571;
+    margin: 0 30px;
 }
 
-.nav-link>button {
-    font-size: 16px !important;
-    font-weight: 500 !important;
-    margin: 0 !important;
-    margin-bottom: 5px !important;
-    margin-top: -5px !important
+.classes-container {
+    position: relative;
+    background-color: pink;
 }
+
+.links-container {
+    display: flex;
+}
+
+.expand-link-container {
+
+    display: flex;
+    position: fixed;
+    overflow: scroll;
+    flex-direction: column;
+    background-color: green;
+    color: white;
+    padding: 0 10px;
+    display: none;
+}
+
+.expand-link-container>span {
+    display: inline-block;
+    display: none;
+}
+
+.show-expand {
+    display: inline-block;
+}
+
+.nav-logo {
+    width: 150px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.login-btn-container>button {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 18px !important;
+}
+
+
 
 .btn {
     background-color: #347571;
 }
 
-.navbar-logo {
-    height: 45px;
+.navbar-collapse {
+    background-color: #fff;
+    z-index: 20;
 }
 
-.navbar-nav {
-    background-color: #fff !important;
-}
-
-.small-screen {
+.login-small {
     display: none;
 }
 
-.large-screen {
-    margin: 0 5% 0 0;
-    width: 80px;
-}
+@media screen and (max-width:1000px) {
+    .login-small {
+        display: block;
+    }
 
-@media screen and (max-width:800px) {
-    .large-screen {
+    .login-large {
         display: none;
     }
 
-    .small-screen {
-        display: block;
+    .login-btn-container>button {
+        color: #fff;
+        margin-top: 10px;
     }
 }
 
 @media screen and (max-width:576px) {
-
-    .navbar>.container {
-        margin-left: 10px !important;
-        margin-right: 10px !important;
+    .nav-logo {
+        width: 100px;
+        height: 40px;
     }
-
-
-
-
-
 }
 
 
