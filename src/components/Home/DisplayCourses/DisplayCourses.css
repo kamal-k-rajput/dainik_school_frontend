@@ -17,4 +17,8 @@
         flex-direction: column;
         height: 100%;
     }
+
+    .display-course-container>div {
+        margin: 10px 20px;
+    }
 }

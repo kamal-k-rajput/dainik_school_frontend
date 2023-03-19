@@ -1,7 +1,7 @@
 .whats-more-container {
     display: flex;
     justify-content: space-between;
-    margin:  50px 5%;
+    margin: 50px 5%;
     font-size: 14px;
     margin-top: 50px;
     flex-wrap: wrap;
@@ -25,4 +25,9 @@
 
 @media screen and (max-width:1080px) {}
 
-@media screen and (max-width:1080px) {}
+@media screen and (max-width:720px) {
+
+    .whats-more-container {
+        justify-content: center;
+    }
+}
