@@ -69,6 +69,8 @@
 .gradient-btn {
     background-image: linear-gradient(to left, #008CE1, #01AE9E);
     background-image: linear-gradient(to left, #22c1c3, #fdbb2d);
+    padding: 15px 40px 15px 40px;
+    font-size: 28px;
 }
 
 .gradient-btn-blue {
