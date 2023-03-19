@@ -19,6 +19,7 @@
     text-align: start;
     font-size: 35px;
     margin: 0 5%;
+    margin-left: 10%;
     line-height: 42px;
     color: #fff;
     font-weight: 800;
@@ -58,7 +59,7 @@
 
 .d-block {
     border: 2px solid rgb(255, 255, 255);
-    margin-right: 0%;
+    margin-right: -30%;
     display: inline !important;
     border-radius: 20px !important;
 }
@@ -66,7 +67,7 @@
 .btn-parent {
     font-size: 18px;
     line-height: 27px;
-    margin-left: 5%;
+    margin-left: 10%;
     margin-right: 5%;
     margin-top: 30px;
     font-weight: 300;
@@ -75,7 +76,7 @@
 }
 
 .carousel-caption {
-    margin: 20px 10%;
+    margin: 20px 24%;
     width: 50%;
     /* background-color: rgb(0 0 0 / 50%); */
     color: #fff;
@@ -152,11 +153,12 @@
 
     .first-section>div:nth-child(1)>p {
         padding: 0px;
-        margin: 0 20px;
+        margin: 0 5% !important;
     }
 
     .btn-parent>p {
         text-align: justify;
+        margin: 0 5% !important;
     }
 
     .btn-parent {
@@ -172,7 +174,7 @@
     }
 
     .w-50 {
-        width: 70% !important;
+        width: 80% !important;
     }
 }
 
