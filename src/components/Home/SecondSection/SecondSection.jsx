@@ -16,7 +16,7 @@ const SecondSection = () => {
         <form>
           <label>Name</label>
           <input type="text" placeholder="Name" />
-        <label>Mobile Number</label>
+          <label>Mobile Number</label>
           <input type="number" placeholder="Mobile Number" />
           <input
             type="submit"

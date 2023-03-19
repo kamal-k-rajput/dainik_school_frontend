@@ -13,6 +13,7 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: rgba(52, 117, 113, 0.9);
 }
 
 .first-section>div:nth-child(1)>p {
