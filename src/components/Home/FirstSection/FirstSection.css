@@ -18,10 +18,8 @@
 .first-section>div:nth-child(1)>p {
     text-align: start;
     font-size: 35px;
-    margin: 0;
-    padding: 0 0 0 30px;
+    margin: 0 5%;
     line-height: 42px;
-    color: #ff9925;
     color: #fff;
     font-weight: 800;
 }
@@ -68,11 +66,12 @@
 .btn-parent {
     font-size: 18px;
     line-height: 27px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 30px;
     font-weight: 300;
     text-align: left;
+
 }
 
 .carousel-caption {

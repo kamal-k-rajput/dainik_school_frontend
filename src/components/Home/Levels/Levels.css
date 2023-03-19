@@ -36,11 +36,12 @@
 
 .level-container {
     display: flex;
-    padding: 0 150px;
+    padding: 0 0;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 400px;
-    margin-top: 80px;
+    margin: 50px 5%;
+
 }
 
 .level-container>div>div>p:nth-child(1) {

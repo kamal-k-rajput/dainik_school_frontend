@@ -1,20 +1,19 @@
 .hm-text-section {
     height: 600px;
     display: flex;
-    margin: 50px 50px;
+    margin: 50px 5%;
 }
 
 .text-section-right {
     background-color: #fff;
     flex: 40%;
-    margin-left: 25px;
     border-radius: 15px;
 }
 
 .text-section-left {
     flex: 40%;
     margin-right: 25px;
-    margin: 10% 10%;
+    /* margin: 10% 10%; */
 }
 
 .download-heading {
