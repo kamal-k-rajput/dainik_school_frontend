@@ -1,14 +1,11 @@
 import React from "react";
 import { NavbarLinks } from "./Navbar/Navbar";
-import HorizoantalLine from "../HorizoantalLine/HorizoantalLine";
-import { Gap } from "../Tools/Gap";
 import "./Header.css";
 
 export const Header = () => {
   return (
     <div>
       <NavbarLinks />
-      <Gap />
       <div className="first-line">
         <div className="line-one"></div>
         <div className="line-two"></div>
