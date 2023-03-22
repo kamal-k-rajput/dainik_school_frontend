@@ -25,8 +25,10 @@ export const NavbarLinks = () => {
             </div>
             <Navbar bg="light" expand="lg">
               <Container>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
+                <Navbar.Toggle
+                  aria-controls={`offcanvasNavbar-expand-${"lg"}`}
+                />
+                <Navbar.Collapse id="basic-navbar-nav" sticky="top">
                   <Nav className="me-auto">
                     <NavDropdown title="CLASSES" id="basic-nav-dropdown">
                       <NavDropdown.Item href="#action/3.1">

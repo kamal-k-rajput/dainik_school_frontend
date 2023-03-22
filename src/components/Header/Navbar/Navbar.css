@@ -121,7 +121,13 @@ a {
         width: 100px;
         height: 40px;
     }
+
+    .navbar>.container {
+        justify-content: flex-end;
+        align-items: center;
+    }
 }
+
 
 
 
