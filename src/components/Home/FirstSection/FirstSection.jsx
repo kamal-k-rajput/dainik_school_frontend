@@ -14,12 +14,12 @@ export const FirstSection = () => {
   };
   return (
     <>
-      <Gap />
+      {/* <Gap /> */}
       <HorizoantalLine className="first-hr-line" />
       <div className="first-section">
         <div>
           <p>
-            DainikSchool is a home school E-learning plateform for students from
+            Dainik School is a home school E-learning platform for students from
             Nursery to Grade 12.
           </p>
           <div className="btn-parent">
