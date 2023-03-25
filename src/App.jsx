@@ -20,6 +20,8 @@ import { DrivingLicense } from "./components/DrivingLicense/DrivingLicense";
 import { AboutUs } from "./components/About/AboutUs";
 import { EducatorPolicy } from "./components/Others/EducatorPolicy";
 import "./App.css";
+import { ReturnPolicy } from "./components/PrivacyPolicy/ReturnPolicy";
+import { TermAndCondition } from "./components/PrivacyPolicy/TermAndCondition";
 
 function App() {
   return (
@@ -45,6 +47,8 @@ function App() {
           <Route path="/practice-session" element={<PracticeSession />} />
           <Route path="/license" element={<DrivingLicense />} />
           <Route path="/educator-policy" element={<EducatorPolicy />} />
+          <Route path="/refund-policy" element={<ReturnPolicy />} />
+          <Route path="/term-of-use" element={<TermAndCondition />} />
           <Route
             path="/previous-year-question-paper"
             element={<PreviousYearQuestions />}
