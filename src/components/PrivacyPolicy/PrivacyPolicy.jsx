@@ -12,7 +12,6 @@ export const PrivacyPolicy = () => {
       <div className="privacy_policy_container">
         <h4>Dainik School Privacy Policy</h4>
         <ul className="privacy_list">
-          <li id="terms">Terms and Conditions:</li>
           <li id="privacy-policy"> Privacy Policy </li>
           <li className="no_style">
             We value your trust. Dainik School Digital Pvt. Ltd adheres to

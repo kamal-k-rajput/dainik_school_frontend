@@ -6,15 +6,15 @@ const ThreeBox = () => {
     <div className="threebox-container">
       <div>
         <span>3100+ </span>
-        <span>Videos Lectures</span>
+        <span>Video Lectures</span>
       </div>
       <div className="mid-level-container">
         <span>Notes</span>
-        <span>5 Lakh+ Pages</span>
+        <span>5 Lacs+ Pages</span>
       </div>
       <div>
         <span>60000+</span>
-        <span>Questions Bank</span>
+        <span>Question Bank</span>
       </div>
     </div>
   );
