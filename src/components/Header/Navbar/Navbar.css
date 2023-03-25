@@ -100,12 +100,18 @@ a {
     z-index: 20;
 }
 
+.offcanvas {
+    max-width: 50%;
+}
+
 .login-small {
     display: none;
 }
-.container-fluid{
+
+.container-fluid {
     padding: 0 5%;
 }
+
 @media screen and (max-width:1000px) {
     .login-small {
         display: block;
