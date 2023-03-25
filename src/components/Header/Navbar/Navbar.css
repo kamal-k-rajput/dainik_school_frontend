@@ -39,7 +39,9 @@ a {
     display: flex;
 
 }
-
+.pe-3{
+    padding-right: 0 !important;
+}
 .links-container>span>a {
     color: #347571;
     margin: 0 30px;
