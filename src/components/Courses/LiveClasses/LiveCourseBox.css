@@ -49,7 +49,7 @@
     line-height: 30px;
     text-align: start;
     color: rgb(0, 0, 0);
-text-decoration: underline;
+    text-decoration: underline;
 }
 
 .live-course-box-container {
@@ -69,4 +69,15 @@ text-decoration: underline;
     border: 2px solid rgb(251, 249, 250);
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width:720px) {
+    .instructor-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .live-bottom-section {
+        font-size: 12px;
+    }
 }
