@@ -6,6 +6,7 @@ import boy3 from "../../../ASSETS/IMG/homepage/FirstSection/boy3.jpg";
 import HorizoantalLine from "../../HorizoantalLine/HorizoantalLine";
 import { Gap } from "../../Tools/Gap";
 import "./FirstSection.css";
+import { Link } from "react-router-dom";
 export const FirstSection = () => {
   const [index, setIndex] = useState(0);
 
@@ -14,7 +15,7 @@ export const FirstSection = () => {
   };
   return (
     <>
-      {/* <Gap /> */}
+      <Gap />
       <HorizoantalLine className="first-hr-line" />
       <div className="first-section">
         <div>
@@ -29,12 +30,20 @@ export const FirstSection = () => {
               saving children’s time and parents money.
             </p>
             <div className="two-btn-container">
-              <button className="btn btn-success gradient-btn">Login </button>
-              <button className="btn btn-success gradient-btn">Enroll</button>
+              <Link to="/login" className="btn btn-success gradient-btn">
+                Login{" "}
+              </Link>
+              <Link to="/register" className="btn btn-success gradient-btn">
+                Enroll
+              </Link>
             </div>
             <div className="two-btn-container">
-              <button className="btn btn-success gradient-btn">Test </button>
-              <button className="btn btn-success gradient-btn">Quiz</button>
+              <Link to="/test" className="btn btn-success gradient-btn">
+                Test{" "}
+              </Link>
+              <Link to="/quiz" className="btn btn-success gradient-btn">
+                Quiz
+              </Link>
             </div>
           </div>
         </div>

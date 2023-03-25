@@ -19,9 +19,12 @@ import { NewsAndBlogs } from "./components/NewsNblogs/NewsAndBlogs";
 import { DrivingLicense } from "./components/DrivingLicense/DrivingLicense";
 import { AboutUs } from "./components/About/AboutUs";
 import { EducatorPolicy } from "./components/Others/EducatorPolicy";
-import "./App.css";
 import { ReturnPolicy } from "./components/PrivacyPolicy/ReturnPolicy";
 import { TermAndCondition } from "./components/PrivacyPolicy/TermAndCondition";
+import { Subject } from "./components/Subject/Subject";
+import { Test } from "./components/Test/Test";
+import { Quiz } from "./components/Quiz/Quiz";
+import "./App.css";
 
 function App() {
   return (
@@ -46,9 +49,14 @@ function App() {
           <Route path="/faculty" element={<Faculty />} />
           <Route path="/practice-session" element={<PracticeSession />} />
           <Route path="/license" element={<DrivingLicense />} />
+          <Route path="/subject" element={<Subject />} />
           <Route path="/educator-policy" element={<EducatorPolicy />} />
+          <Route path="/classes" element={<Classes />} />
+          <Route path="/test" element={<Test />} />
+          <Route path="/quiz" element={<Quiz />} />
           <Route path="/refund-policy" element={<ReturnPolicy />} />
           <Route path="/term-of-use" element={<TermAndCondition />} />
+
           <Route
             path="/previous-year-question-paper"
             element={<PreviousYearQuestions />}
