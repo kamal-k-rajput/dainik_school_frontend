@@ -5,6 +5,8 @@ import { Gap } from "../../Tools/Gap";
 import { CustomHeader } from "../../Tools/CustomHeader";
 import "./LiveClasses.css";
 import { MoveToTop } from "../../Tools/MoveToTop";
+import spokenEnglish from "../../../ASSETS/IMG/liveClasses/spokenenglish.png";
+import { LiveCourseBox } from "./LiveCourseBox";
 
 export const LiveClasses = () => {
   const subjects = [
@@ -31,6 +33,49 @@ export const LiveClasses = () => {
     { text: "CLASS - 11", value: "class-eleven" },
     { text: "CLASS - 12", value: "class-thirteen" },
   ];
+
+  const liveClasses = [
+    {
+      title: "Spoken English",
+      imgSrc: spokenEnglish,
+      highlights: "Highlights of this class. ",
+      description: "Lession-1:Noun",
+      subject: "English",
+      class: "English",
+      date: "01-04-2023",
+      time: "05:00-06:00",
+    },
+    {
+      title: "Mathematics",
+      imgSrc: spokenEnglish,
+      highlights: "Highlights of this class. ",
+      description: "Number System.",
+      subject: "English",
+      class: "9th ",
+      date: "01-04-2023",
+      time: "05:00-06:00",
+    },
+    {
+      title: "Chemistry",
+      imgSrc: spokenEnglish,
+      highlights: "Highlights of this class.",
+      description: "Matter of Surroundings.",
+      subject: "Chemistry",
+      class: "9th",
+      date: "01-04-2023",
+      time: "05:00-06:00",
+    },
+    {
+      title: "Physics",
+      imgSrc: spokenEnglish,
+      highlights: "Highlights of this class.",
+      description: "Motion",
+      subject: "Physics",
+      class: "9th",
+      date: "01-04-2023",
+      time: "05:00-06:00",
+    },
+  ];
   return (
     <>
       <Gap></Gap>
@@ -55,12 +100,10 @@ export const LiveClasses = () => {
         </div>
       </section>
       <section className="live-section">
-        <div>Math</div>
-        <div>Spoken English</div>
-        <div>Physics</div>
-        <div>Biology</div>
+        {liveClasses.map((liveClass) => {
+          return <LiveCourseBox props={liveClass} />;
+        })}
       </section>
-
       <Footer />
       <MoveToTop />
     </>

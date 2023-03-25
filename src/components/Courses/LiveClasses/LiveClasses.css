@@ -38,16 +38,12 @@
 .live-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin: 50px 5%;
+    grid-row-gap: 40px;
+    grid-column-gap: 50px;
 }
 
-.live-section div {
-    width: 90%;
-    height: 400px;
-    border: 2px solid grey;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
+
 
 .live-class-page-line {
     margin-top: 0 !important;
@@ -68,6 +64,8 @@
 .hr-line {
     margin-top: 0;
 }
+
+
 
 @media screen and (max-width:720px) {
     .live-section {

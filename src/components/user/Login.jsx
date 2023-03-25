@@ -51,10 +51,10 @@ export const Login = () => {
           <input
             type="password"
             name="password"
-            placeholder="Enter OTP"
+            placeholder="Password"
             onChange={handleChange}
           />
-          <input type="submit" value="SUBMIT" className="login-submit-button" />
+          <input type="submit" value="SUBMIT" className="btn btn-success" />
         </form>
         <Footer></Footer>
       </div>
