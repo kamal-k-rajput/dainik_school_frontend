@@ -3,6 +3,8 @@ import "./Login.css";
 // import axios from "axios";
 import { Footer } from "../Footer/Footer";
 import { Link } from "react-router-dom";
+import { Gap } from "../Tools/Gap";
+import { CustomHeader } from "../Tools/CustomHeader";
 export const Login = () => {
   const [formData, setFormData] = useState({
     email: "",
@@ -37,28 +39,31 @@ export const Login = () => {
     setFormData({ ...formData, [name]: value });
   }
   return (
-    <div className="login-container">
-      <h1>Login</h1>
-      <form onSubmit={submitLogIn}>
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          onChange={handleChange}
-        />
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          onChange={handleChange}
-        />
-        <input type="submit" value="LOGIN" className="login-submit-button" />
-      </form>
+    <>
+      <Gap />
+      <CustomHeader props={{ title: "Log In" }} />
+      <div className="login-container">
+        <form onSubmit={submitLogIn}>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            onChange={handleChange}
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            onChange={handleChange}
+          />
+          <input type="submit" value="LOGIN" className="login-submit-button" />
+        </form>
 
-      <Link to="/register">
-        <button className="login-submit-button">REGISTER</button>
-      </Link>
-      <Footer></Footer>
-    </div>
+        <Link to="/register">
+          <button className="login-submit-button">REGISTER</button>
+        </Link>
+        <Footer></Footer>
+      </div>
+    </>
   );
 };

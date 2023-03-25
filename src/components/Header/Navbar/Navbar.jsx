@@ -70,7 +70,7 @@ export function NavbarLinks() {
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                   </NavDropdown>
-                  <Nav.Link href="#action2" className="btn btn-sucess">
+                  <Nav.Link href="/login" className="btn btn-sucess">
                     Log In
                   </Nav.Link>
                 </Nav>
