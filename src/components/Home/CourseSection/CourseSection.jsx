@@ -1,7 +1,7 @@
 import React from "react";
-import "./CourseSection.css";
 import { Link } from "react-router-dom";
 import logo from "../../../ASSETS/IMG/Logo/logo.png";
+import "./CourseSection.css";
 
 const CourseSection = ({ props }) => {
   return (
