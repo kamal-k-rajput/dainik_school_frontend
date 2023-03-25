@@ -21,8 +21,6 @@ export const Login = () => {
         },
         body: JSON.stringify({ ...formData }),
       });
-
-      console.log(rawResponse);
     })();
     // axios
     //   .post(`http://192.168.26.235:5000/user/login`, { ...formData })
@@ -45,23 +43,19 @@ export const Login = () => {
       <div className="login-container">
         <form onSubmit={submitLogIn}>
           <input
-            type="email"
-            name="email"
-            placeholder="Email"
+            type="number"
+            name="mobile"
+            placeholder="Mobile Number"
             onChange={handleChange}
           />
           <input
             type="password"
             name="password"
-            placeholder="Password"
+            placeholder="Enter OTP"
             onChange={handleChange}
           />
-          <input type="submit" value="LOGIN" className="login-submit-button" />
+          <input type="submit" value="SUBMIT" className="login-submit-button" />
         </form>
-
-        <Link to="/register">
-          <button className="login-submit-button">REGISTER</button>
-        </Link>
         <Footer></Footer>
       </div>
     </>
