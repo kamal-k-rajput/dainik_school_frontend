@@ -13,6 +13,7 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: rgba(52, 117, 113, 0.9);
 }
 
 .first-section>div:nth-child(1)>p {
@@ -123,12 +124,14 @@
     }
 
     .carousel-caption {
-        font-size: 20px !important;
+        font-size: 27px !important;
     }
 }
 
 @media screen and (max-width:576px) {
     .carousel-caption {
+        margin: 0;
+        width: 80%;
         margin-top: -10%;
         padding: 100px 0;
     }
@@ -174,7 +177,7 @@
     }
 
     .w-50 {
-        width: 80% !important;
+        width: 90% !important;
     }
 }
 

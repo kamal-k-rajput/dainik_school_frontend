@@ -8,7 +8,6 @@
     background-color: #F2F2F2;
     font-size: 12px;
     box-shadow: 0 27px 20px -19px rgb(122 62 134 / 31%);
-
 }
 
 .course-logo {
@@ -53,7 +52,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    text-align: justify;
+    text-align: start;
     padding: 0 30px 0;
     font-size: 16px;
     margin-bottom: 20px;
@@ -73,6 +72,12 @@
 }
 
 .gradient-btn-blue {
-
     background-image: linear-gradient(to left, #008CE1, #01AE9E);
+}
+
+@media screen and (max-width:400px) {
+
+    .course-section>div:nth-child(2) div>img {
+        height: 150px
+    }
 }

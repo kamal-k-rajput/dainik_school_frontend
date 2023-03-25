@@ -1,14 +1,18 @@
 import React from "react";
 import { Footer } from "../Footer/Footer";
 import "./Privacy.css";
+import { CustomHeader } from "../Tools/CustomHeader";
+import { Gap } from "../Tools/Gap";
 export const PrivacyPolicy = () => {
   return (
     <>
+      <Gap />
+      <CustomHeader props={{ title: "Privacy Policy" }} />
       <div className="privacy_policy_container">
         <h4>Dainik School Privacy Policy</h4>
         <ul className="privacy_list">
           <li id="terms">Terms and Conditions:</li>
-          <li> Privacy Policy </li>
+          <li id="privacy-policy"> Privacy Policy </li>
           <li className="no_style">
             We value your trust. Dainik School Digital Pvt. Ltd adheres to
             ethical standards to honor that trust in gathering, using, and
@@ -278,7 +282,7 @@ export const PrivacyPolicy = () => {
             address your grievances at the earliest possible opportunity. Reach
             out to us at dainikschool@gmail.com in case of any queries.
           </li>
-          <li> Terms & Conditions :</li>
+          <li id="terms-of-use"> Terms & Conditions :</li>
           <li className="no_style">
             These Terms & Conditions (“Terms”) of (a) use of our Website
             www.dainikschool.com (“Website”), or any products or services in
@@ -623,7 +627,6 @@ export const PrivacyPolicy = () => {
             noted:- It Is Your sole responsibility to ensure that the account
             information provided by You is accurate, complete, and latest.
           </li>
-          information provided by You is accurate, complete, and latest.
           <li className="no_style">
             You shall be responsible for maintaining the confidentiality of the
             account information and for all activities that occur under Your
@@ -849,7 +852,7 @@ export const PrivacyPolicy = () => {
             Store may or may not reflect the price after the discount. Offers
             cannot be combined for additional discounts.
           </li>
-          <li>Returns :</li>
+          <li id="refund-policy">Returns :</li>
           <li className="no_style"></li>
           You have 24 hours to return an e-course from the date you purchased
           it. A Refund Request will be deemed valid only if it is made through
