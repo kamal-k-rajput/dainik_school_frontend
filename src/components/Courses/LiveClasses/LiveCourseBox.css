@@ -19,7 +19,6 @@
 .live-bottom-section>div>span {
     margin: 0 5px;
     padding-right: 10px;
-    /* border-right: 1px solid grey; */
 
 }
 
@@ -73,11 +72,20 @@
 
 @media screen and (max-width:720px) {
     .instructor-img {
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
     }
 
     .live-bottom-section {
         font-size: 12px;
     }
+
+    .live-middle-section>.btn {
+        padding:2px 10px ;
+    }
+
+    .live-top-section {
+        padding: 10px;
+    }
+
 }

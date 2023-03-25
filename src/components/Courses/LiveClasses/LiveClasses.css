@@ -24,7 +24,7 @@
 .filter-section>div>select {
     border: none;
     padding: 8px 16px;
-    width: 250px;
+    /* width: 250px; */
     border-radius: 8px;
     height: 50px;
 }
@@ -83,7 +83,7 @@
     }
 
     .filter-section>div {
-        width: 150px;
+        /* width: 150px; */
     }
 
     .filter-section>div>select {
