@@ -9,6 +9,10 @@
     justify-content: space-between;
     flex: 1;
     display: flex;
+    margin: 10px 0px 10px 0px;
+}
+
+.display-course-container>div:nth-child(2) {
     margin: 10px 0px 10px 20px;
 }
 
@@ -19,6 +23,10 @@
     }
 
     .display-course-container>div {
-        margin: 10px 20px;
+        margin: 10px 0px;
+    }
+
+    .display-course-container>div:nth-child(2) {
+        margin: 10px 0px 10px 0px;
     }
 }

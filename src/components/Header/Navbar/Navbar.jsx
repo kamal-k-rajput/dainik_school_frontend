@@ -33,9 +33,9 @@ export function NavbarLinks() {
               placement="end"
             >
               <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Offcanvas
-                </Offcanvas.Title>
+                <Offcanvas.Title
+                  id={`offcanvasNavbarLabel-expand-${expand}`}
+                ></Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
@@ -70,6 +70,9 @@ export function NavbarLinks() {
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                   </NavDropdown>
+                  <Nav.Link href="#action2" className="btn btn-sucess">
+                    Log In
+                  </Nav.Link>
                 </Nav>
                 {/* <Form className="d-flex">
                   <Form.Control
@@ -80,15 +83,8 @@ export function NavbarLinks() {
                   />
                   <Button variant="outline-success">Search</Button>
                 </Form> */}
-                <Nav.Link href="#action2" className="btn btn-sucess">
-                  Log In
-                </Nav.Link>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
-
-            {/* <div className="login-btn-container login-large">
-              <button className="btn btn-sucess">Log In</button>
-            </div> */}
           </Container>
         </Navbar>
       ))}
