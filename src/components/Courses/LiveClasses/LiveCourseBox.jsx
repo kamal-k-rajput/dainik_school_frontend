@@ -1,9 +1,9 @@
 import React from "react";
-import "./LiveCourseBox.css";
 import { BiBookReader } from "react-icons/bi";
 import { FaUserGraduate } from "react-icons/fa";
 import { MdDateRange } from "react-icons/md";
 import { FcOvertime } from "react-icons/fc";
+import "./LiveCourseBox.css";
 
 export const LiveCourseBox = ({ props }) => {
   return (

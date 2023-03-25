@@ -83,22 +83,18 @@ export const LiveClasses = () => {
       <HorizoantalLine />
       <CustomHeader props={{ title: "Live Classes" }} />
       <section className="filter-section">
-        <div>
-          <select name="class" id="class">
-            <option value="">Select Class </option>
-            {classes.map((subject) => {
-              return <option value={subject.value}>{subject.text}</option>;
-            })}
-          </select>
-        </div>
-        <div>
-          <select name="subject" id="subject">
-            <option value="">Select Subject</option>
-            {subjects.map((subject) => {
-              return <option value={subject.value}>{subject.text}</option>;
-            })}
-          </select>{" "}
-        </div>
+        <select name="class" id="class">
+          <option value="">Class </option>
+          {classes.map((subject) => {
+            return <option value={subject.value}>{subject.text}</option>;
+          })}
+        </select>
+        <select name="subject" id="subject">
+          <option value="">Subject</option>
+          {subjects.map((subject) => {
+            return <option value={subject.value}>{subject.text}</option>;
+          })}
+        </select>{" "}
       </section>
       <section className="live-section">
         {liveClasses.map((liveClass) => {
