@@ -3,10 +3,10 @@ import { Footer } from "../../Footer/Footer";
 import HorizoantalLine from "../../HorizoantalLine/HorizoantalLine";
 import { Gap } from "../../Tools/Gap";
 import { CustomHeader } from "../../Tools/CustomHeader";
-import "./LiveClasses.css";
 import { MoveToTop } from "../../Tools/MoveToTop";
 import spokenEnglish from "../../../ASSETS/IMG/liveClasses/spokenenglish.png";
 import { LiveCourseBox } from "./LiveCourseBox";
+import "./LiveClasses.css";
 
 export const LiveClasses = () => {
   const subjects = [
@@ -79,6 +79,7 @@ export const LiveClasses = () => {
   return (
     <>
       <Gap></Gap>
+      <MoveToTop />
       <HorizoantalLine />
       <CustomHeader props={{ title: "Live Classes" }} />
       <section className="filter-section">
@@ -105,7 +106,6 @@ export const LiveClasses = () => {
         })}
       </section>
       <Footer />
-      <MoveToTop />
     </>
   );
 };
