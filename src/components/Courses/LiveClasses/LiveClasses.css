@@ -3,30 +3,19 @@
 }
 
 .filter-section {
-    border-radius: 10px;
-    margin: 50px 100px 20px;
+    margin: 40px 5%;
     display: flex;
+    justify-content: flex-start;
 }
 
-.filter-section>div {
-    justify-content: space-around;
-    margin-right: 50px;
-    border-radius: 8px;
-    box-shadow: 0 2px 3px #00000052;
-    border: 1px solid #e4e4e4;
-    width: 250px;
-    font-size: 18px;
-    color: #707070;
-    font-weight: 500;
-
-}
-
-.filter-section>div>select {
+.filter-section>select {
     border: none;
-    padding: 8px 16px;
-    /* width: 250px; */
+    /* padding: 8px 16px; */
     border-radius: 8px;
     height: 50px;
+    width: 250px;
+    border: 2px solid grey;
+    margin-right: 50px;
 }
 
 .courses_list>div>img {
@@ -42,8 +31,6 @@
     grid-row-gap: 40px;
     grid-column-gap: 50px;
 }
-
-
 
 .live-class-page-line {
     margin-top: 0 !important;
@@ -73,20 +60,12 @@
 }
 
 @media screen and (max-width:720px) {
-
-
     .filter-section {
-        margin: 0 5%;
-        margin-top: 40px;
-        justify-content: space-around;
-
+        justify-content: space-between;
     }
 
-    .filter-section>div {
-        /* width: 150px; */
-    }
-
-    .filter-section>div>select {
-        width: 150px;
+    .filter-section>select {
+        width: 130px;
+        margin-right: 0;
     }
 }
