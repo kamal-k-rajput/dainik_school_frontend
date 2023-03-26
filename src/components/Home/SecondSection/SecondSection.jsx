@@ -1,12 +1,20 @@
 import React from "react";
+import appleStore from "../../../ASSETS/IMG/homepage/playStore/AppleStore.png";
+import playStore from "../../../ASSETS/IMG/homepage/playStore/GooglePlay.png";
 import "./SecondSection.css";
 
 const SecondSection = () => {
   return (
     <div className="second-section">
       <div>
-        <b>Fees Ki Wajah Se</b>
-        <b>Padhai Nahi Rukegi</b>
+        <div>
+          <b>Fees Ki Wajah Se</b>
+          <b>Padhai Nahi Rukegi</b>
+        </div>
+        <div className="mobile-app-icon">
+          <img src={appleStore} alt="appstore" />
+          <img src={playStore} alt="playstore" />
+        </div>
       </div>
 
       <div className="second-section-form-container">
