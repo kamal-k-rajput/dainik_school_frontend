@@ -5,27 +5,477 @@ import { Gap } from "../Tools/Gap";
 import HorizoantalLine from "../HorizoantalLine/HorizoantalLine";
 import { CustomHeader } from "../Tools/CustomHeader";
 import { MoveToTop } from "../Tools/MoveToTop";
+import { LiveCourseBox } from "./LiveClasses/LiveCourseBox";
+import spokenEnglish from "../../ASSETS/IMG/liveClasses/spokenenglish.png";
+import { CourseBox } from "./CourseBox/CourseBox";
+
 export const Courses = () => {
+  const courses = [
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+    {
+      heading: "Chemistry",
+      imgSrc: spokenEnglish,
+      details: "Highlights of this class.",
+      subject: "Chemistry",
+      class: "9th",
+    },
+  ];
   return (
     <>
       <Gap />
       <HorizoantalLine />
       <CustomHeader props={{ title: "Courses" }} />
       <div className="courses_container">
-        <div className="all_courses">
-          {/* <img src={courses_top_image} alt="dainik school courses" /> */}
-        </div>
-        <section className="courses-section">
-          <div>course</div>
-          <div>course</div>
-          <div>course</div>
-          <div>course</div>
-          <div>course</div>
-          <div>course</div>
-          <div>course</div>
-          <div>course</div>
-          <div>course</div>
-        </section>
+        {courses.map((course) => {
+          return <CourseBox props={course} />;
+        })}
       </div>
       <Footer />
       <MoveToTop />
