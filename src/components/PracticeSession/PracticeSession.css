@@ -3,7 +3,7 @@
 }
 
 .library_container {
-    margin-top: 65px;
+    margin: 65px 0;
 }
 
 .library_list>div>img {
@@ -27,7 +27,7 @@
 
 .library-section {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .library-section div {

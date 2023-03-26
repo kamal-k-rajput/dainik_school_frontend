@@ -3,6 +3,7 @@ import "./Library.css";
 import { Footer } from "../Footer/Footer";
 import { MoveToTop } from "../Tools/MoveToTop";
 import { CustomHeader } from "../Tools/CustomHeader";
+import { Gap } from "../Tools/Gap";
 
 export const Library = () => {
   const [newClass, setNewClass] = useState("");
@@ -17,6 +18,7 @@ export const Library = () => {
   }
   return (
     <>
+      <Gap />
       <CustomHeader props={{ title: "Library" }} />
       <div className="library_container">
         <div className="all_library"></div>

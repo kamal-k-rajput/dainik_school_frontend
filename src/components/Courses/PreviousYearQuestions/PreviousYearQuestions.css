@@ -1,28 +1,17 @@
-.all_courses>img {
-    width: 100%;
-}
-
-
-
-.courses_list>div>img {
-    border: 2px solid red;
-    max-width: 400px;
-    max-height: fit-content;
-
-}
-
-.courses-section {
+.previous-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin: 50px 5%;
+    row-gap: 20px;
+    column-gap: 20px;
 }
 
-.courses-section div {
-    width: 300px;
-    height: 400px;
-    border: 2px solid grey;
-    margin: 20px auto;
+.previous-section>div {
+    height: 100px;
+    border: 1px solid grey;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #347571;
+
 }
 
 @media screen and (max-width:1080px) {
