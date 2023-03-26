@@ -4,6 +4,60 @@ import playStore from "../../../ASSETS/IMG/homepage/playStore/GooglePlay.png";
 import "./SecondSection.css";
 
 const SecondSection = () => {
+  const classes = [
+    { text: "LKG", value: "lkg" },
+    { text: "UKG", value: "ukg" },
+    { text: "CLASS - 1", value: "class-one" },
+    { text: "CLASS - 2", value: "class-two" },
+    { text: "CLASS - 3", value: "class-three" },
+    { text: "CLASS - 4", value: "class-four" },
+    { text: "CLASS - 5", value: "class-five" },
+    { text: "CLASS - 6", value: "class-six" },
+    { text: "CLASS - 7", value: "class-seven" },
+    { text: "CLASS - 8", value: "class-eight" },
+    { text: "CLASS - 9", value: "class-nine" },
+    { text: "CLASS - 10", value: "class-ten" },
+    { text: "CLASS - 11", value: "class-eleven" },
+    { text: "CLASS - 12", value: "class-thirteen" },
+  ];
+  let states = [
+    "Andhra Pradesh",
+    "Arunachal Pradesh",
+    "Assam",
+    "Bihar",
+    "Chhattisgarh",
+    "Goa",
+    "Gujarat",
+    "Haryana",
+    "Himachal Pradesh",
+    "Jammu and Kashmir",
+    "Jharkhand",
+    "Karnataka",
+    "Kerala",
+    "Madhya Pradesh",
+    "Maharashtra",
+    "Manipur",
+    "Meghalaya",
+    "Mizoram",
+    "Nagaland",
+    "Odisha",
+    "Punjab",
+    "Rajasthan",
+    "Sikkim",
+    "Tamil Nadu",
+    "Telangana",
+    "Tripura",
+    "Uttarakhand",
+    "Uttar Pradesh",
+    "West Bengal",
+    "Andaman and Nicobar Islands",
+    "Chandigarh",
+    "Dadra and Nagar Haveli",
+    "Daman and Diu",
+    "Delhi",
+    "Lakshadweep",
+    "Puducherry",
+  ];
   return (
     <div className="second-section">
       <div>
@@ -22,15 +76,25 @@ const SecondSection = () => {
         <p>Get instant access by signing up now.</p>
         <p>*Trial access is limited to 10 lessons</p>
         <form>
-          <label>Name</label>
           <input type="text" placeholder="Name" />
-          <label>Mobile Number</label>
           <input type="number" placeholder="Mobile Number" />
-          <input
-            type="submit"
-            value="STUDENT ENROLL"
-            className="btn btn-success gradient-btn"
-          />
+          <input type="number" placeholder="Enter OTP " />
+          <select name="class" id="class">
+            <option value="">Class </option>
+            {classes.map((subject) => {
+              return <option value={subject.value}>{subject.text}</option>;
+            })}
+          </select>
+          {
+            <select>
+              {states.map((state) => {
+                return <option value={state}>{state}</option>;
+              })}
+            </select>
+          }
+          <button className="btn btn-success gradient-btn form-btn">
+            SUBMIT
+          </button>
         </form>
         <p className="policy-acceptance">
           By continuing, you agree to DainikSchool's Conditions of Use and

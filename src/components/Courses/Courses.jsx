@@ -5,7 +5,6 @@ import { Gap } from "../Tools/Gap";
 import HorizoantalLine from "../HorizoantalLine/HorizoantalLine";
 import { CustomHeader } from "../Tools/CustomHeader";
 import { MoveToTop } from "../Tools/MoveToTop";
-import { LiveCourseBox } from "./LiveClasses/LiveCourseBox";
 import spokenEnglish from "../../ASSETS/IMG/liveClasses/spokenenglish.png";
 import { CourseBox } from "./CourseBox/CourseBox";
 
