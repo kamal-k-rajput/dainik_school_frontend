@@ -3,6 +3,7 @@ import { Footer } from "../Footer/Footer";
 import "./Register.css";
 import axios from "axios";
 import { Gap } from "../Tools/Gap";
+import { CustomHeader } from "../Tools/CustomHeader";
 export const Register = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -15,15 +16,6 @@ export const Register = () => {
   });
   function submitRegister(e) {
     e.preventDefault();
-    console.log(formData, "formData");
-    // axios
-    //   .post(`http://192.168.26.235:5000/user/register`, { ...formData })
-    //   .then((response) => {
-    //     console.log(response);
-    //   })
-    //   .catch((err) => {
-    //     console.log(err, "error");
-    //   });
     (async () => {
       const rawResponse = await fetch(
         "http://192.168.26.235:5000/user/register",
@@ -48,8 +40,8 @@ export const Register = () => {
   return (
     <>
       <Gap />
+      <CustomHeader props={{ title: "Apply Now" }} />
       <div className="register-container">
-        <h2>Register</h2>
         <div className="register-container">
           <form onSubmit={submitRegister}>
             <input
@@ -74,27 +66,71 @@ export const Register = () => {
               type="password"
               name="password"
               onChange={handleChange}
-              placeholder="Password"
+              placeholder="Create Password"
+            />
+            <input
+              type="password"
+              name="confirmPassword"
+              onChange={handleChange}
+              placeholder="Confirm Password"
             />
             <input
               type="number"
               name="mobileNumber"
               placeholder="Mobile Number"
             />
-            <input
-              type="number"
-              name="class"
-              placeholder="Class"
-              onChange={handleChange}
-              min="1"
-            />
+
             <input
               type="text"
               name="gender"
               placeholder="Gender"
               onChange={handleChange}
             />
-            <input type="submit" value="REGISTER" className="register-submit" />
+            <input
+              type="text"
+              name="Location"
+              placeholder="Location"
+              onChange={handleChange}
+            />
+            <input
+              type="text"
+              name="Workprofilelink"
+              placeholder="Work profile link"
+              onChange={handleChange}
+            />
+            <input
+              type="number"
+              name="experiance"
+              placeholder="Teaching expriance"
+              onChange={handleChange}
+            />
+            <input
+              type="number"
+              name="experiance"
+              placeholder="Teaching expriance"
+              onChange={handleChange}
+            />
+            <textarea placeholder="Your Expertise" />
+            <label htmlFor="resume">
+              Upload Resume
+              <input
+                type="file"
+                id="resume"
+                name="avatar"
+                className="file-upload-input"
+                accept="image/png, image/jpeg"
+              />
+            </label>
+            <label htmlFor="video">Upload Video</label>
+            <input
+              type="file"
+              id="video"
+              name="avatar"
+              accept="image/png, image/jpeg"
+              className="file-upload-input"
+            />
+
+            <input type="submit" value="SUBMIT" className="register-submit btn btn-success" />
           </form>
         </div>
         <Footer></Footer>
