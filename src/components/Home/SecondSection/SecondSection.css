@@ -17,6 +17,11 @@
 
 }
 
+input::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 3;
+}
+
 .second-section>div:nth-child(1) {
     flex: 6;
     display: flex;
@@ -58,7 +63,7 @@
 }
 
 .policy-acceptance {
-    padding:5px 20px;
+    padding: 5px 20px;
 }
 
 .second-section>div>form {
@@ -99,7 +104,7 @@
 
 .second-section-form-container {
     width: 90%;
-    height: 460px;
+    height: 500px;
 }
 
 .second-section-form-container>form {

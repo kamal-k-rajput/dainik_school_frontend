@@ -1,19 +1,25 @@
 .register-container>form {
     display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    border: 3px solid red;
+    margin: 40px 5%;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
+    font-size: 18px;
 }
 
 .register-container>form>input {
     margin: 20px;
 }
 
+textarea {
+    width: 350px;
+}
+
+.file-upload-input {
+    height: inherit;
+}
 
 .register-submit {
-    background-color: rgb(80, 129, 5);
     color: white;
     padding: 10px 20px;
     border-radius: 15px;
@@ -24,6 +30,7 @@
     height: 60px;
 
 }
+
 .register-submit:hover {
     background-color: white;
     color: green;
