@@ -19,7 +19,7 @@ export const LiveCourseBox = ({ props }) => {
         </div>
       </div>
       <div className="live-middle-section">
-        <button className="btn btn-success">Apply Now</button>
+        <button className="btn btn-success">Book Seat</button>
         <button className="btn btn-success">Join Now</button>
       </div>
       <div className="live-bottom-section">
