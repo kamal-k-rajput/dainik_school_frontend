@@ -33,7 +33,10 @@ export const FirstSection = () => {
               <Link to="/login" className="btn btn-success gradient-btn">
                 Login{" "}
               </Link>
-              <Link to="/register" className="btn btn-success gradient-btn">
+              <Link
+                to="/student-registration"
+                className="btn btn-success gradient-btn"
+              >
                 Enroll
               </Link>
             </div>

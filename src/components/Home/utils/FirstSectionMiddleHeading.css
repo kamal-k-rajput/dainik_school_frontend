@@ -1,0 +1,17 @@
+.hm-middle-heading {
+    font-size: 3.5rem;
+    font-family: 600;
+    margin: 40px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.hm-redBox {
+    height: 15px;
+    background-color: red;
+    width: 50px;
+    border-radius: 5px;
+    margin-left: 20px;
+}

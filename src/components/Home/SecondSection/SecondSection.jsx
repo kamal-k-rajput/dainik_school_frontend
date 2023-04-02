@@ -1,9 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import appleStore from "../../../ASSETS/IMG/homepage/playStore/AppleStore.png";
 import playStore from "../../../ASSETS/IMG/homepage/playStore/GooglePlay.png";
 import "./SecondSection.css";
 
 const SecondSection = () => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    password: "",
+    email: "",
+    mobileNumber: "",
+    class: "",
+    gender: "",
+  });
+  function submitRegister(e) {
+    e.preventDefault();
+    (async () => {
+      const rawResponse = await fetch(
+        "http://192.168.26.235:5000/user/register",
+        {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ ...formData }),
+        }
+      );
+
+      console.log(rawResponse);
+    })();
+  }
+  function handleChange(e) {
+    e.preventDefault();
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  }
   const classes = [
     { text: "LKG", value: "lkg" },
     { text: "UKG", value: "ukg" },
@@ -76,9 +108,19 @@ const SecondSection = () => {
         <p>Get instant access by signing up now.</p>
         <p>*Trial access is limited to 10 lessons</p>
         <form>
-          <input type="text" placeholder="Name" />
-          <input type="number" placeholder="Mobile Number" />
-          <input type="number" placeholder="Enter OTP " />
+          <input type="text" placeholder="Name" onChange={handleChange} />
+          <input
+            type="number"
+            placeholder="Mobile Number"
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="email"
+            placeholder="Email address "
+            onChange={handleChange}
+            required
+          />
           <select name="class" id="class">
             <option value="">Class </option>
             {classes.map((subject) => {

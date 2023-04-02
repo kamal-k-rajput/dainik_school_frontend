@@ -17,19 +17,19 @@ export const Register = () => {
   function submitRegister(e) {
     e.preventDefault();
     (async () => {
-      const rawResponse = await fetch(
-        "http://192.168.26.235:5000/user/register",
-        {
-          method: "POST",
-          headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ ...formData }),
-        }
-      );
-
-      console.log(rawResponse);
+      // const rawResponse = await fetch(
+      //   "http://192.168.26.235:5000/user/register",
+      //   {
+      //     method: "POST",
+      //     headers: {
+      //       Accept: "application/json",
+      //       "Content-Type": "application/json",
+      //     },
+      //     body: JSON.stringify({ ...formData }),
+      //   }
+      // );
+      console.log(formData, "form data");
+      // console.log(rawResponse);
     })();
   }
   function handleChange(e) {
@@ -101,15 +101,10 @@ export const Register = () => {
             <input
               type="number"
               name="experiance"
-              placeholder="Teaching expriance"
+              placeholder="Teaching experiance"
               onChange={handleChange}
             />
-            <input
-              type="number"
-              name="experiance"
-              placeholder="Teaching expriance"
-              onChange={handleChange}
-            />
+
             <textarea placeholder="Your Expertise" />
             <label htmlFor="resume">
               Upload Resume
@@ -130,7 +125,11 @@ export const Register = () => {
               className="file-upload-input"
             />
 
-            <input type="submit" value="SUBMIT" className="register-submit btn btn-success" />
+            <input
+              type="submit"
+              value="SUBMIT"
+              className="register-submit btn btn-success"
+            />
           </form>
         </div>
         <Footer></Footer>
