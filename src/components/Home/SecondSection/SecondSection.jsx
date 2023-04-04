@@ -1,95 +1,40 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+
 import appleStore from "../../../ASSETS/IMG/homepage/playStore/AppleStore.png";
 import playStore from "../../../ASSETS/IMG/homepage/playStore/GooglePlay.png";
 import "./SecondSection.css";
+import { registerStudent } from "../../../Redux/Action/action";
+import { classes, states } from "../../Data/Constants";
 
 const SecondSection = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
-    password: "",
     email: "",
-    mobileNumber: "",
+    phone: "",
     class: "",
     gender: "",
+    state: "",
+    location: "",
   });
-  function submitRegister(e) {
-    e.preventDefault();
-    (async () => {
-      const rawResponse = await fetch(
-        "http://192.168.26.235:5000/user/register",
-        {
-          method: "POST",
-          headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ ...formData }),
-        }
-      );
 
-      console.log(rawResponse);
-    })();
+  function submitRegisterForm(e) {
+    e.preventDefault();
+
+    dispatch(registerStudent(formData));
+    navigate("/student-registration");
   }
   function handleChange(e) {
     e.preventDefault();
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   }
-  const classes = [
-    { text: "LKG", value: "lkg" },
-    { text: "UKG", value: "ukg" },
-    { text: "CLASS - 1", value: "class-one" },
-    { text: "CLASS - 2", value: "class-two" },
-    { text: "CLASS - 3", value: "class-three" },
-    { text: "CLASS - 4", value: "class-four" },
-    { text: "CLASS - 5", value: "class-five" },
-    { text: "CLASS - 6", value: "class-six" },
-    { text: "CLASS - 7", value: "class-seven" },
-    { text: "CLASS - 8", value: "class-eight" },
-    { text: "CLASS - 9", value: "class-nine" },
-    { text: "CLASS - 10", value: "class-ten" },
-    { text: "CLASS - 11", value: "class-eleven" },
-    { text: "CLASS - 12", value: "class-thirteen" },
-  ];
-  let states = [
-    "Andhra Pradesh",
-    "Arunachal Pradesh",
-    "Assam",
-    "Bihar",
-    "Chhattisgarh",
-    "Goa",
-    "Gujarat",
-    "Haryana",
-    "Himachal Pradesh",
-    "Jammu and Kashmir",
-    "Jharkhand",
-    "Karnataka",
-    "Kerala",
-    "Madhya Pradesh",
-    "Maharashtra",
-    "Manipur",
-    "Meghalaya",
-    "Mizoram",
-    "Nagaland",
-    "Odisha",
-    "Punjab",
-    "Rajasthan",
-    "Sikkim",
-    "Tamil Nadu",
-    "Telangana",
-    "Tripura",
-    "Uttarakhand",
-    "Uttar Pradesh",
-    "West Bengal",
-    "Andaman and Nicobar Islands",
-    "Chandigarh",
-    "Dadra and Nagar Haveli",
-    "Daman and Diu",
-    "Delhi",
-    "Lakshadweep",
-    "Puducherry",
-  ];
+
   return (
     <div className="second-section">
       <div>
@@ -107,30 +52,46 @@ const SecondSection = () => {
         <p className="font-size-large">Start your 5-Day Free Trial</p>
         <p>Get instant access by signing up now.</p>
         <p>*Trial access is limited to 10 lessons</p>
-        <form>
-          <input type="text" placeholder="Name" onChange={handleChange} />
+        <form onSubmit={submitRegisterForm}>
           <input
-            type="number"
-            placeholder="Mobile Number"
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="text"
+            name="lastName"
+            placeholder="Last Name "
             onChange={handleChange}
             required
           />
           <input
             type="email"
+            name="email"
             placeholder="Email address "
             onChange={handleChange}
             required
           />
-          <select name="class" id="class">
+          <select name="class" onChange={handleChange} required>
             <option value="">Class </option>
             {classes.map((subject) => {
-              return <option value={subject.value}>{subject.text}</option>;
+              return (
+                <option value={subject.value} key={subject.text}>
+                  {subject.text}
+                </option>
+              );
             })}
           </select>
           {
-            <select>
+            <select onChange={handleChange} required name="state">
               {states.map((state) => {
-                return <option value={state}>{state}</option>;
+                return (
+                  <option value={state} key={state}>
+                    {state}
+                  </option>
+                );
               })}
             </select>
           }
