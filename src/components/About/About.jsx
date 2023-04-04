@@ -16,10 +16,10 @@ export const About = () => {
         <div>
           <h2>About Dainik School</h2>
           Dainik School is a one stop ed-tech platform whose endeavour is to
-          provide core competency and adroitness to students of class 6th to 12th
-          through our brief but comprehensive recorded lectures, weekly live
-          doubt sessions, exclusive telegram doubt chat groups, test series etc.
-          which is taken by our well accomplished and amiable faculties.
+          provide core competency and adroitness to students of class 6th to
+          12th through our brief but comprehensive recorded lectures, weekly
+          live doubt sessions, exclusive telegram doubt chat groups, test series
+          etc. which is taken by our well accomplished and amiable faculties.
         </div>
       </div>
       <div className="about-container">
@@ -55,14 +55,15 @@ export const About = () => {
       <div className="about-container">
         <div>
           <h2> What are we trying to solve ?</h2>
-          We ourselves live in rural area, so we have impression that children
-          do not have good tuition facility in villages and the talent of the
-          children is also suppressed. Parents can not send their children
-          outside for tuition due to limited resources and security issue. We
-          are trying to solve this big problem through Dainikschool website and
-          it will be possible with the co-operation of of parents and children.
-          The founder of “Dainik school” stands for education for every child
-          irrespective of it’s economic stands.
+          We ourselves belongs to backward and rural areas, that’s why we have
+          experienced that students don’t have a good tuition facility in
+          villages and the talent of the children is also suppressed. Due to
+          limited resources, security and financial issue; Parents have fear of
+          sending their child far from village for tuition. Thus, We are trying
+          to solve this major problem through Dainik school website and app. It
+          will be possible only if the parents and their children will
+          co-operate with us. The founder of “Dainik school” stands for
+          education of every child irrespective of their economic condition.
         </div>
       </div>
       <div className="about-container">
