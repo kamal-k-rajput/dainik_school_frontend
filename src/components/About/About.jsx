@@ -1,11 +1,7 @@
 import React from "react";
-import "./About.css";
-import { TextSection } from "../Home/TextSection/TextSection";
 import { Gap } from "../Tools/Gap";
-import HorizoantalLine from "../HorizoantalLine/HorizoantalLine";
-import { CustomHeader } from "../Tools/CustomHeader";
-import { Footer } from "../Footer/Footer";
 import { MoveToTop } from "../Tools/MoveToTop";
+import "./About.css";
 
 export const About = () => {
   return (
