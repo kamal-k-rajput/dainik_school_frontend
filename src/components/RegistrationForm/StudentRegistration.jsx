@@ -125,18 +125,25 @@ export const StudentRegistration = () => {
 
           <input
             type="text"
-            name="gender"
-            placeholder="Gender"
-            onChange={handleChange}
-            value={formData.gender || ""}
-          />
-          <input
-            type="text"
             name="location"
             placeholder="Location"
             onChange={handleChange}
             value={formData.location || ""}
           />
+
+          <select
+            onChange={handleChange}
+            required
+            name="gender"
+            value={formData.gender}
+          >
+            <option value={"male"} key={"male"}>
+              Male
+            </option>
+            <option value={"female"} key={"female"}>
+              Female
+            </option>
+          </select>
 
           <input
             type="password"
