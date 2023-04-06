@@ -4,6 +4,7 @@ import { Provider as ReduxProvider } from "react-redux";
 import "./index.css";
 import App from "./App";
 import { store } from "./Redux/Store/store";
+// require("dotenv").config();
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

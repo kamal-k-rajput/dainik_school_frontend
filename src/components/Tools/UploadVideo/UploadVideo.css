@@ -1,0 +1,12 @@
+.video-testing {
+    border: 2px solid grey;
+    margin: 50px 5%;
+    padding: 50px;
+}
+
+.video-uplaod-container {
+
+    margin: 50px 5%;
+    display: flex;
+    flex-direction: column;
+}

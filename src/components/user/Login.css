@@ -12,6 +12,8 @@
     flex-direction: column;
 }
 
+
+
 .login-submit-button {
     background-color: rgb(80, 129, 5);
     color: white;
@@ -24,7 +26,17 @@
     height: 60px;
 }
 
+.wrong-credentials {
+    background-color: red;
+    color: #fff;
+    font-size: 32px;
+    padding: 20px;
 
+}
+
+.correct {
+    background-color: green;
+}
 
 .login-submit-button:hover {
     background-color: white;
