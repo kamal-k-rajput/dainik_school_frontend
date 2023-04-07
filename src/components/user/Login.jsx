@@ -1,27 +1,31 @@
 import React, { useState } from "react";
-import "./Login.css";
-import { Footer } from "../Footer/Footer";
-import { Gap } from "../Tools/Gap";
-import { CustomHeader } from "../Tools/CustomHeader";
-import { LogIn } from "../Tools/Axios";
+import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
+import { userDetails } from "../../Redux/Action/action";
+import { Footer } from "../Footer/Footer";
+import { logIn } from "../Tools/Axios";
+import { CustomHeader } from "../Tools/CustomHeader";
+import { Gap } from "../Tools/Gap";
+import "./Login.css";
+
 export const Login = () => {
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const [text, setText] = useState("Please login from here.");
   function submitLogIn(e) {
     e.preventDefault();
     (async () => {
       try {
-        let response = await LogIn(formData);
-
-        console.log(response);
+        let response = await logIn(formData);
+        console.log(response, "response from api");
+        dispatch(userDetails(response.data));
         localStorage.setItem("token", JSON.stringify(response.data["token"]));
         localStorage.setItem("userData", JSON.stringify(response.data));
-        navigate("/");
+        navigate("/courses");
       } catch (error) {
         setText("Invalid Credentials.");
       }

@@ -27,6 +27,9 @@ import { Quiz } from "./components/Quiz/Quiz";
 import "./App.css";
 import { StudentRegistration } from "./components/RegistrationForm/StudentRegistration";
 import { UploadVideo } from "./components/Tools/UploadVideo/UploadVideo";
+import { Profile } from "./components/user/Profile";
+import { AdminProfile } from "./components/Admin/AdminProfile";
+import { Dashboard } from "./components/Admin/Dashboard";
 
 function App() {
   return (
@@ -40,7 +43,7 @@ function App() {
           <Route path="/Courses" element={<Courses />} />
           <Route path="/Privacy-Policy" element={<PrivacyPolicy />} />
           <Route path="/Contact-us" element={<ContactUs />} />
-          <Route path="/Register" element={<Register />} />
+          <Route path="/apply-now" element={<Register />} />
           <Route path="/Feedback" element={<Feedback />} />
           <Route path="/About" element={<AboutUs />} />
           <Route path="/live-classes" element={<LiveClasses />} />
@@ -58,7 +61,9 @@ function App() {
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/refund-policy" element={<ReturnPolicy />} />
           <Route path="/term-of-use" element={<TermAndCondition />} />
+          <Route path="/admin-dashboard" element={<Dashboard />} />
           <Route path="/upload-video" element={<UploadVideo />} />
+          <Route path="/profile" element={<Profile />} />
           <Route
             path="/student-registration"
             element={<StudentRegistration />}
