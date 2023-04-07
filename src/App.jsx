@@ -26,6 +26,7 @@ import { Test } from "./components/Test/Test";
 import { Quiz } from "./components/Quiz/Quiz";
 import "./App.css";
 import { StudentRegistration } from "./components/RegistrationForm/StudentRegistration";
+import { UploadVideo } from "./components/Tools/UploadVideo/UploadVideo";
 
 function App() {
   return (
@@ -57,6 +58,7 @@ function App() {
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/refund-policy" element={<ReturnPolicy />} />
           <Route path="/term-of-use" element={<TermAndCondition />} />
+          <Route path="/upload-video" element={<UploadVideo />} />
           <Route
             path="/student-registration"
             element={<StudentRegistration />}

@@ -12,6 +12,8 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import "./Navbar.css";
 
 export function NavbarLinks() {
+  let isLoggedIn = localStorage.getItem("token");
+
   return (
     <div className="navbar-container">
       {["xl"].map((expand) => (
@@ -70,7 +72,10 @@ export function NavbarLinks() {
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                   </NavDropdown>
-                  <Nav.Link href="/login" className="btn btn-sucess">
+                  <Nav.Link
+                    href={isLoggedIn ? "Logout" : "Login"}
+                    className="btn btn-sucess"
+                  >
                     Log In
                   </Nav.Link>
                 </Nav>
@@ -92,4 +97,3 @@ export function NavbarLinks() {
     </div>
   );
 }
-

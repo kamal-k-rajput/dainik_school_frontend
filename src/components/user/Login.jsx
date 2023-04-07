@@ -1,35 +1,31 @@
 import React, { useState } from "react";
 import "./Login.css";
-// import axios from "axios";
 import { Footer } from "../Footer/Footer";
-import { Link } from "react-router-dom";
 import { Gap } from "../Tools/Gap";
 import { CustomHeader } from "../Tools/CustomHeader";
+import { LogIn } from "../Tools/Axios";
+import { useNavigate } from "react-router";
 export const Login = () => {
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
+  const navigate = useNavigate();
+  const [text, setText] = useState("Please login from here.");
   function submitLogIn(e) {
     e.preventDefault();
     (async () => {
-      const rawResponse = await fetch("http://192.168.26.235:5000/user/login", {
-        method: "GET",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ ...formData }),
-      });
+      try {
+        let response = await LogIn(formData);
+
+        console.log(response);
+        localStorage.setItem("token", JSON.stringify(response.data["token"]));
+        localStorage.setItem("userData", JSON.stringify(response.data));
+        navigate("/");
+      } catch (error) {
+        setText("Invalid Credentials.");
+      }
     })();
-    // axios
-    //   .post(`http://192.168.26.235:5000/user/login`, { ...formData })
-    //   .then((response) => {
-    //     console.log(response);
-    //   })
-    //   .catch((err) => {
-    //     console.log(err, "error");
-    //   });
   }
   function handleChange(e) {
     e.preventDefault();
@@ -40,19 +36,24 @@ export const Login = () => {
     <>
       <Gap />
       <CustomHeader props={{ title: "Log In" }} />
+      <div className="wrong-credentials correct">
+        <span>{text}</span>
+      </div>
       <div className="login-container">
         <form onSubmit={submitLogIn}>
           <input
-            type="number"
-            name="mobile"
-            placeholder="Mobile Number"
+            type="email"
+            name="email"
+            placeholder="Email"
             onChange={handleChange}
+            required
           />
           <input
             type="password"
             name="password"
             placeholder="Password"
             onChange={handleChange}
+            required
           />
           <input type="submit" value="SUBMIT" className="btn btn-success" />
         </form>

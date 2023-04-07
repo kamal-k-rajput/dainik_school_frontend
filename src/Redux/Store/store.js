@@ -3,6 +3,7 @@ import { studentDetailsReducer } from "../Reducer/reducer";
 
 let initialState = {
   studentDetails: {},
+  loggedInUserDetail: {},
 };
 
 export const store = createStore(studentDetailsReducer, initialState);
