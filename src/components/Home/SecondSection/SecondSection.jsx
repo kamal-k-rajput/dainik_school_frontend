@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import appleStore from "../../../ASSETS/IMG/homepage/playStore/AppleStore.png";
 import playStore from "../../../ASSETS/IMG/homepage/playStore/GooglePlay.png";
@@ -42,9 +42,14 @@ const SecondSection = () => {
           <b>Fees Ki Wajah Se</b>
           <b>Padhai Nahi Rukegi</b>
         </div>
-        <div className="mobile-app-icon">
-          <img src={appleStore} alt="appstore" />
-          <img src={playStore} alt="playstore" />
+        <div>
+          <Link
+            className="mobile-app-icon"
+            to="https://play.google.com/store/apps/details?id=com.nrichlearning.dainikschool&pli=1"
+          >
+            <img src={appleStore} alt="appstore" />
+            <img src={playStore} alt="playstore" />
+          </Link>
         </div>
       </div>
 
