@@ -86,19 +86,27 @@ export const LiveClasses = () => {
         <select name="class" id="class">
           <option value="">Class </option>
           {classes.map((subject) => {
-            return <option value={subject.value}>{subject.text}</option>;
+            return (
+              <option value={subject.value} key={subject.value}>
+                {subject.text}
+              </option>
+            );
           })}
         </select>
         <select name="subject" id="subject">
           <option value="">Subject</option>
           {subjects.map((subject) => {
-            return <option value={subject.value}>{subject.text}</option>;
+            return (
+              <option value={subject.value} key={subject.value}>
+                {subject.text}
+              </option>
+            );
           })}
         </select>{" "}
       </section>
       <section className="live-section">
         {liveClasses.map((liveClass) => {
-          return <LiveCourseBox props={liveClass} />;
+          return <LiveCourseBox props={liveClass} key={liveClass.title} />;
         })}
       </section>
       <Footer />

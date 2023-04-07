@@ -42,6 +42,7 @@ export function NavbarLinks() {
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link href="/">HOME</Nav.Link>
+                  <Nav.Link href="/courses">COURSES</Nav.Link>
                   <Nav.Link href="/live-classes">LIVE CLASSES </Nav.Link>
                   <NavDropdown
                     title="CLASSES"
@@ -73,7 +74,7 @@ export function NavbarLinks() {
                     <NavDropdown.Divider />
                   </NavDropdown>
                   <Nav.Link
-                    href={isLoggedIn ? "Logout" : "Login"}
+                    href={isLoggedIn ? "login" : "Login"}
                     className="btn btn-sucess"
                   >
                     Log In
