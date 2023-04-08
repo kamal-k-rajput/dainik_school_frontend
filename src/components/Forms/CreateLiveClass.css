@@ -1,0 +1,15 @@
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-container >table, th, td {
+  border: 1px solid black;
+}
+.table-container ,th{
+    padding: 10, 20px   ;
+}
