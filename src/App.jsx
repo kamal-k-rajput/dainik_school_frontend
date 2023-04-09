@@ -30,12 +30,6 @@ import { UploadVideo } from "./components/Tools/UploadVideo/UploadVideo";
 import { Profile } from "./components/user/Profile";
 import { AdminProfile } from "./components/Admin/AdminProfile";
 import { Dashboard } from "./components/Admin/Dashboard";
-import { CreateLiveClasses } from "./components/Forms/CreateLiveClass";
-import { CreateCourse } from "./components/Forms/CreateCourse";
-import { StudentList } from "./components/Forms/StudentList";
-import { TeacherList } from "./components/Forms/TeacherList";
-import { AppliedTeacherList } from "./components/Forms/AppliedTeacher";
-import { CreateBlog } from "./components/Forms/CreateBlog";
 
 function App() {
   return (
@@ -69,17 +63,7 @@ function App() {
           <Route path="/term-of-use" element={<TermAndCondition />} />
           <Route path="/admin-dashboard" element={<Dashboard />} />
           <Route path="/upload-video" element={<UploadVideo />} />
-          <Route path="/create-live-class" element={<CreateLiveClasses />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/create-blog" element={<CreateBlog />} />
-          <Route path="/student-list" element={<StudentList />} />
-          <Route path="/teacher-list" element={<TeacherList />} />
-          <Route
-            path="/applied-teacher-list"
-            element={<AppliedTeacherList />}
-          />
-
-          <Route path="/create-course" element={<CreateCourse />} />
           <Route
             path="/student-registration"
             element={<StudentRegistration />}
