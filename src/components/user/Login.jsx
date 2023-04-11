@@ -15,7 +15,7 @@ export const Login = () => {
   });
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const [text, setText] = useState("Please login from here.");
+  const [text, setText] = useState("");
   function submitLogIn(e) {
     e.preventDefault();
     (async () => {
@@ -40,9 +40,7 @@ export const Login = () => {
     <>
       <Gap />
       <CustomHeader props={{ title: "Log In" }} />
-      <div className="wrong-credentials correct">
-        <span>{text}</span>
-      </div>
+
       <div className="login-container">
         <form onSubmit={submitLogIn}>
           <input

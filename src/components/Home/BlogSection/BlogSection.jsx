@@ -1,6 +1,7 @@
 import React from "react";
 import "./BlogSection.css";
 import blogImg from "../../../ASSETS/IMG/homepage/Blog/blog.jpg";
+import { Link } from "react-router-dom";
 export const BlogSection = () => {
   const blogData = [
     {
@@ -38,10 +39,15 @@ export const BlogSection = () => {
         <div>
           <span className="blog-title">Title</span>
           <p className="blog-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-            maxime, rem suscipitLorem ipsum dolor sit.
+            The Future of Education: Revolutionizing Education with Online
+            Learning.
           </p>
-          <button className="btn btn-success">Read more</button>
+          <Link
+            to="https://dainikschool.blogspot.com/2023/04/the-future-of-education-revolutionizing.html"
+            className="btn btn-success"
+          >
+            Read more
+          </Link>
         </div>
       </section>
     </>

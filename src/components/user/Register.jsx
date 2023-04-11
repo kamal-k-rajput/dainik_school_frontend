@@ -11,9 +11,17 @@ export const Register = () => {
     password: "",
     email: "",
     mobileNumber: "",
+    description: "",
     class: "",
     gender: "",
   });
+
+  const options = [
+    { value: "chocolate", label: "Chocolate" },
+    { value: "strawberry", label: "Strawberry" },
+    { value: "vanilla", label: "Vanilla" },
+  ];
+
   function submitRegister(e) {
     e.preventDefault();
     (async () => {
@@ -28,7 +36,7 @@ export const Register = () => {
       //     body: JSON.stringify({ ...formData }),
       //   }
       // );
-      console.log(formData, "form data");
+      // console.log(formData, "form data");
       // console.log(rawResponse);
     })();
   }
@@ -104,8 +112,7 @@ export const Register = () => {
               placeholder="Teaching experiance"
               onChange={handleChange}
             />
-
-            <textarea placeholder="Your Expertise" />
+            <textarea placeholder="Your Expertise" name="description" />
             <label htmlFor="resume">
               Upload Resume
               <input

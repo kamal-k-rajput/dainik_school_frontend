@@ -57,6 +57,9 @@ export function NavbarLinks() {
                     <NavDropdown.Item href="/classes">
                       9 to 12th
                     </NavDropdown.Item>
+                    <NavDropdown.Item href="/classes">
+                      Spoken English
+                    </NavDropdown.Item>
                     <NavDropdown.Divider />
                   </NavDropdown>
                   <NavDropdown

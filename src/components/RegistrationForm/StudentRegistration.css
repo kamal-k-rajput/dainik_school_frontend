@@ -12,15 +12,14 @@ input {
 }
 
 .student-reg-container {
+    margin: 10px 5%;
     background-color: aliceblue;
 }
 
 .student-reg-container>form {
-    display: flex;
-    margin: 0px 5%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  
     font-size: 18px;
 }
 
@@ -43,10 +42,30 @@ input {
     transition: .6s ease;
 }
 
+@media screen and (max-width:720px) {
+
+
+    
+.student-reg-container>form {
+  
+    grid-template-columns: repeat(2,1fr);
+  
+}
+.student-reg-container select,
+    input {
+        width: 300px;
+    }
+}
 @media screen and (max-width:480px) {
 
     .student-reg-container select,
     input {
         width: 250px;
     }
+    
+.student-reg-container>form {
+  
+    grid-template-columns: repeat(1,1fr);
+  
+}
 }
