@@ -113,24 +113,28 @@ export const Register = () => {
               onChange={handleChange}
             />
             <textarea placeholder="Your Expertise" name="description" />
-            <label htmlFor="resume">
-              Upload Resume
-              <input
-                type="file"
-                id="resume"
-                name="avatar"
-                className="file-upload-input"
-                accept="image/png, image/jpeg"
-              />
-            </label>
-            <label htmlFor="video">Upload Video</label>
+            <div>
+              <label htmlFor="resume">
+                Upload Resume
+                <input
+                  type="file"
+                  id="resume"
+                  name="avatar"
+                  className="file-upload-input"
+                  accept="image/png, image/jpeg"
+                />
+              </label>
+            </div>
+            <div></div>
+            <label htmlFor="video">Upload Video
             <input
               type="file"
               id="video"
               name="avatar"
               accept="image/png, image/jpeg"
               className="file-upload-input"
-            />
+              />
+              </label>
 
             <input
               type="submit"
