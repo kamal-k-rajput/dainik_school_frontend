@@ -14,8 +14,8 @@ input {
 
 
 .student-reg-container {
-    margin: 10px 5%;
-    background-color: aliceblue;
+    margin: 80px 5%;
+    background-color: #fff;
 }
 
 .student-reg-container>form {
@@ -62,7 +62,7 @@ input {
 
     .student-reg-container select,
     input {
-        width: 250px;
+        width: 275px;
     }
 
     .student-reg-container>form {

@@ -75,6 +75,26 @@ export const LiveClasses = () => {
       date: "01-04-2023",
       time: "05:00-06:00",
     },
+    {
+      title: "Biology",
+      imgSrc: spokenEnglish,
+      highlights: "Highlights of this class.",
+      description: "Cell",
+      subject: "Biology",
+      class: "9th",
+      date: "01-04-2023",
+      time: "05:00-06:00",
+    },
+    {
+      title: "SST",
+      imgSrc: spokenEnglish,
+      highlights: "Highlights of this class.",
+      description: "Cell",
+      subject: "SST",
+      class: "9th",
+      date: "01-04-2023",
+      time: "05:00-06:00",
+    },
   ];
   return (
     <>
