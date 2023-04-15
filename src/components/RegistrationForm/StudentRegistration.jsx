@@ -39,7 +39,8 @@ export const StudentRegistration = () => {
       return;
     }
 
-    console.log(typeof formData);
+    if (!IsMobileNumber(formData.phone)) return;
+
     (async () => {
       const rawResponse = await fetch("http://3.110.254.213/user/register", {
         method: "POST",
@@ -56,6 +57,17 @@ export const StudentRegistration = () => {
     e.preventDefault();
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+  }
+
+  function IsMobileNumber(txtMobId) {
+    var mob = /^[1-9]{1}[0-9]{9}$/;
+    var txtMobile = document.getElementById(txtMobId);
+    if (mob.test(txtMobile.value) == false) {
+      alert("Please enter valid mobile number.");
+      txtMobile.focus();
+      return false;
+    }
+    return true;
   }
   return (
     <>
@@ -121,6 +133,7 @@ export const StudentRegistration = () => {
             placeholder="Mobile Number"
             value={formData.phone || ""}
             onChange={handleChange}
+            pattern=""
           />
 
           <input

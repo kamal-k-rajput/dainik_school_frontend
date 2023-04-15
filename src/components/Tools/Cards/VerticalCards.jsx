@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export const VerticalCards = ({ cardProps }) => {
   return (
     <div>
-      <Card style={{ width: "18rem" }}>
+      <Card style={{ width: "20rem" }}>
         <Card.Img variant="top" src={cardProps.img} />
         <Card.Body>
           <Card.Title>{cardProps.title}</Card.Title>

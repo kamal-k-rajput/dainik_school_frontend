@@ -20,6 +20,7 @@ input {
 
 .student-reg-container>form {
     display: grid;
+    vertical-align: center;
     grid-template-columns: repeat(3, 1fr);
 
     font-size: 18px;
@@ -34,7 +35,6 @@ input {
     font-weight: 600;
     width: 350px;
     height: 60px;
-
 }
 
 .register-submit:hover {
@@ -47,9 +47,7 @@ input {
 @media screen and (max-width:720px) {
 
     .student-reg-container>form {
-
         grid-template-columns: repeat(2, 1fr);
-
     }
 
     .student-reg-container select,
@@ -60,14 +58,12 @@ input {
 
 @media screen and (max-width:480px) {
 
-    .student-reg-container select,
+    /* .student-reg-container select,
     input {
-        width: 275px;
-    }
+        width: 300px;
+    } */
 
     .student-reg-container>form {
-
         grid-template-columns: repeat(1, 1fr);
-
     }
 }

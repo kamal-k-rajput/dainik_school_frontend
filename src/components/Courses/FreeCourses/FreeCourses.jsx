@@ -12,11 +12,10 @@ export const FreeCourses = () => {
         <Gap />
         <CustomHeader props={{ title: "Free Courses" }} />
         <div className="courses_container">
+          <h1>Comming soon...</h1>
           <div className="all_courses"></div>
+
           <section className="courses-section">
-            <div>course</div>
-            <div>course</div>
-            <div>course</div>
             <div>course</div>
           </section>
         </div>
