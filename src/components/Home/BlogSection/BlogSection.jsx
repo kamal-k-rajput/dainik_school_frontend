@@ -37,22 +37,19 @@ export const BlogSection = () => {
           <img src={blogImg} alt="" className="blog-img" />
         </div>
         <div>
-          <span className="blog-title">
-            The Future of Education: Revolutionizing Education with Online
-            Learning
-          </span>
+          <span className="blog-title">The Future of Education</span>
           <p className="blog-desc">
             Education has always been a cornerstone of human development. Over
-            the centuries, we have seen many advancements in the field of
-            education, from the advent of the printing press to the widespread
-            availability of the Internet ....
+            the centuries ....
           </p>
-          <Link
-            to="https://dainikschool.blogspot.com/2023/04/the-future-of-education-revolutionizing.html"
-            className="btn btn-success"
-          >
-            Read more ...
-          </Link>
+          <div>
+            <Link
+              to="https://dainikschool.blogspot.com/2023/04/the-future-of-education-revolutionizing.html"
+              className="btn btn-success"
+            >
+              Read more
+            </Link>
+          </div>
         </div>
       </section>
     </>

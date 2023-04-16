@@ -31,6 +31,7 @@ import { Profile } from "./components/user/Profile";
 import { AdminProfile } from "./components/Admin/AdminProfile";
 import { Dashboard } from "./components/Admin/Dashboard";
 import { Blog } from "./components/NewsNblogs/Blog";
+import { YoutubeVideo } from "./components/Tools/YoutubeVideo";
 
 function App() {
   return (
@@ -66,6 +67,7 @@ function App() {
           <Route path="/admin-dashboard" element={<Dashboard />} />
           <Route path="/upload-video" element={<UploadVideo />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/youtubeVideo" element={<YoutubeVideo />} />
           <Route
             path="/student-registration"
             element={<StudentRegistration />}

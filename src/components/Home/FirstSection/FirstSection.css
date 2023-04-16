@@ -86,9 +86,10 @@
 }
 
 .first-section .btn-parent>div {
-    width: 350px;
+    width: 320px;
     margin: 10px 0px;
     display: flex;
+    justify-content: space-between;
 }
 
 
