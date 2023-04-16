@@ -30,6 +30,7 @@ import { UploadVideo } from "./components/Tools/UploadVideo/UploadVideo";
 import { Profile } from "./components/user/Profile";
 import { AdminProfile } from "./components/Admin/AdminProfile";
 import { Dashboard } from "./components/Admin/Dashboard";
+import { Blog } from "./components/NewsNblogs/Blog";
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
           <Route path="/classes" element={<Classes />} />
           <Route path="/free-courses" element={<FreeCourses />} />
           <Route path="/news-and-blogs" element={<NewsAndBlogs />} />
+          <Route path="/news-and-blogs/:id" element={<Blog />} />
           <Route path="/faculty" element={<Faculty />} />
           <Route path="/practice-session" element={<PracticeSession />} />
           <Route path="/license" element={<DrivingLicense />} />
