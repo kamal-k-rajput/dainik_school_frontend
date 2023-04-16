@@ -67,7 +67,10 @@ function App() {
           <Route path="/admin-dashboard" element={<Dashboard />} />
           <Route path="/upload-video" element={<UploadVideo />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/youtubeVideo" element={<YoutubeVideo />} />
+          <Route
+            path="/youtubeVideo"
+            element={<YoutubeVideo props={{ link: "aWQ7FqkvnT4" }} />}
+          />
           <Route
             path="/student-registration"
             element={<StudentRegistration />}
