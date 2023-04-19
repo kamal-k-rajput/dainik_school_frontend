@@ -1,6 +1,4 @@
 import React from "react";
-import { Footer } from "../Footer/Footer";
-import { CustomHeader } from "./CustomHeader";
 import { Gap } from "./Gap";
 import "./youtubeVideo.css";
 
