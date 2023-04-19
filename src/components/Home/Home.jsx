@@ -13,6 +13,7 @@ import { DisplayCourses2 } from "./DisplayCourses/DisplayCourses2";
 import { TextSection } from "./TextSection/TextSection";
 import { BlogSection } from "./BlogSection/BlogSection";
 import { FirstSectionMiddleHeading } from "./utils/FirstSectionMiddleHeading";
+import { YoutubeVideo } from "../Tools/YoutubeVideo";
 
 export const Home = () => {
   return (
@@ -30,6 +31,7 @@ export const Home = () => {
       <ThreeBox />
       <Levels />
       <WhatsMore />
+      <YoutubeVideo props={{ link: "lkq_kx_NiU8" }} />
       <BlogSection />
       <Footer />
     </div>
