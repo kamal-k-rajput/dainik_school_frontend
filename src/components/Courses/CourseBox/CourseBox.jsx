@@ -1,5 +1,6 @@
 import React from "react";
 import "./CourseBox.css";
+import { Link } from "react-router-dom";
 
 export const CourseBox = ({ props }) => {
   return (
@@ -10,8 +11,12 @@ export const CourseBox = ({ props }) => {
         <p className="course-box-details">{props.details}</p>
       </div>
       <div className="course-box-bottom">
-        <button className="btn btn-success">View Details</button>
-        <button className="btn btn-success">Free Trials</button>
+        <Link to={props.subject} className="btn btn-success">
+          View Details
+        </Link>
+        <Link to={props.subject} className="btn btn-success">
+          Free Trials
+        </Link>
       </div>
     </div>
   );

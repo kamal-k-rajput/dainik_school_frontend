@@ -31,7 +31,13 @@ export const Home = () => {
       <ThreeBox />
       <Levels />
       <WhatsMore />
-      <YoutubeVideo props={{ link: "lkq_kx_NiU8" }} />
+      <YoutubeVideo
+        props={{
+          link: "lkq_kx_NiU8",
+          title:
+            "The Wonders of Space: Discovering Our Universe | Dainik School",
+        }}
+      />
       <BlogSection />
       <Footer />
     </div>

@@ -6,8 +6,7 @@ export const YoutubeVideo = ({ props }) => {
   return (
     <div>
       <Gap />
-      {/* <CustomHeader props={{ title: "Our Ambtions" }} /> */}
-      <h1>The Wonders of Space: Discovering Our Universe | Dainik School</h1>
+      <h1>{props.title}</h1>
       <iframe
         id="youtube-video-iframe"
         src={`https://www.youtube.com/embed/${props.link}`}
@@ -16,7 +15,6 @@ export const YoutubeVideo = ({ props }) => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen="allowFullScreen"
       ></iframe>
-      {/* <Footer /> */}
     </div>
   );
 };
