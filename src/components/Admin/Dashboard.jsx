@@ -3,6 +3,7 @@ import "./AdminDashboard.css";
 import { Gap } from "../Tools/Gap";
 import { CustomHeader } from "../Tools/CustomHeader";
 import { Footer } from "../Footer/Footer";
+import { Link } from "react-router-dom";
 
 export const Dashboard = () => {
   return (
@@ -11,7 +12,12 @@ export const Dashboard = () => {
       <CustomHeader props={{ title: "Admin Dashboard" }} />
       <div className="admin-btn-container">
         <button className="btn btn-success">Create a live Class</button>
-        <button className="btn btn-success">Create a Course</button>
+        <Link to="/create-course" className="btn btn-success">
+          Create a Course
+        </Link>
+        <Link to="/get-all-course" className="btn btn-success">
+          Get all Course
+        </Link>
         <button className="btn btn-success">Add a teacher</button>
         <button className="btn btn-success"> Add a blog</button>
         <button className="btn btn-success"> Students list</button>

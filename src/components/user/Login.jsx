@@ -21,7 +21,6 @@ export const Login = () => {
     (async () => {
       try {
         let response = await logIn(formData);
-        console.log(response, "response from api");
         dispatch(userDetails(response.data));
         localStorage.setItem("token", JSON.stringify(response.data["token"]));
         localStorage.setItem("userData", JSON.stringify(response.data));

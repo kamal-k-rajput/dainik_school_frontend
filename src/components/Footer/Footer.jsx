@@ -41,6 +41,7 @@ export const Footer = () => {
           <div className="footer-vertical align-left footer-links">
             <Link to="/apply-now"> Apply Now</Link>
             <Link to="/educator-policy">Educator Policy</Link>
+            <Link to="/admin-dashboard">admin dashboard</Link>
           </div>
         </div>
       </footer>
