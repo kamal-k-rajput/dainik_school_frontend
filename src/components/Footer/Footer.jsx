@@ -59,7 +59,7 @@ export const Footer = () => {
             </a>
           </div>
           <div className="footer-social-link">
-            <a href="https://www.youtube.com/channel/UC7PltYNgy8cWQKoz6NIZBgg">
+            <a href="https://www.youtube.com/@dainikschool">
               <FaYoutube />
             </a>
           </div>
