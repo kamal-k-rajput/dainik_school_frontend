@@ -1,31 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router";
 
 export const LogOut = () => {
+  const navigate = useNavigate();
   function changeRoutes(e) {
     e.preventDefault();
-
-    // axios
-    //   .get("http://192.168.26.235:5000/user/logout")
-    //   .then((res) => {
-    //     console.log(res, "response");
-    //   })
-    //   .catch((err) => {
-    //     console.log(err, "err");
-    //   });
-    (async () => {
-      const rawResponse = await fetch(
-        "http://192.168.26.235:5000/user/logout",
-        {
-          method: "GET",
-          headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json",
-          },
-        }
-      );
-
-      console.log(rawResponse);
-    })();
+    localStorage.clear();
+    navigate("/");
   }
   return (
     <div>

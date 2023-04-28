@@ -29,7 +29,7 @@ export const UploadVideo = () => {
     console.log({ video: filePath, description });
     axios
       .post(
-        `http://3.110.254.213/course/${id}/uploadVideo`,
+        `https://api.dainikschool.com/course/${id}/uploadVideo`,
         { video: filePath, description },
         {
           headers: {

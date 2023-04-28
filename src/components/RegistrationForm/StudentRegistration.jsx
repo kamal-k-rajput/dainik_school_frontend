@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Footer } from "../Footer/Footer";
 import { classes, states } from "../Data/Constants";
 import "./StudentRegistration.css";
+import { Register } from "../Tools/Axios";
 
 export const StudentRegistration = () => {
   const dispatch = useDispatch();
@@ -32,7 +33,7 @@ export const StudentRegistration = () => {
     }
   }, []);
 
-  function submitRegister(e) {
+  async function submitRegister(e) {
     e.preventDefault();
     if (formData.password !== formData.confirmPassword) {
       alert("Password does not match.");
@@ -41,17 +42,22 @@ export const StudentRegistration = () => {
 
     if (!IsMobileNumber(formData.phone)) return;
 
-    (async () => {
-      const rawResponse = await fetch("http://3.110.254.213/user/register", {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ ...formData }),
-      });
-      console.log(rawResponse, "rawResponse");
-    })();
+    await Register(formData).then(d => console.log(d));
+
+    // (async () => {
+    //   const rawResponse = await fetch(
+    //     "https://api.dainikschool.com/user/register",
+    //     {
+    //       method: "POST",
+    //       headers: {
+    //         Accept: "application/json",
+    //         "Content-Type": "application/json",
+    //       },
+    //       body: JSON.stringify({ ...formData }),
+    //     }
+    //   );
+    //   console.log(rawResponse, "rawResponse");
+    // })();
   }
   function handleChange(e) {
     e.preventDefault();
@@ -61,8 +67,8 @@ export const StudentRegistration = () => {
 
   function IsMobileNumber(txtMobId) {
     var mob = /^[1-9]{1}[0-9]{9}$/;
-    var txtMobile = document.getElementById(txtMobId);
-    if (mob.test(txtMobile.value) == false) {
+    var txtMobile = formData.phone;
+    if (mob.test(txtMobile) == false) {
       alert("Please enter valid mobile number.");
       txtMobile.focus();
       return false;
