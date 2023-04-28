@@ -13,6 +13,7 @@ export const UploadVideo = () => {
 
   const [filePath, setFilePath] = useState("");
   const [isUploading, setUploading] = useState(false);
+  const [percentCompleted, setPercentCompleted] = useState(0);
   const navigate = useNavigate();
 
   function handleFileChange(e) {
@@ -26,7 +27,6 @@ export const UploadVideo = () => {
   function handleUpload(e) {
     e.preventDefault();
     setUploading(true);
-    console.log({ video: filePath, description });
     axios
       .post(
         `https://api.dainikschool.com/course/${id}/uploadVideo`,
@@ -37,10 +37,11 @@ export const UploadVideo = () => {
             "x-access-token": token,
           },
           onUploadProgress: function (progressEvent) {
-            var percentCompleted = Math.round(
+            var per = Math.round(
               (progressEvent.loaded * 100) / progressEvent.total
             );
-            console.log(percentCompleted);
+            console.log(per);
+            setPercentCompleted(per);
           },
         }
       )
@@ -66,6 +67,13 @@ export const UploadVideo = () => {
           name="myfile"
           accept=".mp4,.mkv,.pdf"
         />
+        <div>
+          Uploaded{" "}
+          <b>
+            {" "}
+            <i>{percentCompleted}%</i>
+          </b>
+        </div>
         <input
           type="text"
           placeholder="description"
