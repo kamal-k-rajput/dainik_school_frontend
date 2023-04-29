@@ -7,11 +7,12 @@ const api = axios.create({
     "Content-type": "application/json",
     Accept: "application/json",
     "x-access-token": token,
+    "Access-Control-Allow-Origin": "*",
   },
 });
 export default api;
 // export const
-export const logIn = (data) => api.post("/user/login", data);
+export const logIn = async (data) => api.post("/user/login", data);
 export const Register = async (data) => api.post("/user/register", data);
-export const createCourseAdmin = (data) => api.post("/course", data);
-export const getAllCourse = (data) => api.get("/course", data);
+export const createCourseAdmin = async (data) => api.post("/course", data);
+export const getAllCourse = async (data) => api.get("/course", data);

@@ -35,6 +35,7 @@ export const UploadVideo = () => {
           headers: {
             "Content-Type": "multipart/form-data",
             "x-access-token": token,
+            "Access-Control-Allow-Origin": "*",
           },
           onUploadProgress: function (progressEvent) {
             var per = Math.round(

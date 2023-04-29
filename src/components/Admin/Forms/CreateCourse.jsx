@@ -8,7 +8,7 @@ import { useNavigate } from "react-router";
 
 export const CreateCourse = () => {
   const navigate = useNavigate();
-  navigate("/courses");
+  
   const [courseData, setCourseData] = useState({
     subject: "",
     description: "",
@@ -16,7 +16,7 @@ export const CreateCourse = () => {
     fees: "",
     duration: "",
   });
-
+  
   function handleChange(e) {
     e.preventDefault();
     const { name, value } = e.target;
@@ -28,9 +28,12 @@ export const CreateCourse = () => {
       try {
         let response = await createCourseAdmin(courseData);
         localStorage.setItem("subjectId", response.data._id);
-        navigate("/get-all-courses");
+        // navigate("/get-all-courses");
+        alert("Course created Successfully");
+        // navigate("/courses");
       } catch (err) {
         console.log(err, "error");
+        alert(err.message);
       }
     })();
   }
