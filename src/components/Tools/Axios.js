@@ -1,13 +1,18 @@
 import axios from "axios";
+let token = JSON.parse(localStorage.getItem("token"));
 
 const api = axios.create({
-  baseURL: "http://localhost:3000",
+  baseURL: "https://api.dainikschool.com/",
   headers: {
     "Content-type": "application/json",
     Accept: "application/json",
+    "x-access-token": token,
+    "Access-Control-Allow-Origin": "*",
   },
 });
 export default api;
 // export const
-export const logIn = (data) => api.post("/user/login", data);
-export const Register = (data) => api.post("/user/register", data);
+export const logIn = async (data) => api.post("/user/login", data);
+export const Register = async (data) => api.post("/user/register", data);
+export const createCourseAdmin = async (data) => api.post("/course", data);
+export const getAllCourse = async (data) => api.get("/course", data);

@@ -2,3 +2,26 @@
     margin: 100px;
     text-align: justify;
 }
+
+
+
+@media screen and (max-width:480px) {
+
+    .download-heading {
+    font-size: 24px;
+    font-weight: 500;
+}
+.hm-vision-list {
+    font-size: 18px;
+}
+.app-desc{
+    font-size: 15px;
+
+}
+.blog-title{
+    font-size: medium;
+}
+.hm-text-section {
+flex-direction: column;
+}
+}

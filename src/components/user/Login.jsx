@@ -15,13 +15,12 @@ export const Login = () => {
   });
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const [text, setText] = useState("Please login from here.");
+  const [text, setText] = useState("");
   function submitLogIn(e) {
     e.preventDefault();
     (async () => {
       try {
         let response = await logIn(formData);
-        console.log(response, "response from api");
         dispatch(userDetails(response.data));
         localStorage.setItem("token", JSON.stringify(response.data["token"]));
         localStorage.setItem("userData", JSON.stringify(response.data));
@@ -40,9 +39,7 @@ export const Login = () => {
     <>
       <Gap />
       <CustomHeader props={{ title: "Log In" }} />
-      <div className="wrong-credentials correct">
-        <span>{text}</span>
-      </div>
+
       <div className="login-container">
         <form onSubmit={submitLogIn}>
           <input

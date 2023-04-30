@@ -4,6 +4,7 @@ import { FaUserGraduate } from "react-icons/fa";
 import { MdDateRange } from "react-icons/md";
 import { FcOvertime } from "react-icons/fc";
 import "./LiveCourseBox.css";
+import { Link } from "react-router-dom";
 
 export const LiveCourseBox = ({ props }) => {
   return (
@@ -19,8 +20,15 @@ export const LiveCourseBox = ({ props }) => {
         </div>
       </div>
       <div className="live-middle-section">
-        <button className="btn btn-success">Book Seat</button>
-        <button className="btn btn-success">Join Now</button>
+        <Link to="/student-registration" className="btn btn-success">
+          Book Seat
+        </Link>
+        <Link
+          to="https://nrichlearning.com/auth/login"
+          className="btn btn-success"
+        >
+          Join Now
+        </Link>
       </div>
       <div className="live-bottom-section">
         <div>

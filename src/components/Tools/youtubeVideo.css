@@ -1,0 +1,14 @@
+#youtube-video-iframe {
+    width: 90vw !important;
+    height: 70vh !important;
+    margin: 50px 5%;
+}
+
+@media screen and (max-width:720px) {
+
+    #youtube-video-iframe {
+
+        height: 50vh !important;
+    }
+
+}

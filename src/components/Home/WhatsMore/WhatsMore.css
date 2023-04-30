@@ -5,6 +5,7 @@
     font-size: 14px;
     margin-top: 50px;
     flex-wrap: wrap;
+    font-weight: 500;
 }
 
 .whats-more-container .card {
@@ -16,9 +17,9 @@
     height: 250px;
     border-radius: 15px;
 }
-
 .card {
     margin-top: 20px;
+    width: 22rem;
 }
 
 @media screen and (max-width:1080px) {}

@@ -1,6 +1,7 @@
 import React from "react";
 import "./BlogSection.css";
 import blogImg from "../../../ASSETS/IMG/homepage/Blog/blog.jpg";
+import { Link } from "react-router-dom";
 export const BlogSection = () => {
   const blogData = [
     {
@@ -36,12 +37,19 @@ export const BlogSection = () => {
           <img src={blogImg} alt="" className="blog-img" />
         </div>
         <div>
-          <span className="blog-title">Title</span>
+          <span className="blog-title">The Future of Education</span>
           <p className="blog-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-            maxime, rem suscipitLorem ipsum dolor sit.
+            Education has always been a cornerstone of human development. Over
+            the centuries ....
           </p>
-          <button className="btn btn-success">Read more</button>
+          <div>
+            <Link
+              to="https://dainikschool.blogspot.com/2023/04/the-future-of-education-revolutionizing.html"
+              className="btn btn-success"
+            >
+              Read more
+            </Link>
+          </div>
         </div>
       </section>
     </>

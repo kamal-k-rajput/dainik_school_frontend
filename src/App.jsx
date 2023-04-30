@@ -30,12 +30,13 @@ import { UploadVideo } from "./components/Tools/UploadVideo/UploadVideo";
 import { Profile } from "./components/user/Profile";
 import { AdminProfile } from "./components/Admin/AdminProfile";
 import { Dashboard } from "./components/Admin/Dashboard";
-import { CreateLiveClasses } from "./components/Forms/CreateLiveClass";
-import { CreateCourse } from "./components/Forms/CreateCourse";
-import { StudentList } from "./components/Forms/StudentList";
-import { TeacherList } from "./components/Forms/TeacherList";
-import { AppliedTeacherList } from "./components/Forms/AppliedTeacher";
-import { CreateBlog } from "./components/Forms/CreateBlog";
+import { Blog } from "./components/NewsNblogs/Blog";
+import { YoutubeVideo } from "./components/Tools/YoutubeVideo";
+import { CourseDetails } from "./components/Courses/CourseBox/CourseDetails/CourseDetails";
+import { MathCourseDetails } from "./components/Courses/CourseBox/CourseDetails/MathCourseDetails";
+import { ScienceCourseDetails } from "./components/Courses/CourseBox/CourseDetails/ScienceCourseDetails";
+import { CreateCourse } from "./components/Admin/Forms/CreateCourse";
+import { GetAllCourse } from "./components/Admin/GetAllCourse/GetAllCourse";
 
 function App() {
   return (
@@ -57,6 +58,7 @@ function App() {
           <Route path="/classes" element={<Classes />} />
           <Route path="/free-courses" element={<FreeCourses />} />
           <Route path="/news-and-blogs" element={<NewsAndBlogs />} />
+          <Route path="/news-and-blogs/:id" element={<Blog />} />
           <Route path="/faculty" element={<Faculty />} />
           <Route path="/practice-session" element={<PracticeSession />} />
           <Route path="/license" element={<DrivingLicense />} />
@@ -64,22 +66,20 @@ function App() {
           <Route path="/educator-policy" element={<EducatorPolicy />} />
           <Route path="/classes" element={<Classes />} />
           <Route path="/test" element={<Test />} />
+          <Route path="/create-course" element={<CreateCourse />} />
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/refund-policy" element={<ReturnPolicy />} />
           <Route path="/term-of-use" element={<TermAndCondition />} />
           <Route path="/admin-dashboard" element={<Dashboard />} />
-          <Route path="/upload-video" element={<UploadVideo />} />
-          <Route path="/create-live-class" element={<CreateLiveClasses />} />
+          <Route path="/upload-video/:id" element={<UploadVideo />} />
+          <Route path="/get-all-course" element={<GetAllCourse />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/create-blog" element={<CreateBlog />} />
-          <Route path="/student-list" element={<StudentList />} />
-          <Route path="/teacher-list" element={<TeacherList />} />
+          <Route path="/courses/Maths" element={<MathCourseDetails />} />
+          <Route path="/courses/Science" element={<ScienceCourseDetails />} />
           <Route
-            path="/applied-teacher-list"
-            element={<AppliedTeacherList />}
+            path="/youtubeVideo"
+            element={<YoutubeVideo props={{ link: "aWQ7FqkvnT4" }} />}
           />
-
-          <Route path="/create-course" element={<CreateCourse />} />
           <Route
             path="/student-registration"
             element={<StudentRegistration />}

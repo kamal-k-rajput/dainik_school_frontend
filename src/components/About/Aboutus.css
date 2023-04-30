@@ -1,0 +1,9 @@
+.about-us-page-container{
+    margin: 100px 0px;
+}
+
+.about-us-page-container > .about-container > div {
+    font-weight: 500;
+    font-size: 18px;
+
+}

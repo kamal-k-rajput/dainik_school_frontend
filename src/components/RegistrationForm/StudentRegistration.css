@@ -1,26 +1,28 @@
 .student-reg-container select,
 input {
     width: 350px;
-    height: 60px;
+    height: 40px;
     border-radius: 5px;
     border: 1px solid rgb(203, 206, 203);
     margin: 10px;
-    padding: 0 0 0 10px;
+    padding: 0 0 0 0px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
+
 .student-reg-container {
-    background-color: aliceblue;
+    margin: 80px 5%;
+    background-color: #fff;
 }
 
 .student-reg-container>form {
-    display: flex;
-    margin: 0px 5%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    vertical-align: center;
+    grid-template-columns: repeat(3, 1fr);
+
     font-size: 18px;
 }
 
@@ -33,7 +35,6 @@ input {
     font-weight: 600;
     width: 350px;
     height: 60px;
-
 }
 
 .register-submit:hover {
@@ -43,10 +44,26 @@ input {
     transition: .6s ease;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:720px) {
+
+    .student-reg-container>form {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     .student-reg-container select,
     input {
-        width: 250px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    /* .student-reg-container select,
+    input {
+        width: 300px;
+    } */
+
+    .student-reg-container>form {
+        grid-template-columns: repeat(1, 1fr);
     }
 }

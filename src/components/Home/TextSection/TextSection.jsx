@@ -19,9 +19,10 @@ export const TextSection = () => {
             Download Dainik School <span className="">Online Tuition</span> App
           </p>
           <p className="app-desc">
-            Dainik School had helped us to close our positions across the levels
-            without any delay. Candidates at Dainik School are really talented,
-            smart and have the go-getter attitude.
+            The education sector has undergone drastic transformation is recent
+            times The new era of online education is best platform for students
+            and Dainik school furnish a world full of learning for cream child
+            to grab and accomplish every sparkling opportunity.
           </p>
         </div>
         <div>
