@@ -7,7 +7,7 @@ import "./Aboutus.css";
 
 export const AboutUs = () => {
   return (
-    <div>
+    <>
       <Gap />
       <CustomHeader props={{ title: "About us" }} />
       <div className="about-us-page-container">
@@ -82,6 +82,6 @@ export const AboutUs = () => {
 
       <Footer />
       <MoveToTop />
-    </div>
+    </>
   );
 };
