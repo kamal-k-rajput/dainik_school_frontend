@@ -1,43 +1,63 @@
 import React, { useState } from "react";
 import { Footer } from "../Footer/Footer";
 import "./Register.css";
-import axios from "axios";
 import { Gap } from "../Tools/Gap";
 import { CustomHeader } from "../Tools/CustomHeader";
-export const Register = () => {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    password: "",
-    email: "",
-    mobileNumber: "",
-    description: "",
-    class: "",
-    gender: "",
-  });
+import { applyInstructor } from "../Tools/Axios";
+import { useNavigate } from "react-router";
 
-  const options = [
-    { value: "chocolate", label: "Chocolate" },
-    { value: "strawberry", label: "Strawberry" },
-    { value: "vanilla", label: "Vanilla" },
-  ];
+/*
+  firstname: string;
+  lastname: string;
+  email: string;
+  phone: string;
+  description?: string;
+  subjects?: string[];
+  fromClass: number;
+  toClass: number;
+  gender: string;
+  location?: string;
+  resumeUrl?: string;
+  videoUrl?: string;
+  experiance: number;
+  degree?: string;
+*/
+
+export const Register = () => {
+  const navigate = useNavigate();
+  const [formData, setFormData] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    password: "",
+    phone: "",
+    description: "",
+    subjects: [],
+    fromClass: "",
+    toClass: "",
+    gender: "",
+    location: "",
+    resumeUrl: "",
+    videoUrl: "",
+    experiance: 0,
+    degree: "",
+  });
 
   function submitRegister(e) {
     e.preventDefault();
+    console.log(formData, "formdata");
     (async () => {
-      // const rawResponse = await fetch(
-      //   "http://192.168.26.235:5000/user/register",
-      //   {
-      //     method: "POST",
-      //     headers: {
-      //       Accept: "application/json",
-      //       "Content-Type": "application/json",
-      //     },
-      //     body: JSON.stringify({ ...formData }),
-      //   }
-      // );
-      // console.log(formData, "form data");
-      // console.log(rawResponse);
+      try {
+        let response = await applyInstructor(formData);
+        console.log(response);
+        alert(
+          "Application Submitted Successfully. Our Team will contact you sortly."
+        );
+        navigate("/");
+      } catch (err) {
+        console.log(err, "error");
+        alert(err.message);
+      }
     })();
   }
   function handleChange(e) {
@@ -54,13 +74,13 @@ export const Register = () => {
           <form onSubmit={submitRegister}>
             <input
               type="text"
-              name="firstName"
+              name="firstname"
               placeholder="First Name"
               onChange={handleChange}
             />
             <input
               type="text"
-              name="lastName"
+              name="lastname"
               placeholder="Last Name"
               onChange={handleChange}
             />
@@ -84,8 +104,9 @@ export const Register = () => {
             />
             <input
               type="number"
-              name="mobileNumber"
+              name="phone"
               placeholder="Mobile Number"
+              onChange={handleChange}
             />
 
             <input
@@ -96,14 +117,44 @@ export const Register = () => {
             />
             <input
               type="text"
-              name="Location"
+              name="location"
               placeholder="Location"
               onChange={handleChange}
             />
             <input
               type="text"
-              name="Workprofilelink"
-              placeholder="Work profile link"
+              name="subjects"
+              placeholder="All subject seprated by space"
+              onChange={handleChange}
+            />
+            <input
+              type="number"
+              name="fromClass"
+              onChange={handleChange}
+              placeholder="From class"
+            />
+            <input
+              type="number"
+              name="toClass"
+              onChange={handleChange}
+              placeholder="To class"
+            />
+            <input
+              type="text"
+              name="resumeUrl"
+              placeholder="Work profile link OR resume Url"
+              onChange={handleChange}
+            />
+            <input
+              type="text"
+              name="videoUrl"
+              placeholder="Video Url"
+              onChange={handleChange}
+            />
+            <input
+              type="text"
+              name="degree"
+              placeholder="Highest Qualification"
               onChange={handleChange}
             />
             <input
@@ -112,8 +163,12 @@ export const Register = () => {
               placeholder="Teaching experiance"
               onChange={handleChange}
             />
-            <textarea placeholder="Your Expertise" name="description" />
-            <div>
+            <textarea
+              placeholder="Your Expertise"
+              name="description"
+              onChange={handleChange}
+            />
+            {/* <div>
               <label htmlFor="resume">
                 Upload Resume
                 <input
@@ -124,17 +179,18 @@ export const Register = () => {
                   accept="image/png, image/jpeg"
                 />
               </label>
-            </div>
+            </div> */}
             <div></div>
-            <label htmlFor="video">Upload Video
-            <input
-              type="file"
-              id="video"
-              name="avatar"
-              accept="image/png, image/jpeg"
-              className="file-upload-input"
+            {/* <label htmlFor="video">
+              Upload Video
+              <input
+                type="file"
+                id="video"
+                name="avatar"
+                accept="image/png, image/jpeg"
+                className="file-upload-input"
               />
-              </label>
+            </label> */}
 
             <input
               type="submit"
