@@ -9,7 +9,7 @@ export const AppliedTeacher = () => {
   useEffect(() => {
     (async () => {
       let res = await getAllTeachersApplication();
-      console.log(res, "res");
+      console.log(res.data, "applied teacher");
     })();
   }, []);
 

@@ -29,8 +29,8 @@ export const GetAllCourse = () => {
         <Link to="/create-course" className="btn btn-success">
           Create Course
         </Link>
-        <table class="table table-bordered border-primary">
-          <thead class="thead-dark">
+        <table className="table table-bordered border-primary">
+          <thead className="thead-dark">
             <tr>
               <th scope="col">Class</th>
               <th scope="col">Duration</th>
@@ -42,7 +42,7 @@ export const GetAllCourse = () => {
           <tbody>
             {courses.map((course) => {
               return (
-                <tr scope="row">
+                <tr key={course._id}>
                   <td>{course.description}</td>
                   <td>{course.duration}</td>
                   <td>{course.instructor}</td>

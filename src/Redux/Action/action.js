@@ -1,5 +1,4 @@
-import { LogIn } from "../../components/Tools/Axios";
-import { REGISTER_STUDENT, USER_DETAILS } from "./actionTypes";
+import { REGISTER_STUDENT, SET_TOKEN, USER_DETAILS } from "./actionTypes";
 
 export const registerStudent = (data) => {
   return {
@@ -11,6 +10,13 @@ export const registerStudent = (data) => {
 export function userDetails(data) {
   return {
     type: USER_DETAILS,
+    payload: data,
+  };
+}
+
+export function setUserToken(data) {
+  return {
+    type: SET_TOKEN,
     payload: data,
   };
 }
