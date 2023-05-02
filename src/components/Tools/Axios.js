@@ -1,12 +1,11 @@
 import axios from "axios";
-let token = "";
-token = JSON.parse(localStorage?.getItem("token")) || "";
+const token = JSON.parse(localStorage?.getItem("token")) || "";
 
 const api = axios.create({
   baseURL: "https://api.dainikschool.com/",
   headers: {
     "Content-type": "application/json",
-    Accept: "application/json",
+    "Accept": "application/json",
     "x-access-token": token,
     "Access-Control-Allow-Origin": "*",
   },
