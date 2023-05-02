@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router";
-import { setUserToken, userDetails } from "../../Redux/Action/action";
+import {
+  setLogInFlag,
+  setUserToken,
+  userDetails,
+} from "../../Redux/Action/action";
 import { Footer } from "../Footer/Footer";
 import { logIn } from "../Tools/Axios";
 import { CustomHeader } from "../Tools/CustomHeader";
@@ -24,7 +28,9 @@ export const Login = () => {
         let response = await logIn(formData);
         dispatch(userDetails(response.data));
         dispatch(setUserToken(response.data["token"]));
+        dispatch(setLogInFlag(true));
         localStorage.setItem("token", JSON.stringify(response.data["token"]));
+
         navigate("/courses");
       } catch (error) {
         setText("Invalid Credentials.");

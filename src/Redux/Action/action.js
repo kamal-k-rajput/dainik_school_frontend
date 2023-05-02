@@ -1,4 +1,10 @@
-import { REGISTER_STUDENT, SET_TOKEN, USER_DETAILS } from "./actionTypes";
+import {
+  APPLIED_TEACHER_DETAILS,
+  REGISTER_STUDENT,
+  SET_LOGIN_FLAG,
+  SET_TOKEN,
+  USER_DETAILS,
+} from "./actionTypes";
 
 export const registerStudent = (data) => {
   return {
@@ -17,6 +23,20 @@ export function userDetails(data) {
 export function setUserToken(data) {
   return {
     type: SET_TOKEN,
+    payload: data,
+  };
+}
+
+export function setAppliedTeacherDetails(data) {
+  return {
+    type: APPLIED_TEACHER_DETAILS,
+    payload: data,
+  };
+}
+
+export function setLogInFlag(data) {
+  return {
+    type: SET_LOGIN_FLAG,
     payload: data,
   };
 }

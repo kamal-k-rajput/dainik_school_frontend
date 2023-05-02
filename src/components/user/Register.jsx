@@ -77,36 +77,42 @@ export const Register = () => {
               name="firstname"
               placeholder="First Name"
               onChange={handleChange}
+              required
             />
             <input
               type="text"
               name="lastname"
               placeholder="Last Name"
               onChange={handleChange}
+              required
             />
             <input
               type="email"
               name="email"
               placeholder="Email"
               onChange={handleChange}
+              required
             />
             <input
               type="password"
               name="password"
               onChange={handleChange}
               placeholder="Create Password"
+              required
             />
             <input
               type="password"
               name="confirmPassword"
               onChange={handleChange}
               placeholder="Confirm Password"
+              required
             />
             <input
               type="number"
               name="phone"
               placeholder="Mobile Number"
               onChange={handleChange}
+              required
             />
 
             <input
@@ -114,18 +120,21 @@ export const Register = () => {
               name="gender"
               placeholder="Gender"
               onChange={handleChange}
+              required
             />
             <input
               type="text"
               name="location"
               placeholder="Location"
               onChange={handleChange}
+              required
             />
             <input
               type="text"
               name="subjects"
               placeholder="All subject seprated by space"
               onChange={handleChange}
+              required
             />
             <input
               type="number"
@@ -144,24 +153,28 @@ export const Register = () => {
               name="resumeUrl"
               placeholder="Work profile link OR resume Url"
               onChange={handleChange}
+              required
             />
             <input
               type="text"
               name="videoUrl"
               placeholder="Video Url"
               onChange={handleChange}
+              required
             />
             <input
               type="text"
               name="degree"
               placeholder="Highest Qualification"
               onChange={handleChange}
+              required
             />
             <input
               type="number"
               name="experiance"
               placeholder="Teaching experiance"
               onChange={handleChange}
+              required
             />
             <textarea
               placeholder="Your Expertise"

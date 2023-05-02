@@ -38,6 +38,7 @@ import { ScienceCourseDetails } from "./components/Courses/CourseBox/CourseDetai
 import { CreateCourse } from "./components/Admin/Forms/CreateCourse";
 import { GetAllCourse } from "./components/Admin/GetAllCourse/GetAllCourse";
 import { AppliedTeacher } from "./components/Admin/AppliedTeacher/AppliedTeacher";
+import { AppliedTeacherCompleteDetails } from "./components/Admin/AppliedTeacher/AppliedTeacherCompleteDetails";
 
 function App() {
   return (
@@ -78,6 +79,10 @@ function App() {
           <Route path="/courses/Maths" element={<MathCourseDetails />} />
           <Route path="/courses/Science" element={<ScienceCourseDetails />} />
           <Route path="/applied-teacher" element={<AppliedTeacher />} />
+          <Route
+            path="/applied-teacher/:TeacherId"
+            element={<AppliedTeacherCompleteDetails />}
+          />
           <Route
             path="/youtubeVideo"
             element={<YoutubeVideo props={{ link: "aWQ7FqkvnT4" }} />}
