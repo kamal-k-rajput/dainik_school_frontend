@@ -37,6 +37,7 @@ import { MathCourseDetails } from "./components/Courses/CourseBox/CourseDetails/
 import { ScienceCourseDetails } from "./components/Courses/CourseBox/CourseDetails/ScienceCourseDetails";
 import { CreateCourse } from "./components/Admin/Forms/CreateCourse";
 import { GetAllCourse } from "./components/Admin/GetAllCourse/GetAllCourse";
+import { AppliedTeacher } from "./components/Admin/AppliedTeacher/AppliedTeacher";
 
 function App() {
   return (
@@ -76,6 +77,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/courses/Maths" element={<MathCourseDetails />} />
           <Route path="/courses/Science" element={<ScienceCourseDetails />} />
+          <Route path="/applied-teacher" element={<AppliedTeacher />} />
           <Route
             path="/youtubeVideo"
             element={<YoutubeVideo props={{ link: "aWQ7FqkvnT4" }} />}

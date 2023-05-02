@@ -22,7 +22,9 @@ export const Dashboard = () => {
         <button className="btn btn-success"> Add a blog</button>
         <button className="btn btn-success"> Students list</button>
         <button className="btn btn-success">Teacher list</button>
-        <button className="btn btn-success">Applied Teacher</button>
+        <Link to="/applied-teacher" className="btn btn-success">
+          Applied Teacher
+        </Link>
         <button className="btn btn-success">Upload Video</button>
         <button className="btn btn-success">PROFILE</button>
       </div>

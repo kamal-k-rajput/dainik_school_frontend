@@ -15,5 +15,11 @@ export default api;
 export const logIn = async (data) => api.post("/user/login", data);
 export const Register = async (data) => api.post("/user/register", data);
 export const createCourseAdmin = async (data) => api.post("/course", data);
-export const applyInstructor = async (data) => api.post("/api/apply-instructor", data);
+
+export const applyInstructor = async (data) =>
+  api.post("/api/apply-instructor", data);
+
+export const getAllTeachersApplication = async (data) =>
+  api.get("/api/application");
+
 export const getAllCourse = async (data) => api.get("/course", data);
