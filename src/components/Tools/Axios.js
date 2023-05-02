@@ -1,5 +1,7 @@
 import axios from "axios";
-let token = JSON.parse(localStorage.getItem("token"));
+let stringfiedToken = localStorage.getItem("token");
+
+let token = stringfiedToken ? JSON.parse(stringfiedToken) : "";
 
 const api = axios.create({
   baseURL: "https://api.dainikschool.com/",
