@@ -2,6 +2,7 @@ import {
   APPLIED_TEACHER_DETAILS,
   REGISTER_STUDENT,
   SET_LOGIN_FLAG,
+  SET_STUDENT_DETAILS,
   SET_TOKEN,
   USER_DETAILS,
 } from "./actionTypes";
@@ -37,6 +38,13 @@ export function setAppliedTeacherDetails(data) {
 export function setLogInFlag(data) {
   return {
     type: SET_LOGIN_FLAG,
+    payload: data,
+  };
+}
+
+export function setStudentDetails(data) {
+  return {
+    type: SET_STUDENT_DETAILS,
     payload: data,
   };
 }

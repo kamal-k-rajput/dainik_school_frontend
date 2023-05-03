@@ -2,6 +2,7 @@ import {
   APPLIED_TEACHER_DETAILS,
   REGISTER_STUDENT,
   SET_LOGIN_FLAG,
+  SET_STUDENT_DETAILS,
   SET_TOKEN,
   USER_DETAILS,
 } from "../Action/actionTypes";
@@ -23,6 +24,9 @@ export const studentDetailsReducer = (store, { type, payload }) => {
     }
     case SET_LOGIN_FLAG: {
       return { ...store, isLogin: payload };
+    }
+    case SET_STUDENT_DETAILS: {
+      return { ...store, studentDetails: payload };
     }
     default:
       return { ...store };

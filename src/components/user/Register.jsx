@@ -41,6 +41,7 @@ export const Register = () => {
     videoUrl: "",
     experiance: 0,
     degree: "",
+    role: "teacher",
   });
 
   function submitRegister(e) {
