@@ -13,8 +13,12 @@ export const Students = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   async function getData() {
-    let stds = await studentList();
-    setStudents(stds.data);
+    try {
+      let stds = await studentList();
+      setStudents(stds.data);
+    } catch (error) {
+      console.log(error.message, "error.message");
+    }
   }
   function handleClick(student) {
     dispatch(setStudentDetails(student));
