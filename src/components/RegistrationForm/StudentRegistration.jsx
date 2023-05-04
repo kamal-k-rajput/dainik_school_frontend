@@ -29,7 +29,7 @@ export const StudentRegistration = () => {
 
   useEffect(() => {
     if (data) {
-      setFormData({ ...data });
+      setFormData({ ...data, role: "student" });
     }
   }, []);
 
@@ -41,23 +41,8 @@ export const StudentRegistration = () => {
     }
 
     if (!IsMobileNumber(formData.phone)) return;
-
-    await Register(formData).then(d => console.log(d));
-
-    // (async () => {
-    //   const rawResponse = await fetch(
-    //     "https://api.dainikschool.com/user/register",
-    //     {
-    //       method: "POST",
-    //       headers: {
-    //         Accept: "application/json",
-    //         "Content-Type": "application/json",
-    //       },
-    //       body: JSON.stringify({ ...formData }),
-    //     }
-    //   );
-    //   console.log(rawResponse, "rawResponse");
-    // })();
+    console.log(formData);
+    await Register(formData).then((d) => console.log(d));
   }
   function handleChange(e) {
     e.preventDefault();
@@ -87,6 +72,7 @@ export const StudentRegistration = () => {
             placeholder="First Name"
             onChange={handleChange}
             value={formData.firstName || ""}
+            required
           />
           <input
             type="text"
@@ -94,6 +80,7 @@ export const StudentRegistration = () => {
             placeholder="Last Name"
             onChange={handleChange}
             value={formData.lastName || ""}
+            required
           />
           <input
             type="email"
@@ -101,6 +88,7 @@ export const StudentRegistration = () => {
             placeholder="Email"
             onChange={handleChange}
             value={formData.email || ""}
+            required
           />
 
           <select
@@ -111,7 +99,7 @@ export const StudentRegistration = () => {
           >
             {classes.map((subject) => {
               return (
-                <option value={subject.text} key={subject.text}>
+                <option value={subject.value} key={subject.text}>
                   {subject.text}
                 </option>
               );
@@ -140,6 +128,7 @@ export const StudentRegistration = () => {
             value={formData.phone || ""}
             onChange={handleChange}
             pattern=""
+            required
           />
 
           <input
@@ -148,6 +137,7 @@ export const StudentRegistration = () => {
             placeholder="Location"
             onChange={handleChange}
             value={formData.location || ""}
+            required
           />
 
           <select
@@ -170,6 +160,7 @@ export const StudentRegistration = () => {
             onChange={handleChange}
             placeholder="Create Password"
             value={formData.password || ""}
+            required
           />
           <input
             type="password"
@@ -177,6 +168,7 @@ export const StudentRegistration = () => {
             onChange={handleChange}
             placeholder="Confirm Password"
             value={formData.confirmPassword || ""}
+            required
           />
           <input type="submit" value="SUBMIT" className=" btn btn-success" />
         </form>

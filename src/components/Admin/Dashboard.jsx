@@ -20,9 +20,14 @@ export const Dashboard = () => {
         </Link>
         <button className="btn btn-success">Add a teacher</button>
         <button className="btn btn-success"> Add a blog</button>
-        <button className="btn btn-success"> Students list</button>
+        <Link to="/students" className="btn btn-success">
+          {" "}
+          Students list
+        </Link>
         <button className="btn btn-success">Teacher list</button>
-        <button className="btn btn-success">Applied Teacher</button>
+        <Link to="/applied-teacher" className="btn btn-success">
+          Applied Teacher
+        </Link>
         <button className="btn btn-success">Upload Video</button>
         <button className="btn btn-success">PROFILE</button>
       </div>

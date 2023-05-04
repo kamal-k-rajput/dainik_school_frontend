@@ -33,8 +33,8 @@ export const Courses = () => {
       <HorizoantalLine />
       <CustomHeader props={{ title: "Courses" }} />
       <div className="courses_container">
-        {courses.map((course) => {
-          return <CourseBox props={course} />;
+        {courses.map((course, i) => {
+          return <CourseBox props={course} key={i} />;
         })}
       </div>
       <Footer />
