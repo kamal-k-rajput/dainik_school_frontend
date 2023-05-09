@@ -13,7 +13,7 @@ const api = axios.create({
 export default api;
 // export const
 export const logIn = async (data) => api.post("/user/login", data);
-export const Register = async (data) => api.post("/user/register", data);
+export const register = async (data) => api.post("/user/register", data);
 export const createCourseAdmin = async (data) => api.post("/course", data);
 export const studentList = (data) => api.get("/user/students", data);
 export const applyInstructor = async (data) =>
