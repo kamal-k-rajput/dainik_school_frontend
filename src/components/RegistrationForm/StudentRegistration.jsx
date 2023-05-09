@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Footer } from "../Footer/Footer";
 import { classes, states } from "../Data/Constants";
 import "./StudentRegistration.css";
-import { Register } from "../Tools/Axios";
+import { Register, register } from "../Tools/Axios";
 
 export const StudentRegistration = () => {
   const dispatch = useDispatch();
@@ -16,7 +16,7 @@ export const StudentRegistration = () => {
     password: "",
     email: "",
     phone: "",
-    class: "",
+    class: 1,
     gender: "",
     location: "",
     state: "",
@@ -41,8 +41,16 @@ export const StudentRegistration = () => {
     }
 
     if (!IsMobileNumber(formData.phone)) return;
-    console.log(formData);
-    await Register(formData).then((d) => console.log(d));
+    console.log(formData, "form data");
+    (async () => {
+      try {
+        let response = await register(formData).then((d) => {
+          alert("Your registration successful.");
+        });
+      } catch (error) {
+        console.log(error, "error");
+      }
+    })();
   }
   function handleChange(e) {
     e.preventDefault();
@@ -55,7 +63,6 @@ export const StudentRegistration = () => {
     var txtMobile = formData.phone;
     if (mob.test(txtMobile) == false) {
       alert("Please enter valid mobile number.");
-      txtMobile.focus();
       return false;
     }
     return true;
@@ -99,7 +106,7 @@ export const StudentRegistration = () => {
           >
             {classes.map((subject) => {
               return (
-                <option value={subject.value} key={subject.text}>
+                <option value={1} key={subject.text}>
                   {subject.text}
                 </option>
               );
