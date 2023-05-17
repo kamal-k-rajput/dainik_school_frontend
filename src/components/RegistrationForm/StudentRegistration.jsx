@@ -16,7 +16,7 @@ export const StudentRegistration = () => {
     password: "",
     email: "",
     phone: "",
-    class: 1,
+    class: "",
     gender: "",
     location: "",
     state: "",
@@ -104,10 +104,10 @@ export const StudentRegistration = () => {
             required
             value={formData.class}
           >
-            {classes.map((subject) => {
+            {classes.map((grade) => {
               return (
-                <option value={1} key={subject.text}>
-                  {subject.text}
+                <option value={grade.value} key={grade.text}>
+                  {grade.text}
                 </option>
               );
             })}
