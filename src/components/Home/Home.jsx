@@ -14,8 +14,16 @@ import { TextSection } from "./TextSection/TextSection";
 import { BlogSection } from "./BlogSection/BlogSection";
 import { FirstSectionMiddleHeading } from "./utils/FirstSectionMiddleHeading";
 import { YoutubeVideo } from "../Tools/YoutubeVideo";
+import { useDispatch } from "react-redux";
+import { setLogInFlag } from "../../Redux/Action/action";
 
 export const Home = () => {
+  // check user logged in or not
+  const dispatch = useDispatch();
+  const token = localStorage.getItem("token");
+  if (token !== "" && token !== undefined && token !== null) {
+    dispatch(setLogInFlag(true));
+  }
   return (
     <div className="home_container">
       <FirstSection />
