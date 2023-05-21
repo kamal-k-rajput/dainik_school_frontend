@@ -6,14 +6,22 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import HorizoantalLine from "../../HorizoantalLine/HorizoantalLine";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import "./Navbar.css";
+import {  useSelector } from "react-redux";
+import { useNavigate } from "react-router";
 
 export function NavbarLinks() {
-  let isLoggedIn = localStorage.getItem("token");
-
+   const navigate = useNavigate();
+   function changeRoutes(e) {
+     e.preventDefault();
+     localStorage.clear();
+     navigate("/");
+   }
+  let isLoggedIn = useSelector((store) => {
+    return store.isLogin;
+  });
+ 
   return (
     <div className="navbar-container">
       {["xl"].map((expand) => (
@@ -78,10 +86,10 @@ export function NavbarLinks() {
                     <NavDropdown.Divider />
                   </NavDropdown>
                   <Nav.Link
-                    href={isLoggedIn ? "/login" : "Login"}
+                    href={isLoggedIn ? "/logout" : "login"}
                     className="btn btn-sucess"
                   >
-                    Log In
+                    {isLoggedIn ? "Log Out" : "Log In"}
                   </Nav.Link>
                 </Nav>
                 {/* <Form className="d-flex">
