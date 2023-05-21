@@ -2,7 +2,7 @@ import axios from "axios";
 const token = JSON.parse(localStorage?.getItem("token")) || "";
 
 const api = axios.create({
-  baseURL: "http://localhost:3000/",
+  baseURL: "https://api.dainikschool.com/",
   headers: {
     "Content-type": "application/json",
     Accept: "application/json",
