@@ -19,7 +19,7 @@ export function NavbarLinks() {
       {["xl"].map((expand) => (
         <Navbar
           key={expand}
-          bg="light"
+          bg="#fff"
           expand={expand}
           className="mb-3"
           sticky="top"
@@ -42,8 +42,9 @@ export function NavbarLinks() {
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link href="/">HOME</Nav.Link>
+                  <Nav.Link href="/my-course">MY COURSE</Nav.Link>
                   <Nav.Link href="/courses">COURSES</Nav.Link>
-                  <Nav.Link href="/live-classes">LIVE CLASSES </Nav.Link>
+                  {/* <Nav.Link href="/live-classes">LIVE CLASSES </Nav.Link> */}
                   <NavDropdown
                     title="CLASSES"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
