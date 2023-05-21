@@ -10,7 +10,7 @@ export const DisplayCourses = () => {
       <CourseSection
         props={{
           img: playschool,
-          title: "Classes LKG - 3",
+          title: "Classroom LKG - 3",
           text: `Early learning with Animated videos for Ignited Mind.`,
           buttonLabel: "Explore",
         }}
@@ -18,7 +18,7 @@ export const DisplayCourses = () => {
       <CourseSection
         props={{
           img: juniorClass,
-          title: "Classes 4 - 8",
+          title: "Classroom 4 - 8",
           text: `Attractive learning to mold young minds into strong individuals by animation & live tutoring.`,
           buttonLabel: "Explore",
         }}

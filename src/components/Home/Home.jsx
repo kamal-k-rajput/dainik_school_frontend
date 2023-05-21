@@ -20,9 +20,13 @@ export const Home = () => {
     <div className="home_container">
       <FirstSection />
       <HorizoantalLine />
-      <FirstSectionMiddleHeading props={{ title: "*Get Registered" }} />
+      <FirstSectionMiddleHeading
+        props={{ title: "*Get Registered For Latest and Upcoming Course" }}
+      />
       <SecondSection />
-      <FirstSectionMiddleHeading props={{ title: "*Latest Courses" }} />
+      <FirstSectionMiddleHeading
+        props={{ title: "*Dainik School Classroom" }}
+      />
       <DisplayCourses />
       <DisplayCourses2 />
       <FirstSectionMiddleHeading props={{ title: "*Objectives" }} />

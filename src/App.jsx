@@ -41,6 +41,8 @@ import { AppliedTeacher } from "./components/Admin/AppliedTeacher/AppliedTeacher
 import { AppliedTeacherCompleteDetails } from "./components/Admin/AppliedTeacher/AppliedTeacherCompleteDetails";
 import { Students } from "./components/Admin/Students";
 import { StudentDetails } from "./components/Admin/StudentDetails";
+import { CheckoutPage } from "./Payment/CheckoutPage";
+import { MyCourse } from "./components/MyCourse/MyCourse";
 
 function App() {
   return (
@@ -83,6 +85,8 @@ function App() {
           <Route path="/courses/Maths" element={<MathCourseDetails />} />
           <Route path="/courses/Science" element={<ScienceCourseDetails />} />
           <Route path="/applied-teacher" element={<AppliedTeacher />} />
+          <Route path="/my-course" element={<MyCourse />} />
+          <Route path="/checkout/:courseId" element={<CheckoutPage />} />
           <Route
             path="/applied-teacher/:TeacherId"
             element={<AppliedTeacherCompleteDetails />}

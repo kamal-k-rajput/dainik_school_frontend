@@ -48,6 +48,11 @@ export const FirstSection = () => {
                 Quiz
               </Link>
             </div>
+            <div>
+              <Link to="/apply-now" className="btn btn-success gradient-btn">
+                Join our team
+              </Link>
+            </div>
           </div>
         </div>
         <div>

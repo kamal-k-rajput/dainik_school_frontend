@@ -11,7 +11,7 @@ export const DisplayCourses2 = () => {
       <CourseSection
         props={{
           img: classNinth,
-          title: "Classes 9-12",
+          title: "Classroom 9-12",
           text: `We works to build solid & strong foundation for developing brains`,
           buttonLabel: "Explore",
         }}
