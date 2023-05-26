@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-
+import subjectTopic from "./constants";
 import appleStore from "../../../ASSETS/IMG/homepage/playStore/AppleStore.png";
 import playStore from "../../../ASSETS/IMG/homepage/playStore/GooglePlay.png";
-import "./SecondSection.css";
 import { registerStudent } from "../../../Redux/Action/action";
 import { classes, states } from "../../Data/Constants";
+import { SubjectTopics } from "./SubjectTopics";
+import "./SecondSection.css";
 
 const SecondSection = () => {
   const dispatch = useDispatch();
@@ -38,6 +39,11 @@ const SecondSection = () => {
   return (
     <div className="second-section">
       <div>
+        <div className="topics-container">
+          {subjectTopic.map((topic) => {
+            return <SubjectTopics topic={topic}></SubjectTopics>;
+          })}
+        </div>
         <div>
           <b>Fees Ki Wajah Se</b>
           <b>Padhai Nahi Rukegi</b>
