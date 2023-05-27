@@ -1,0 +1,15 @@
+.topics-btn {
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 1px 8px;
+    margin: 5px;
+    font-size: medium;
+    background-color: #fff;
+    color: black !important;
+}
+
+.topics-btn:hover {
+    color: #4194e7 !important;
+    cursor: pointer;
+    border-color: #4194e7 !important;
+}

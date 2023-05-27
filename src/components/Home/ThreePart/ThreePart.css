@@ -101,11 +101,11 @@
 
     .mobile-app-icon {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .mobile-app-icon>img {
-        margin-right: 0
+        margin: 0 10px;
     }
 
     ;

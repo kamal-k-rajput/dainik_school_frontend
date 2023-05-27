@@ -41,10 +41,12 @@ const SecondSection = () => {
       <div>
         <div className="topics-container">
           {subjectTopic.map((topic) => {
-            return <SubjectTopics topic={topic}></SubjectTopics>;
+            return (
+              <SubjectTopics topic={topic} key={topic.subject} ></SubjectTopics>
+            );
           })}
         </div>
-        <div>
+        <div className="second-section-quote">
           <b>Fees Ki Wajah Se</b>
           <b>Padhai Nahi Rukegi</b>
         </div>

@@ -10,24 +10,22 @@ import { CourseBox } from "./CourseBox/CourseBox";
 import { getAllCourse } from "../Tools/Axios";
 
 export const Courses = () => {
- async function getcoures (){
+  async function getcoures() {
     try {
-      let res =await getAllCourse();
+      let res = await getAllCourse();
 
-      return  setCourses(res.data);
-
-      
+      return setCourses(res.data);
     } catch (err) {
       console.log(err);
-      
     }
-}
+  }
   const [courses, setCourses] = useState([]);
   useEffect(() => {
     getcoures();
-  },[])
+  }, []);
   return (
     <>
+      <MoveToTop />
       <Gap />
       <HorizoantalLine />
       <CustomHeader props={{ title: "Courses" }} />
@@ -37,7 +35,6 @@ export const Courses = () => {
         })}
       </div>
       <Footer />
-      <MoveToTop />
     </>
   );
 };
