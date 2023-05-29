@@ -1,16 +1,5 @@
 const subjectTopics = [
   {
-    subject: "English",
-    topics: [
-      "Advanced",
-      "Foundations",
-      "Handwriting",
-      "Reading",
-      "Speaking",
-      "Writing",
-    ],
-  },
-  {
     subject: "Math & Science",
     topics: [
       "Abacus",
@@ -24,16 +13,25 @@ const subjectTopics = [
     ],
   },
   {
+    subject: "English",
+    topics: [
+      "Advanced",
+      "Foundations",
+      "Handwriting",
+      "Reading",
+      "Speaking",
+      "Writing",
+    ],
+  },
+
+  {
     subject: "Life Skills",
     topics: [
       "Communication",
-      "Cooking",
       "Critical Thinking",
       "Entrepreneurship",
-      "Finance",
       "Personality Development",
       "Presentation",
-      "Sports",
       "Yoga & Meditaton",
     ],
   },
