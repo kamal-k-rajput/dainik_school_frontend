@@ -49,10 +49,10 @@ export function NavbarLinks() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="/">HOME</Nav.Link>
+                  <Nav.Link href="/live-classes">LIVE CLASSES </Nav.Link>
+                  {/* <Nav.Link href="/">HOME</Nav.Link> */}
                   <Nav.Link href="/my-course">MY COURSE</Nav.Link>
                   <Nav.Link href="/courses">COURSES</Nav.Link>
-                  {/* <Nav.Link href="/live-classes">LIVE CLASSES </Nav.Link> */}
                   <NavDropdown
                     title="CLASSES"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
