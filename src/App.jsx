@@ -43,6 +43,7 @@ import { Students } from "./components/Admin/Students";
 import { StudentDetails } from "./components/Admin/StudentDetails";
 import { CheckoutPage } from "./Payment/CheckoutPage";
 import { MyCourse } from "./components/MyCourse/MyCourse";
+import { UploadFile } from "./components/Tools/UploadFile/UploadFile";
 
 function App() {
   return (
@@ -78,6 +79,7 @@ function App() {
           <Route path="/term-of-use" element={<TermAndCondition />} />
           <Route path="/admin-dashboard" element={<Dashboard />} />
           <Route path="/upload-video/:id" element={<UploadVideo />} />
+          <Route path="/upload-pdf/:id" element={<UploadFile />} />
           <Route path="/get-all-course" element={<GetAllCourse />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/students" element={<Students />} />

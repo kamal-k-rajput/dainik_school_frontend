@@ -37,6 +37,7 @@ export const GetAllCourse = () => {
               <th scope="col">INSTRUCTOR</th>
               <th scope="col">Subject</th>
               <th scope="col">UPLOAD VIDEO</th>
+              <th scope="col">UPLOAD File</th>
             </tr>
           </thead>
           <tbody>
@@ -54,6 +55,15 @@ export const GetAllCourse = () => {
                     >
                       {" "}
                       UPLOAD VIDEO
+                    </Link>
+                  </td>
+                  <td>
+                    <Link
+                      className="btn btn-success"
+                      to={`/upload-pdf/${course._id}`} //uploadPdf
+                    >
+                      {" "}
+                      UPLOAD File
                     </Link>
                   </td>
                 </tr>
