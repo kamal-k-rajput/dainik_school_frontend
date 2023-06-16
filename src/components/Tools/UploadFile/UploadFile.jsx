@@ -30,7 +30,7 @@ export const UploadFile = () => {
     axios
       .post(
         `https://api.dainikschool.com/course/${id}/uploadPdf`,
-        { video: filePath, description },
+        { file: filePath, description },
         {
           headers: {
             "Content-Type": "multipart/form-data",
