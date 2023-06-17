@@ -8,7 +8,7 @@ import "./Mycourses.css";
 export const MyCourse = () => {
   const [myCourse, setMyCourse] = useState([]);
   const [fetched, setFetched] = useState(false);
-  const [message, setMessage] = useState("loading");
+  const [message, setMessage] = useState("Buy a Course First.");
 
   async function getSubscribedCourses() {
     try {

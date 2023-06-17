@@ -81,7 +81,7 @@
 @media screen and (max-width:720px) {
     .footer-container {
         /* flex-wrap: wrap; */
-        padding: 5px;
+        padding: 0px;
     }
 }
 

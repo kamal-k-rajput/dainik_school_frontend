@@ -5,7 +5,6 @@ const subjectTopics = [
       "Abacus",
       "Academics",
       "Advanced",
-      "Astronomy",
       "Basic Concepts",
       "Olympiad",
       "Science",

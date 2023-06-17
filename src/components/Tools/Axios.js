@@ -29,3 +29,6 @@ export const getRedirectURL = async (courseId) =>
 
 // export const getRedirectURL = (courseId) =>
 //   `http://localhost:3000/payment/${courseId}?token=${token}`;
+
+export const getCourseFiles = async (courseId) =>
+  api.get(`/course/${courseId}/files`);

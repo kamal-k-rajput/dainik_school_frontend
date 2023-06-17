@@ -1,17 +1,15 @@
 import React, { useState } from "react";
 import { Document, Page } from "react-pdf";
 
-export const AllPages = (props) => {
-  const [numPages, setNumPages] = useState(1);
+export default function AllPages(props) {
+  const [numPages, setNumPages] = useState(null);
 
   function onDocumentLoadSuccess({ numPages }) {
-    console.log("document load success");
     setNumPages(numPages);
-    console.log("object");
   }
 
   const { pdf } = props;
-  console.log(pdf);
+
   return (
     <Document
       file={pdf}
@@ -23,4 +21,4 @@ export const AllPages = (props) => {
       ))}
     </Document>
   );
-};
+}

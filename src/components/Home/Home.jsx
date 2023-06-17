@@ -33,7 +33,7 @@ export const Home = () => {
       />
       <SecondSection />
       <FirstSectionMiddleHeading
-        props={{ title: "*Dainik School Classroom" }}
+        props={{ title: "*Dainik School's Classroom" }}
       />
       <DisplayCourses />
       <DisplayCourses2 />

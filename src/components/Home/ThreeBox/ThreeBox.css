@@ -1,7 +1,7 @@
 .threebox-container {
     display: flex;
     height: 175px;
-    margin: 5% 5%;
+    margin: 1% 5%;
     justify-content: space-between;
 }
 

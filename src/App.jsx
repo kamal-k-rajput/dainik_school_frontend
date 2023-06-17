@@ -90,6 +90,10 @@ function App() {
           <Route path="/my-course" element={<MyCourse />} />
           <Route path="/checkout/:courseId" element={<CheckoutPage />} />
           <Route
+            path="/my-course/:courseId/course-details"
+            element={<CourseDetails />}
+          />
+          <Route
             path="/applied-teacher/:TeacherId"
             element={<AppliedTeacherCompleteDetails />}
           />

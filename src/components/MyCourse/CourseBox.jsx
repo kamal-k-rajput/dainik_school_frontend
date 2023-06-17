@@ -3,6 +3,7 @@ import spokenEnglish from "../../ASSETS/IMG/liveClasses/spokenenglish.png";
 import "./subscourse.css";
 import { Link } from "react-router-dom";
 export const CourseBox = ({ props }) => {
+  console.log(props, "props");
   return (
     <>
       <div className="course-box-parent">
@@ -17,6 +18,10 @@ export const CourseBox = ({ props }) => {
             to="https://play.google.com/store/apps/details?id=com.nrichlearning.dainikschool"
           >
             Start Class
+          </Link>
+
+          <Link className="btn btn-success" to={`${props._id}/course-details`}>
+            Course Details
           </Link>
         </div>
       </div>
