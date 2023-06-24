@@ -3,3 +3,14 @@
     max-height: 500px;
     overflow: auto;
 }
+
+.table-primary {
+    margin: 50px auto;
+    
+}
+
+.table-primary tr td {
+    background-color: rgb(230, 242, 230);
+    border: 2px solid rgb(171, 171, 171);
+
+}

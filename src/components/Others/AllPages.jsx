@@ -5,9 +5,8 @@ export const AllPages = (props) => {
   const [numPages, setNumPages] = useState(1);
 
   function onDocumentLoadSuccess({ numPages }) {
-    console.log("document load success");
     setNumPages(numPages);
-    console.log("object");
+
   }
 
   const { pdf } = props;

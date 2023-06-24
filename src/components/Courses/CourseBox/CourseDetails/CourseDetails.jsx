@@ -6,6 +6,8 @@ import { CustomHeader } from "../../../Tools/CustomHeader";
 import { Footer } from "../../../Footer/Footer";
 import { getCourseFiles } from "../../../Tools/Axios";
 import { AllPages } from "../../../Others/AllPages";
+import { Displaypdf } from "../../../DisplayPdf/DisplayPdf";
+import { Link } from "react-router-dom";
 
 export const CourseDetails = ({ props }) => {
   const [courseFiles, setCourseFiles] = useState([]);
@@ -14,7 +16,6 @@ export const CourseDetails = ({ props }) => {
     (async () => {
       let files = await getCourseFiles("6465352174eb185b66e90a2c");
       setCourseFiles(files.data);
-      console.log(files.data, "data");
       setIsData(true);
     })();
   }, []);
@@ -24,19 +25,31 @@ export const CourseDetails = ({ props }) => {
       <CustomHeader props={{ title: "Course Details" }} />
 
       {/* <YoutubeVideo props={{ link, title }} /> */}
-      <h1>course details</h1>
-
-      {isData &&
-        courseFiles?.fileIds?.map((fileId) => {
-          return (
-            <div key={fileId.location}>
-              <div>{fileId.originalName}</div>
-              <div className="pdf-file-container">
-                <AllPages pdf={fileId.location} />
-              </div>
-            </div>
-          );
-        })}
+      <h1>Course Study Material</h1>
+      <table class="table-primary">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Download</th>
+          </tr>
+        </thead>
+        <tbody>
+          {isData &&
+            courseFiles?.fileIds?.map((fileId) => {
+              return (
+                <tr key={fileId.location}>
+                  <td>
+                    <div>{fileId.originalName}</div>
+                  </td>
+                  <td>
+                    <Displaypdf link={fileId.location} />
+                  </td>
+                </tr>
+              );
+            })}
+        </tbody>
+      </table>
+      <Footer />
     </>
   );
 };
