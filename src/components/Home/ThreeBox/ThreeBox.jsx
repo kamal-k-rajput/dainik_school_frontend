@@ -9,8 +9,8 @@ const ThreeBox = () => {
         <span>Video Lectures</span>
       </div>
       <div className="mid-level-container">
-        <span>Notes</span>
-        <span>5 Lacs+ Pages</span>
+        <span>5 Lacs+</span>
+        <span> Assignments</span>
       </div>
       <div>
         <span>60000+</span>

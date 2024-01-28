@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import boy from "../../../ASSETS/IMG/homepage/FirstSection/boy.jpg";
-import boy2 from "../../../ASSETS/IMG/homepage/FirstSection/boy2.jpg";
-import boy3 from "../../../ASSETS/IMG/homepage/FirstSection/boy3.jpg";
+import boy from "../../../ASSETS/IMG/homepage/FirstSection/vaidic_maths.jpg";
+import english from "../../../ASSETS/IMG/homepage/FirstSection/english.jpg";
+import boy3 from "../../../ASSETS/IMG/homepage/FirstSection/boy.jpg";
 import HorizoantalLine from "../../HorizoantalLine/HorizoantalLine";
 import { Gap } from "../../Tools/Gap";
 import "./FirstSection.css";
@@ -48,6 +48,11 @@ export const FirstSection = () => {
                 Quiz
               </Link>
             </div>
+            <div>
+              <Link to="/apply-now" className="btn btn-success gradient-btn">
+                Join our team
+              </Link>
+            </div>
           </div>
         </div>
         <div>
@@ -60,7 +65,7 @@ export const FirstSection = () => {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img className="d-block w-50" src={boy2} alt="Second slide" />
+              <img className="d-block w-50" src={boy3} alt="Second slide" />
 
               <Carousel.Caption>
                 <span>Science</span>
@@ -68,7 +73,7 @@ export const FirstSection = () => {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img className="d-block w-50" src={boy3} alt="Third slide" />
+              <img className="d-block w-50" src={english} alt="Third slide" />
 
               <Carousel.Caption>
                 <span>English</span>

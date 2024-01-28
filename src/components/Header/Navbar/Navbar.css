@@ -32,7 +32,7 @@ a {
 .nav-link {
     color: #347571;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .navbar-container .right-box {
@@ -88,7 +88,7 @@ a {
 .login-btn-container>button {
     color: #fff;
     margin-top: 10px;
-    font-size: 18px !important;
+    font-size: 16px !important;
 }
 
 

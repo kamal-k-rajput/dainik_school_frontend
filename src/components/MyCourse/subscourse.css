@@ -1,0 +1,41 @@
+.course-box-parent {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px;
+    padding: 20px 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.course-box-parent>img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+
+}
+
+.course-box-heading {
+    text-align: left;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.course-box-container>.middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+.course-box-bottom {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.course-box-details {
+    font-size: 18px;
+}
+
+@media screen and (max-width:720px) {}

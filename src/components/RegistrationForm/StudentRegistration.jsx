@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Footer } from "../Footer/Footer";
 import { classes, states } from "../Data/Constants";
 import "./StudentRegistration.css";
+import { Register, register } from "../Tools/Axios";
 
 export const StudentRegistration = () => {
   const dispatch = useDispatch();
@@ -28,34 +29,43 @@ export const StudentRegistration = () => {
 
   useEffect(() => {
     if (data) {
-      setFormData({ ...data });
+      setFormData({ ...data, role: "student" });
     }
   }, []);
 
-  function submitRegister(e) {
+  async function submitRegister(e) {
     e.preventDefault();
     if (formData.password !== formData.confirmPassword) {
       alert("Password does not match.");
       return;
     }
 
-    console.log(typeof formData);
+    if (!IsMobileNumber(formData.phone)) return;
+    console.log(formData, "form data");
     (async () => {
-      const rawResponse = await fetch("http://3.110.254.213/user/register", {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ ...formData }),
-      });
-      console.log(rawResponse, "rawResponse");
+      try {
+        let response = await register(formData).then((d) => {
+          alert("Your registration successful.");
+        });
+      } catch (error) {
+        console.log(error, "error");
+      }
     })();
   }
   function handleChange(e) {
     e.preventDefault();
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+  }
+
+  function IsMobileNumber(txtMobId) {
+    var mob = /^[1-9]{1}[0-9]{9}$/;
+    var txtMobile = formData.phone;
+    if (mob.test(txtMobile) == false) {
+      alert("Please enter valid mobile number.");
+      return false;
+    }
+    return true;
   }
   return (
     <>
@@ -69,6 +79,7 @@ export const StudentRegistration = () => {
             placeholder="First Name"
             onChange={handleChange}
             value={formData.firstName || ""}
+            required
           />
           <input
             type="text"
@@ -76,6 +87,7 @@ export const StudentRegistration = () => {
             placeholder="Last Name"
             onChange={handleChange}
             value={formData.lastName || ""}
+            required
           />
           <input
             type="email"
@@ -83,6 +95,7 @@ export const StudentRegistration = () => {
             placeholder="Email"
             onChange={handleChange}
             value={formData.email || ""}
+            required
           />
 
           <select
@@ -91,10 +104,10 @@ export const StudentRegistration = () => {
             required
             value={formData.class}
           >
-            {classes.map((subject) => {
+            {classes.map((grade) => {
               return (
-                <option value={subject.text} key={subject.text}>
-                  {subject.text}
+                <option value={grade.value} key={grade.text}>
+                  {grade.text}
                 </option>
               );
             })}
@@ -121,6 +134,8 @@ export const StudentRegistration = () => {
             placeholder="Mobile Number"
             value={formData.phone || ""}
             onChange={handleChange}
+            pattern=""
+            required
           />
 
           <input
@@ -129,6 +144,7 @@ export const StudentRegistration = () => {
             placeholder="Location"
             onChange={handleChange}
             value={formData.location || ""}
+            required
           />
 
           <select
@@ -151,6 +167,7 @@ export const StudentRegistration = () => {
             onChange={handleChange}
             placeholder="Create Password"
             value={formData.password || ""}
+            required
           />
           <input
             type="password"
@@ -158,6 +175,7 @@ export const StudentRegistration = () => {
             onChange={handleChange}
             placeholder="Confirm Password"
             value={formData.confirmPassword || ""}
+            required
           />
           <input type="submit" value="SUBMIT" className=" btn btn-success" />
         </form>

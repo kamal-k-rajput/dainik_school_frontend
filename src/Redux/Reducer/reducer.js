@@ -1,13 +1,32 @@
-import { REGISTER_STUDENT, USER_DETAILS } from "../Action/actionTypes";
+import {
+  APPLIED_TEACHER_DETAILS,
+  REGISTER_STUDENT,
+  SET_LOGIN_FLAG,
+  SET_STUDENT_DETAILS,
+  SET_TOKEN,
+  USER_DETAILS,
+} from "../Action/actionTypes";
 
 export const studentDetailsReducer = (store, { type, payload }) => {
   switch (type) {
     case REGISTER_STUDENT: {
       return { ...store, studentDetails: payload };
     }
+
     case USER_DETAILS: {
-      console.log(payload, "payload in reducer");
       return { ...store, loggedInUserDetail: payload };
+    }
+    case SET_TOKEN: {
+      return { ...store, token: payload };
+    }
+    case APPLIED_TEACHER_DETAILS: {
+      return { ...store, appliedTeacherDetails: payload };
+    }
+    case SET_LOGIN_FLAG: {
+      return { ...store, isLogin: payload };
+    }
+    case SET_STUDENT_DETAILS: {
+      return { ...store, studentDetails: payload };
     }
     default:
       return { ...store };

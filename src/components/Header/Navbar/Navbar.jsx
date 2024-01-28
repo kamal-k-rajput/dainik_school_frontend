@@ -6,20 +6,28 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import HorizoantalLine from "../../HorizoantalLine/HorizoantalLine";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import "./Navbar.css";
+import {  useSelector } from "react-redux";
+import { useNavigate } from "react-router";
 
 export function NavbarLinks() {
-  let isLoggedIn = localStorage.getItem("token");
-
+   const navigate = useNavigate();
+   function changeRoutes(e) {
+     e.preventDefault();
+     localStorage.clear();
+     navigate("/");
+   }
+  let isLoggedIn = useSelector((store) => {
+    return store.isLogin;
+  });
+ 
   return (
     <div className="navbar-container">
       {["xl"].map((expand) => (
         <Navbar
           key={expand}
-          bg="light"
+          bg="#fff"
           expand={expand}
           className="mb-3"
           sticky="top"
@@ -41,9 +49,10 @@ export function NavbarLinks() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="/">HOME</Nav.Link>
-                  <Nav.Link href="/courses">COURSES</Nav.Link>
                   <Nav.Link href="/live-classes">LIVE CLASSES </Nav.Link>
+                  {/* <Nav.Link href="/">HOME</Nav.Link> */}
+                  <Nav.Link href="/my-course">MY COURSE</Nav.Link>
+                  <Nav.Link href="/courses">COURSES</Nav.Link>
                   <NavDropdown
                     title="CLASSES"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
@@ -56,6 +65,9 @@ export function NavbarLinks() {
                     </NavDropdown.Item>
                     <NavDropdown.Item href="/classes">
                       9 to 12th
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="/classes">
+                      Spoken English
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                   </NavDropdown>
@@ -74,10 +86,10 @@ export function NavbarLinks() {
                     <NavDropdown.Divider />
                   </NavDropdown>
                   <Nav.Link
-                    href={isLoggedIn ? "login" : "Login"}
+                    href={isLoggedIn ? "/logout" : "login"}
                     className="btn btn-sucess"
                   >
-                    Log In
+                    {isLoggedIn ? "Log Out" : "Log In"}
                   </Nav.Link>
                 </Nav>
                 {/* <Form className="d-flex">

@@ -22,26 +22,30 @@ input::-webkit-input-placeholder {
     line-height: 3;
 }
 
+.second-section-quote {
+
+    font-size: 35px;
+    line-height: 42px;
+    font-weight: 800;
+}
+
 .second-section>div:nth-child(1) {
     flex: 6;
     display: flex;
     flex-direction: column;
     font-family: 'Nunito', sans-serif !important;
-    font-size: 35px;
-    line-height: 42px;
-    font-weight: 800;
     color: #fff;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-around;
     margin: 0 5%;
     padding-bottom: 5%;
     background-position: right -20px;
-    background-image: url("../../../ASSETS/IMG//homepage//secondSection/bg-second.png");
+    /* background-image: url("../../../ASSETS/IMG//homepage//secondSection/bg-second.png"); */
     background-size: 100% 100%;
     background-repeat: no-repeat;
     backdrop-filter: blur(5px);
     width: 90%;
-    color: #ffffff;
+    color: #000000;
 }
 
 .second-section>div:nth-child(2) {
@@ -150,7 +154,6 @@ input::-webkit-input-placeholder {
     .second-section {
         flex-direction: column;
         align-items: center;
-        height: 850px
     }
 
     .second-section>div:nth-child(2) {
@@ -159,10 +162,8 @@ input::-webkit-input-placeholder {
     }
 
     .second-section>div:nth-child(1) {
-        height: 500px !important;
         padding-bottom: 0;
         background-size: cover;
-        background-color: rgba(0, 0, 0, 0.55);
         border-radius: 15px;
         margin-top: 40px;
     }

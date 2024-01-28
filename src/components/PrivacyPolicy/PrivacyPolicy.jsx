@@ -282,6 +282,59 @@ export const PrivacyPolicy = () => {
             address your grievances at the earliest possible opportunity. Reach
             out to us at dainikschool@gmail.com in case of any queries.
           </li>
+          <li>
+            At dainik school, we are committed to protecting the privacy and
+            security of our users' personal information. This Privacy Policy
+            describes how we collect, use, and disclose information when you use
+            our application dainik school App available on Google Play Store.
+            Information We Collect We collect the following types of information
+            when you use our Dainik school App: Personal Information: We collect
+            personal information, such as your name, email address, phone
+            number, and other contact information that you provide when you sign
+            up for our services or communicate with us. Usage Information: We
+            collect information about how you use our App, such as the date and
+            time of access, the features and content you interact with, and
+            other usage statistics. Device Information: We may collect
+            information about the device you use to access our App, including
+            the device model, operating system version, IP address, and other
+            device identifiers. Cookies and Similar Technologies: We may use
+            cookies and similar technologies to collect information about your
+            usage of our App and to personalize your experience. You can control
+            the use of cookies through your device or browser settings. How We
+            Use Information We use the information we collect for the following
+            purposes: To provide and improve our services to you. To communicate
+            with you about our services and to respond to your inquiries. To
+            personalize your experience and provide you with customized content.
+            To conduct research and analytics to improve our Dainik school App
+            and services. To comply with legal and regulatory obligations. How
+            We Share Information We may share your information with third
+            parties in the following circumstances: With your consent. With
+            service providers that help us to provide our services, such as
+            hosting providers, analytics providers, and marketing partners. In
+            connection with a merger, acquisition, or sale of our assets. To
+            comply with legal and regulatory obligations. Data Retention We
+            retain your personal information for as long as necessary to fulfill
+            the purposes for which it was collected, unless a longer retention
+            period is required or permitted by law. Security We implement
+            reasonable and appropriate measures to protect your personal
+            information from unauthorized access, use, and disclosure. Your
+            Choices and Rights You have certain choices and rights regarding
+            your personal information, including the right to access, correct,
+            delete, and object to the processing of your personal information.
+            To exercise these rights, please contact us at
+            dainikschool@gmail.com Children's Privacy Our App is not intended
+            for children under the age of 13. We do not knowingly collect
+            personal information from children under the age of 13. If you are a
+            parent or guardian and believe that your child has provided us with
+            personal information without your consent, please contact us at
+            dainikschool@gmail.com Changes to this Privacy Policy We may update
+            this Privacy Policy from time to time. If we make material changes
+            to this Privacy Policy, we will notify you by email or by posting a
+            notice in our Dainik school App. Contact Us If you have any
+            questions or concerns about this Privacy Policy or our practices
+            regarding your personal information, please contact us at
+            dainikschool@gmail.com Call : +91 97290 98866
+          </li>
         </ul>
         <Footer />
       </div>

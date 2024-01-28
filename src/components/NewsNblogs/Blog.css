@@ -1,0 +1,11 @@
+.blog-container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    margin: 4opx 5%;
+}
+
+.blog-container > img {
+    width: 70%;
+}
+

@@ -1,20 +1,19 @@
 import React, { useState } from "react";
 import { Document, Page } from "react-pdf";
-import samplePDF from "./policy.pdf";
 
-export default function AllPages(props) {
+export const AllPages = (props) => {
   const [numPages, setNumPages] = useState(1);
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
-    console.log("object");
+
   }
 
   const { pdf } = props;
-
+  console.log(pdf);
   return (
     <Document
-      file={samplePDF}
+      file={pdf}
       options={{ workerSrc: "/pdf.worker.js" }}
       onLoadSuccess={onDocumentLoadSuccess}
     >
@@ -23,4 +22,4 @@ export default function AllPages(props) {
       ))}
     </Document>
   );
-}
+};

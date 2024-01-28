@@ -2,9 +2,11 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://api.dainikschool.com",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@react-18-pdf/renderer": "^2.3.4",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -12,6 +14,7 @@
     "bootstrap": "^5.2.3",
     "dotenv": "^16.0.3",
     "framer-motion": "^6.5.1",
+    "http-proxy-middleware": "^2.0.6",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
@@ -21,7 +24,9 @@
     "react-router": "^6.8.0",
     "react-router-dom": "^6.8.0",
     "react-scripts": "5.0.1",
+    "react-select": "^5.7.2",
     "react-spring": "^9.7.1",
+    "redux": "^4.2.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
